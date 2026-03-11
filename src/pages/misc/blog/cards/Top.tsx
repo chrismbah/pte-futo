@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Carousel } from "flowbite-react";
 import { FC } from "react";
 import { BlogPostProp } from "../../../../models/misc/blog/blogPosts";
@@ -24,11 +24,11 @@ export const TopPosts: FC<BlogPostProp> = ({ blogPosts }) => {
               .filter((post) => post.postType === "top")
               .map(
                 (
-                  { title, sampleImg, contents, date, author, postType, id },
+                  { title, sampleImg, contents, date, author, postType, no },
                   i
                 ) => (
                   <div key={i} className="h-full hover:bg-gray-100">
-                    <Link to={`/blog/posts/${title}/${id}/${postType}`}>
+                    <Link to={`/blog/posts/${encodeURIComponent(title)}/${no}/${postType}`}>
                       <img
                         className="object-cover rounded-t-lg h-3/5 w-full"
                         src={sampleImg}
@@ -36,11 +36,11 @@ export const TopPosts: FC<BlogPostProp> = ({ blogPosts }) => {
                       />
                       <div className="p-5 h-2/5 w-full flex flex-col justify-between">
                         <div>
-                          <h5 className="mb-2 text-base md:text-lg lg:text-xl xlg:text-xll font-bold tracking-tight text-gray-900 dark:text-white">
+                          <h5 className="mb-2 text-base md:text-lg lg:text-xl xlg:text-xll font-bold tracking-tight text-gray-900">
                             {title}
                           </h5>
-                          <p className="mb-3 font-normal text-sm xl:text-xs text-gray-900 dark:text-gray-400">
-                            {typeof contents[0].content === "string" &&
+                          <p className="mb-3 font-normal text-sm xl:text-xs text-gray-700">
+                            {contents && contents[0] && typeof contents[0].content === "string" &&
                               contents[0].content
                                 .split(" ")
                                 .slice(0, 20)

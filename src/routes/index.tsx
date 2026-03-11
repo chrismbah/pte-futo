@@ -33,10 +33,21 @@ const AppRoutes = () => {
     () =>
       import("../pages/academics/learning-resources/LearningResourcesContent")
   );
+  const ExamTimetable = lazy(
+    () => import("../pages/academics/exam-timetable/ExamTimetable")
+  );
   const Blog = lazy(() => import("../pages/misc/blog/Blog"));
   const BlogPost = lazy(() => import("../pages/misc/blog/post/BlogPost"));
   const ProjectTeam = lazy(() => import("../pages/students/ProjectTeam"));
   const ClassReps = lazy(() => import("../pages/students/ClassReps"));
+  
+  // New EBSUMSA pages
+  const EbsumsaTeam = lazy(() => import("../pages/students/EbsumsaTeam"));
+  const SportsTeam = lazy(() => import("../pages/students/SportsTeam"));
+  const PressTeam = lazy(() => import("../pages/students/PressTeam"));
+  const ProjectsShowcase = lazy(() => import("../pages/projects/ProjectsShowcase"));
+  const ProjectDetails = lazy(() => import("../pages/projects/ProjectDetails"));
+  
   const AboutUs = lazy(() => import("../pages/about/AboutUs"));
   const PhilosophyAndObjectives = lazy(() => import("../pages/about/P&A"));
   const Admission = lazy(() => import("../pages/about/Admission"));
@@ -60,6 +71,15 @@ const AppRoutes = () => {
         "../pages/user/dashboard/components/learning-resources/LearningResources"
       )
   );
+  const IDCardRegistration = lazy(
+    () => import("../pages/user/id-card/IDCardRegistration")
+  );
+  const AdminDashboard = lazy(
+    () => import("../pages/admin/AdminDashboard")
+  );
+  const ResourcesPage = lazy(
+    () => import("../pages/user/resources/ResourcesPage")
+  );
 
   return (
     <>
@@ -74,7 +94,7 @@ const AppRoutes = () => {
           <Route path="/course-outlines/:level" element={<CoursesOutline />} />
           <Route path="/course-outlines/:level/:id" element={<CourseInfo />} />
           <Route
-            path={"/learning-resources" || "/dashboard/learning-resources"}
+            path="/learning-resources"
             element={<LearningResources />}
           />
           <Route
@@ -85,6 +105,7 @@ const AppRoutes = () => {
             path={"/learning-resources/:level/:id/:courseTitle"}
             element={<LearningResourcesContent />}
           />
+          <Route path="/exam-timetable" element={<ExamTimetable />} />
           <Route path="/blog" element={<Blog />} />
           <Route
             path="/blog/posts/:title/:postID/:postType"
@@ -95,6 +116,14 @@ const AppRoutes = () => {
             path="/students/class-representatives"
             element={<ClassReps />}
           />
+          
+          {/* New EBSUMSA routes */}
+          <Route path="/ebsumsa/team" element={<EbsumsaTeam />} />
+          <Route path="/ebsumsa/sports" element={<SportsTeam />} />
+          <Route path="/ebsumsa/press" element={<PressTeam />} />
+          <Route path="/projects" element={<ProjectsShowcase />} />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} />
+          
           <Route path="/about/about-us" element={<AboutUs />} />
           <Route
             path="/about/philosophy-and-objectives"
@@ -139,6 +168,30 @@ const AppRoutes = () => {
             element={
               <ProtectedRoute>
                 <Dashboard />{" "}
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/u/id-card"
+            element={
+              <ProtectedRoute>
+                <IDCardRegistration />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/u/resources"
+            element={
+              <ProtectedRoute>
+                <ResourcesPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
               </ProtectedRoute>
             }
           />

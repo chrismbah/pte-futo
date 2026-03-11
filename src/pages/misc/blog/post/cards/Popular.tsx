@@ -7,11 +7,11 @@ export const PopularPosts: FC<BlogPostProp> = ({ blogPosts, postID, postType }) 
   return (
     <div>
       {blogPosts
-        .filter((post) => post.id !== postID && post.postType !== postType)
+        .filter((post) => String(post.no) !== postID && post.postType !== postType)
         .slice(0, 3)
-        .map(({ title, sampleImg, date, author, postType, id }, i) => {
+        .map(({ title, sampleImg, date, author, postType, no }, i) => {
           return (
-            <Link to={`/blog/posts/${title}/${id}/${postType}`} key={i}>
+            <Link to={`/blog/posts/${encodeURIComponent(title)}/${no}/${postType}`} key={i}>
               <div className="mb-4 ">
                 <div className="overflow-hidden cursor-pointer group h-[120px] sm:h-[140px] md:h-[110px]  flex items-center flex-row gap-2 w-full rounded-lg ">
                   <div className="flex items-start flex-col justify-between leading-normal w-2/3 h-full">

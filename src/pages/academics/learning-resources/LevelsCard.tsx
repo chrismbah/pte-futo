@@ -2,10 +2,20 @@ import { FC } from "react";
 import folder from "../../../assets/svg/icons/folder.svg";
 import { LevelCard } from "../../../models/academics/learning-resources";
 import { Link } from "react-router-dom";
-export const LevelsCard: FC<LevelCard> = ({ level, title, desc }) => {
+
+export const LevelsCard: FC<LevelCard> = ({ level, title, desc, section }) => {
   return (
     <Link to={`/learning-resources/${level}`}>
-      <div className="w-full py-8 mx-auto hover:bg-gray-100 border-2 border-transparent hover:border-green1 rounded-lg p-2">
+      <div className="w-full py-8 mx-auto hover:bg-gray-100 border-2 border-transparent hover:border-green1 rounded-lg p-2 relative">
+        {section && (
+          <span className={`absolute top-2 right-2 text-xss px-2 py-0.5 rounded-full font-medium ${
+            section === "preclinical" 
+              ? "bg-blue-100 text-blue-700" 
+              : "bg-green-100 text-green-700"
+          }`}>
+            {section === "preclinical" ? "Preclinical" : "Clinical"}
+          </span>
+        )}
         <div className="flex items-center justify-center">
           <div className="w-[80px] sm:w-[95px]">
             <img src={folder} alt="folder" className="w-full" />

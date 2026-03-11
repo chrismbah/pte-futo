@@ -1,17 +1,47 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useModalContext } from "../../context/Modal";
 import { Spinner } from "../loaders/Spinner";
 import { CancelIcon } from "../icons/general/CancelIcon";
-import { useUploadProfileImage } from "../../hooks/user-profile/useUploadProfileImage";
+import { useGetUserInfo } from "../../hooks/auth/useGetUserInfo";
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../config/firebase";
+import { notifyUser } from "../../helpers/notifyUser";
 import { motion } from "framer-motion";
 import { scaleInVariants1 } from "../../animation/variants";
 
 export const DeleteProfileImage = () => {
   const { openDeleteProfileImageModal, setOpenDeleteProfileImageModal } =
     useModalContext();
-  const { deleteUserProfileImage, deletingProfileImage } =
-    useUploadProfileImage();
+  const { userID } = useGetUserInfo();
+  const [deletingProfileImage, setDeletingProfileImage] = useState(false);
+
+  const deleteUserProfileImage = async () => {
+    if (!userID) {
+      notifyUser("error", "User not found. Please try again.");
+      return;
+    }
+
+    try {
+      setDeletingProfileImage(true);
+
+      // Clear the profile image reference in Firestore
+      await updateDoc(doc(db, "userInfo", userID), {
+        profileImageURL: "",
+        profileImageID: "",
+      });
+
+      setDeletingProfileImage(false);
+      setOpenDeleteProfileImageModal(false);
+      notifyUser("success", "Profile picture deleted");
+    } catch (err) {
+      console.error("Error deleting profile image:", err);
+      notifyUser("error", "Something went wrong. Please try again");
+      setOpenDeleteProfileImageModal(false);
+      setDeletingProfileImage(false);
+    }
+  };
+
   useEffect(() => {
     if (openDeleteProfileImageModal) {
       document.body.style.overflow = "hidden";
@@ -19,6 +49,7 @@ export const DeleteProfileImage = () => {
       document.body.style.overflow = "visible";
     }
   }, [openDeleteProfileImageModal]);
+
   return (
     <>
       <div

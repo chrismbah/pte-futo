@@ -15,19 +15,19 @@ export default function Login() {
   } = useForm<ILoginForm>({ resolver: yupResolver(logInSchema) });
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-white">
       <div className="flex items-center justify-center px-4 sm:px-6 py-8 mx-auto h-screen lg:py-0">
-        <div className="w-full bg-white rounded-lg shadow dark:border mt-16 max-w-md sm:max-w-lg xl:p-0 ">
+        <div className="w-full bg-white rounded-lg shadow border border-gray-200 mt-16 max-w-md sm:max-w-lg xl:p-0">
           <div className=" space-y-4 md:space-y-6 p-3 ss:p-6 sm:p-8">
             <div className="flex items-center justify-center flex-col">
-              <a className="flex items-center mb-3 text-xl font-semibold text-gray-900 dark:text-white">
+              <a className="flex items-center mb-3 text-xl font-semibold text-gray-900">
                 <img
                   className="w-16 h-16 sm:w-20 sm:h-20"
                   src={logo}
                   alt="logo"
                 />
               </a>
-              <h1 className="text-base sm:text-md font-bold leading-tight tracking-tight text-gray-900 md:text-[21px] dark:text-white">
+              <h1 className="text-base sm:text-md font-bold leading-tight tracking-tight text-gray-900 md:text-[21px]">
                 Login to your account
               </h1>
             </div>
@@ -39,14 +39,14 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-ss ss:text-sm sm:text-xs font-bold text-gray-900 dark:text-white"
+                  className="block mb-2 text-ss ss:text-sm sm:text-xs font-bold text-gray-900"
                 >
-                  Your Email
+                  Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss ss:text-sm sm:text-xs rounded-lg focus:ring-green1 focus:border-green1 block w-full p-2.5 "
+                  className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss ss:text-sm sm:text-xs rounded-lg focus:ring-green1 focus:border-green1 block w-full p-2.5"
                   placeholder="eg. name@gmail.com"
                   {...register("email")}
                 />
@@ -57,7 +57,7 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="password"
-                  className="block mb-2 text-ss ss:text-sm sm:text-xs font-bold text-gray-900 dark:text-white"
+                  className="block mb-2 text-ss ss:text-sm sm:text-xs font-bold text-gray-900"
                 >
                   Password
                 </label>
@@ -65,7 +65,7 @@ export default function Login() {
                   type="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border font-medium border-gray-300 text-gray-700 sm text-ss ss:text-sm sm:text-xs rounded-lg focus:ring-green1 focus:border-green1 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-transparent border font-medium border-gray-300 text-gray-700 text-ss ss:text-sm sm:text-xs rounded-lg focus:ring-green1 focus:border-green1 block w-full p-2.5"
                   {...register("password")}
                 />
                 {errors.password && (

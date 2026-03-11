@@ -10,7 +10,7 @@ export default function GPACalculator() {
   const { studentGPA } = useComputeGPA();
   const { studentDetails } = useGetUserInfo();
   return (
-    <div className="min-h-screen w-full bg-gray-50">
+    <div className="min-h-screen w-full bg-white">
       <div className="  w-full min-h-[95vh] flex items-center justify-center px-3 sm:px-10 py-10 pt-20 sm:pt-28">
         <motion.div
           variants={fadeInVariants1}

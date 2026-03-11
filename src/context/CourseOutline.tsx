@@ -16,6 +16,7 @@ export default function CourseOutlineContextProvider({
   const [semester300L, setSemester300L] = useState<string>("First");
   const [semester400L, setSemester400L] = useState<string>("First");
   const [semester500L, setSemester500L] = useState<string>("First");
+  
 
   const CourseOutlineContextValue = {
     semester100L,

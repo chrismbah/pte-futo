@@ -87,10 +87,10 @@ export default function Blog() {
                     .filter((post) => post.postType !== "featured")
                     .sort(() => 0.5 - Math.random())
                     .slice(0, 3)
-                    .map(({ title, sampleImg, contents, postType, id }, i) => {
+                    .map(({ title, sampleImg, contents, postType, no }, i) => {
                       return (
                         <Link
-                          to={`/blog/posts/${title}/${id}/${postType}`}
+                          to={`/blog/posts/${encodeURIComponent(title)}/${no}/${postType}`}
                           key={i}
                         >
                           <motion.div
@@ -110,11 +110,11 @@ export default function Blog() {
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <h5 className="mb-2 text-xs md:text-ss lg:text-xs font-bold tracking-tight text-gray-900 dark:text-white">
+                            <h5 className="mb-2 text-xs md:text-ss lg:text-xs font-bold tracking-tight text-gray-900">
                               {title}
                             </h5>
                             <p className="mb-1 font-normal text-gray-900 text-ss ss:text-sm md:text-ss xmd:text-ss xl:text-sm">
-                              {typeof contents[0].content === "string" &&
+                              {contents && contents[0] && typeof contents[0].content === "string" &&
                                 contents[0].content
                                   .split(" ")
                                   .slice(0, 8)
@@ -122,7 +122,7 @@ export default function Blog() {
                               ...
                             </p>
                             <Link
-                              to={`/blog/posts/${title}/${id}/${postType}`}
+                              to={`/blog/posts/${encodeURIComponent(title)}/${no}/${postType}`}
                               className="font-semibold absolute bottom-0 left-0 underline text-ss ss:text-sm md:text-ss xmd:text-ss xl:text-sm hover:text-green1"
                             >
                               Read More...

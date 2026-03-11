@@ -81,13 +81,13 @@ export default function AboutUs() {
           </p>
           <div className="w-full flex justify-start flex-wrap lg:flex-nowrap ">
             <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
-              <ol className="relative border-s border-gray-200 dark:border-gray-700">
+              <ol className="relative border-s border-gray-200 ">
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1980-1982
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr S.C.O. Ugbolue
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -99,11 +99,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1982-1986
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr M.E. Enyiegbulam
                   </h3>
                   <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
@@ -115,11 +115,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1986-1990
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr M.E. Enyiegbulam
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -131,11 +131,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1990-1994
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr J.O. Ukponmwan
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -147,11 +147,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1994-1998
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr A.E. Iheonye
                   </h3>
                   <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
@@ -167,11 +167,11 @@ export default function AboutUs() {
             <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
               <ol className="relative border-s border-gray-200">
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     1998-2002
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr O. Ogbobe
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -183,11 +183,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     2002-2005
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr C.B.C. Ohanuzue
                   </h3>
                   <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
@@ -199,11 +199,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     2005-2007
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Prof. M.E. Enyiegbulam
                   </h3>
                   <p className="text-ss text-gray-500 ">Professor</p>
@@ -213,11 +213,11 @@ export default function AboutUs() {
                   <p className="mb-4 text-xs font-medium text-gray-900 ">HOD</p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     2008- JUNE 2012
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Engr. Dr I.C. Madufor
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -229,11 +229,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     JULY 2012 – JUNE 2014
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Prof. I. O. Igwe
                   </h3>
                   <p className="text-ss text-gray-500 ">Professor</p>
@@ -245,13 +245,13 @@ export default function AboutUs() {
               </ol>
             </div>
             <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
-              <ol className="relative border-s border-gray-200 dark:border-gray-700">
+              <ol className="relative border-s border-gray-200 ">
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     JULY 2014 – JUNE 2016
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Engr. Dr M. U. Obidiegwu
                   </h3>
                   <p className="text-ss text-gray-500 ">Senior Lecturer</p>
@@ -263,11 +263,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     JULY 2016 - JUNE 2018
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Engr. Prof. I.C. Madufor
                   </h3>
                   <p className="text-ss text-gray-500 ">Professor</p>
@@ -277,11 +277,11 @@ export default function AboutUs() {
                   <p className="mb-4 text-xs font-medium text-gray-900 ">HOD</p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     JULY 2018 - JUNE 2019
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Dr G. N. Onyeagoro
                   </h3>
                   <p className="text-ss text-gray-500 ">Reader</p>
@@ -293,11 +293,11 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
+                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+                  <time className="mb-1 text-ss font-normal leading-none text-green1 ">
                     JULY 2019 - TILL DATE
                   </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 ">
                     Prof. G. N. Onyeagoro
                   </h3>
                   <p className="text-ss text-gray-500 ">Professor</p>

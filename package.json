@@ -11,14 +11,19 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
+    "heic2any": "^0.0.4",
     "@material-tailwind/react": "^2.1.8",
+    "@supabase/supabase-js": "^2.39.3",
     "firebase": "^10.7.1",
+    "flowbite": "^4.0.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.8",
     "hamburgers": "^1.2.1",
+    "imagekitio-react": "^4.2.0",
     "ldrs": "^1.0.1",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
+    "lucide-react": "^0.577.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
@@ -38,6 +43,7 @@
     "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
+    "@vercel/node": "^3.0.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
@@ -48,7 +54,8 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
-  },"engines": {
-  "node": "24.x"
-}
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
 }

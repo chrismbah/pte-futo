@@ -1,7 +1,7 @@
 import logo from "../../assets/logo/logo.png";
 import { WebIcon } from "../icons/socials/WebIcon";
 import { XIcon } from "../icons/socials/XIcon";
-import { FacebookIcon } from "../icons/socials/FacebookIcon";
+import { InstagramIcon } from "../icons/socials/InstagramIcon";
 
 export default function Footer() {
   return (
@@ -12,8 +12,8 @@ export default function Footer() {
             <a href="/" className="flex items-center">
               <img src={logo} className="w-8 sm:w-10 mr-2" alt="PTE Logo" />
               <span className="self-center text-xs xsm:text-base font-bold whitespace-wrap">
-                Polymer and Textile Engineering,{" "}
-                <br className="hidden md:block" /> FUTO
+                Medicine and Surgery Department,{" "}
+                <br className="hidden md:block" /> EBSU
               </span>
             </a>
           </div>
@@ -24,16 +24,16 @@ export default function Footer() {
               </h2>
               <ul className="text-white font-medium text-ss md:text-sm flex flex-col gap-2 sm:gap-4 ">
                 <li>
-                  <a href="https://futo.edu.ng/" className="hover:underline">
-                    FUTO Website
+                  <a href="https://ebsu.edu.ng/" className="hover:underline">
+                    EBSU Website
                   </a>
                 </li>
                 <li className="">
                   <a
-                    href="https://portal.futo.edu.ng/"
+                    href="https://portal.ebsu.edu.ng/"
                     className="hover:underline"
                   >
-                    FUTO Portal
+                    EBSU Portal
                   </a>
                 </li>
               </ul>
@@ -84,45 +84,37 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-col justify-start items-start">
-            <span className="text-xss ss:text-ss md:text-sm text-white sm:text-center dark:text-gray-400">
-              © 2024{" "}
-              <a href="/" className="hover:underline">
-                PTE-FUTO.
+            <span className="text-xss ss:text-ss md:text-sm text-white sm:text-center">
+              © 2026{" "}
+              <a href="/" className="hover:underline text-white">
+                EBSUMSA-EBSU.
               </a>
             </span>
             <span className="text-ss md:text-sm text-white sm:text-center">
-              Created and Designed by{" "}
-              <a
-                href="https://chrismbah.vercel.app/"
-                target="_"
-                className="hover:underline"
-              >
-                Christian Mbah.
-              </a>{" "}
-              All Rights Reserved.
+              Built by EBSUMSA Tech Team. All Rights Reserved.
             </span>
           </div>
 
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="https://www.facebook.com/F.U.T.O.Nigeria/"
-              className="text-white hover:text-gray-900 dark:hover:text-white"
+              href="https://www.instagram.com/ebsumsaofficial?igsh=Z2JxMGtpMTJkOXYx"
+              className="text-white hover:text-white/80"
             >
-              <FacebookIcon className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 fill-white" />
+              <InstagramIcon className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 fill-white" />
             </a>
 
             <a
-              href="/"
-              className="text-white hover:text-gray-900 dark:hover:text-white ms-2"
+              href="https://x.com/Ebsumsaofficial"
+              className="text-white hover:text-white/80 ms-2"
             >
               <XIcon className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
             </a>
             <a
-              href="https://futo.edu.ng/"
-              className="text-white hover:text-gray-900 dark:hover:text-white ms-2"
+              href="https://ebsu.edu.ng/"
+              className="text-white hover:text-white/80 ms-2"
             >
               <WebIcon className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
             </a>

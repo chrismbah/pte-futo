@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
 import consultation from "../../json/animation/consultation.json";
 import glasses from "../../json/animation/glasses.json";
-import img2 from "../../assets/img/gallery/senate-building.webp";
-import img3 from "../../assets/img/gallery/senate.jpg";
-import img4 from "../../assets/img/gallery/statue.jpg";
+import img2 from "../../assets/img/gallery/fetha.jpg";
+import img3 from "../../assets/img/gallery/ebsu.jpeg";
+import img4 from "../../assets/img/gallery/senate.png";
 import { motion } from "framer-motion";
 import {
   fadeInVariants1,
@@ -39,8 +39,7 @@ export default function About() {
               custom={2}
               className="text-gray-900 font-medium text-ss ss:text-sm xlg:text-xs mb-4"
             >
-              Empowering students to achieve academic excellence through
-              learning resources and personalized support.
+              Empowering students toward outstanding academic success through rich educational resources and personalized ai assistance.
             </motion.p>
             <motion.div
               variants={fadeInVariants1}

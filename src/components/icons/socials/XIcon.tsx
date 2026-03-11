@@ -21,9 +21,9 @@ export const XIcon: FC<StyleProp> = ({ className }) => {
         strokeDasharray=""
         strokeDashoffset="0"
         fontFamily="none"
-        fontWeight="none"
-        fontSize="none"
-        textAnchor="none"
+        fontWeight="normal"
+        fontSize="medium"
+        textAnchor="start"
         // style="mix-blend-mode: normal"
       >
         <g transform="scale(5.12,5.12)">

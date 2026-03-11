@@ -25,6 +25,8 @@ export const useBlogComments = () => {
   const navigate = useNavigate();
   const commentsRef = collection(db, "postsComments");
   const [userComment, setUserComment] = useState<string>("");
+  const [replyComment, setReplyComment] = useState<string>("");
+  const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const [postComments, setPostComments] = useState<IPostComment[] | null>(null);
   const [postCommentsLoading, setPostCommentsLoading] = useState<boolean>(true);
   const [postCommentsError, setPostCommentsError] = useState<boolean>(false);
@@ -102,6 +104,55 @@ export const useBlogComments = () => {
     }
   };
 
+  const addReplyComment = async (parentCommentID: string) => {
+    if (!userID) {
+      navigate("/login");
+      notifyUser("info", "Please login to reply");
+      return;
+    }
+
+    if (!studentDetails || !postID) {
+      notifyUser("error", "Something went wrong. Please try again");
+      return;
+    }
+
+    if (!replyComment.trim()) {
+      notifyUser("info", "Please add a reply");
+      return;
+    }
+
+    try {
+      const { firstName, lastName, email, profileImageID, profileImageURL } =
+        studentDetails;
+      const commentID = uuid();
+      const replyInfo: IPostComment = {
+        commentPostID: postID,
+        commentUserID: userID,
+        commentID,
+        firstName,
+        lastName,
+        email,
+        comment: replyComment,
+        time: getCurrentTime(),
+        date: getCurrentDateInShortFormat(),
+        timeStamp: new Date(),
+        profileImageID,
+        profileImageURL,
+        parentCommentID,
+      };
+
+      await setDoc(doc(db, "postsComments", commentID), replyInfo);
+      setReplyComment("");
+      setReplyingTo(null);
+      notifyUser("success", "Reply posted!");
+    } catch (err) {
+      notifyUser(
+        "error",
+        "Couldn't post reply. Please check your network connection and try again."
+      );
+    }
+  };
+
   const deleteUserComment = async (
     commentID: string,
     commentUserID: string
@@ -150,5 +201,10 @@ export const useBlogComments = () => {
     deleteUserComment,
     deleteCommentLoading,
     deleteCommentError,
+    replyComment,
+    setReplyComment,
+    replyingTo,
+    setReplyingTo,
+    addReplyComment,
   };
 };

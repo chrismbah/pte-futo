@@ -16,7 +16,7 @@ export default function SignUp() {
   } = useForm<ISignUpForm>({ resolver: yupResolver(signUpSchema) });
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-white">
       <div className=" w-full min-h-screen flex items-center justify-center  sm:px-10 pt-24 pb-10">
         <div className=" bg-white rounded-lg shadow w-[95%] sm:min-w-[650px] sm:w-auto">
           <form
@@ -27,7 +27,7 @@ export default function SignUp() {
               <img src={logo} alt="PTE LOGO" className="w-14 h-14" />
               <div className="text-center mb-4 mt-2">
                 <p className="font-bold text-xs sm:text-base text-wrap">
-                  Polymer and Textile Engineering Department, FUTO
+                  Medicine and Surgery Department, EBSU
                 </p>
               </div>
             </div>
@@ -43,8 +43,8 @@ export default function SignUp() {
                   <input
                     type="text"
                     id="firstName"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
-                    placeholder="eg. Chris"
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
+                    placeholder="eg. Ken"
                     {...register("firstName")}
                   />
                   {errors.firstName && (
@@ -63,8 +63,8 @@ export default function SignUp() {
                   <input
                     type="text"
                     id="lastName"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
-                    placeholder="eg. Mbah"
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
+                    placeholder="eg. Chigozie"
                     {...register("lastName")}
                   />
                   {errors.lastName && (
@@ -85,8 +85,8 @@ export default function SignUp() {
                   <input
                     type="number"
                     id="regNo"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
-                    placeholder="eg. 20191189227"
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
+                    placeholder="eg. 91141"
                     {...register("regNo")}
                   />
                   {errors.regNo && (
@@ -102,7 +102,7 @@ export default function SignUp() {
                   </label>
                   <select
                     id="level"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
                     {...register("level")}
                   >
                     <option selected hidden value={""}>
@@ -114,6 +114,7 @@ export default function SignUp() {
                     <option value="300L">300L</option>
                     <option value="400L">400L</option>
                     <option value="500L">500L</option>
+                    <option value="600L">600L</option>
                     <option value="Visitor">Visitor</option>
                   </select>
                   {errors.level && (
@@ -131,7 +132,7 @@ export default function SignUp() {
                 <input
                   type="email"
                   id="email"
-                  className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
+                  className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
                   placeholder="eg. name@gmail.com"
                   {...register("email")}
                 />
@@ -150,7 +151,7 @@ export default function SignUp() {
                   <input
                     type="password"
                     id="password"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
                     placeholder="••••••••"
                     {...register("password")}
                   />
@@ -170,7 +171,7 @@ export default function SignUp() {
                   <input
                     type="password"
                     id="confirmPassword"
-                    className="bg-gray-50 font-medium text-gray-700 border border-gray-300  text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2 "
+                    className="bg-transparent font-medium text-gray-700 border border-gray-300 text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 ss:p-2"
                     placeholder="••••••••"
                     {...register("confirmPassword")}
                   />

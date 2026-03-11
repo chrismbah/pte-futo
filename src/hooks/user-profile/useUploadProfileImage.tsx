@@ -1,18 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import {  useState } from "react";
+import { useState } from "react";
 import { notifyUser } from "../../helpers/notifyUser";
-import {
-  ref,
-  uploadBytes,
-  getDownloadURL,
-  deleteObject,
-} from "firebase/storage";
-import { db, storage } from "../../config/firebase";
+import { db } from "../../config/firebase";
 import { useGetUserInfo } from "../../hooks/auth/useGetUserInfo";
 import { updateDoc, doc } from "firebase/firestore";
 import { useModalContext } from "../../context/Modal";
+import { supabase, STORAGE_BUCKETS, getPublicUrl } from "../../config/supabase";
 
 export const useUploadProfileImage = () => {
   const { studentDetails, userID } = useGetUserInfo();
@@ -30,7 +25,9 @@ export const useUploadProfileImage = () => {
     if (selectedFile && selectedFile.type.startsWith("image/")) {
       setImageFile(selectedFile);
       setUploadProgress(0);
-      console.log(imageFile);
+      // Create local preview URL immediately when file is selected
+      const localPreviewURL = URL.createObjectURL(selectedFile);
+      setImageURL(localPreviewURL);
     } else {
       notifyUser(
         "error",
@@ -48,22 +45,45 @@ export const useUploadProfileImage = () => {
     if (userID) {
       try {
         notifyUser("loading", "Uploading Image");
-        const userImageRef = ref(
-          storage,
-          `profile-pictures/${studentDetails?.email}-${userID}/${imageFile.name}`
-        );
-        setImageFileID(imageFile.name);
-        await uploadBytes(userImageRef, imageFile);
-        const downloadURL = await getDownloadURL(userImageRef);
+
+        // Generate unique file path for Supabase Storage
+        const fileExt = imageFile.name.split('.').pop();
+        const fileName = `${userID}/${studentDetails?.email}-${Date.now()}.${fileExt}`;
+
+        // Upload to Supabase Storage
+        const { data, error } = await supabase.storage
+          .from(STORAGE_BUCKETS.PROFILE_PICTURES)
+          .upload(fileName, imageFile, {
+            cacheControl: '3600',
+            upsert: true,
+          });
+
+        if (error) {
+          throw new Error(`Failed to upload image: ${error.message}`);
+        }
+
+        // Get the public URL
+        const downloadURL = getPublicUrl(STORAGE_BUCKETS.PROFILE_PICTURES, data.path);
+        const fileId = data.path;
+
         setImageURL(downloadURL);
+        setImageFileID(fileId);
+
+        // Automatically save to Firestore so image persists
+        await updateDoc(doc(db, "userInfo", userID), {
+          profileImageURL: downloadURL,
+          profileImageID: fileId,
+        });
+
         notifyUser("success", "Image Uploaded");
-        console.log("Image Uploaded");
       } catch (error: any) {
+        console.error("Supabase upload error:", error);
         notifyUser("error", "Failed to upload image. Please try again.");
         setUploadError(error);
       }
     }
   };
+
   const updateUserProfileLink = async () => {
     if (userID && imageURL && imageURL.length > 1) {
       try {
@@ -81,29 +101,27 @@ export const useUploadProfileImage = () => {
       }
     }
   };
+
   const deleteUserProfileImage = async () => {
     if (userID && studentDetails) {
-      const userImageRef = ref(
-        storage,
-        `profile-pictures/${studentDetails.email}-${userID}/${studentDetails.profileImageID}`
-      );
       try {
         setDeletingProfileImage(true);
-        await deleteObject(userImageRef);
+
+        // Clear the profile image reference in Firestore
         await updateDoc(doc(db, "userInfo", userID), {
           profileImageURL: "",
           profileImageID: "",
         });
+
         setDeletingProfileImage(false);
         setOpenDeleteProfileImageModal(false);
         notifyUser("success", "Profile picture deleted");
       } catch (err) {
-        console.log(err);
+        console.error("Error deleting profile image:", err);
         notifyUser("error", "Something went wrong. Please try again");
         setOpenDeleteProfileImageModal(false);
+        setDeletingProfileImage(false);
       }
-    } else {
-      console.log("Bug!!");
     }
   };
 

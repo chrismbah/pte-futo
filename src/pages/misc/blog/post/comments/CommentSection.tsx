@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { PaperPlaneIcon } from "../../../../../components/icons/general/PaperPlaneIcon";
 import { useBlogComments } from "../../hooks/useBlogComments";
 import { Tooltip } from "flowbite-react";
@@ -12,6 +12,10 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useGetUserInfo } from "../../../../../hooks/auth/useGetUserInfo";
 import Lottie from "lottie-react";
 import profile from "../../../../../json/animation/avatar1.json";
+import { IoChatbubbleOutline } from "react-icons/io5";
+
+const MAX_COMMENT_LENGTH = 180;
+
 export default function CommentSection() {
   const { postID } = useParams();
   const {
@@ -24,6 +28,19 @@ export default function CommentSection() {
     postCommentsError,
   } = useBlogComments();
   const { studentDetails, user } = useGetUserInfo();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  const remainingChars = MAX_COMMENT_LENGTH - userComment.length;
+
+  const handleSubmitComment = async () => {
+    if (!userComment.trim() || isSubmitting) return;
+    setIsSubmitting(true);
+    try {
+      await addUserComment();
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     getPostComments();
@@ -62,7 +79,7 @@ export default function CommentSection() {
           )}
         </div>
         <textarea
-          maxLength={180}
+          maxLength={MAX_COMMENT_LENGTH}
           value={userComment}
           onChange={(e) => setUserComment(e.target.value)}
           className="w-full h-10 sm:h-12 p-1 sm:px-2 focus:outline-none leading-relaxed text-gray-800 my-2 text-[12px]
@@ -72,23 +89,50 @@ export default function CommentSection() {
         ></textarea>
 
         <Tooltip
-          content="Comment"
+          content={isSubmitting ? "Sending..." : "Comment"}
           animation="duration-0"
           theme={customTooltipTheme}
         >
           <button
-            onClick={addUserComment}
+            onClick={handleSubmitComment}
+            disabled={!userComment.trim() || isSubmitting}
             type="submit"
-            className="inline-flex justify-center mt-2 p-1 sm:p-2 text-green1 rounded-md cursor-pointer hover:bg-green1/10 pr-1"
+            className={`inline-flex justify-center mt-2 p-1 sm:p-2 rounded-md pr-1 transition-colors ${
+              !userComment.trim() || isSubmitting
+                ? "text-gray-300 cursor-not-allowed"
+                : "text-green1 cursor-pointer hover:bg-green1/10"
+            }`}
           >
-            <PaperPlaneIcon className="w-[15px] sm:w-5 sm:h-5 ml-1" />
+            {isSubmitting ? (
+              <div className="w-[15px] h-[15px] sm:w-5 sm:h-5 ml-1 border-2 border-green1/30 border-t-green1 rounded-full animate-spin" />
+            ) : (
+              <PaperPlaneIcon className="w-[15px] sm:w-5 sm:h-5 ml-1" />
+            )}
           </button>
         </Tooltip>
+      </div>
+      
+      {/* Character Counter */}
+      <div className="flex justify-end -mt-1 mb-2 pr-10">
+        <span className={`text-xs ${remainingChars < 30 ? 'text-orange-500' : remainingChars < 10 ? 'text-red-500' : 'text-gray-400'}`}>
+          {remainingChars} characters remaining
+        </span>
       </div>
       {!postCommentsLoading &&
         !postCommentsError &&
         postComments &&
         postComments.length > 0 && <Comments postComments={postComments} />}
+      
+      {/* Empty State - No Comments */}
+      {!postCommentsLoading &&
+        !postCommentsError &&
+        (!postComments || postComments.length === 0) && (
+          <div className="flex flex-col items-center justify-center py-6 text-center">
+            <IoChatbubbleOutline className="w-10 h-10 text-gray-300 mb-2" />
+            <p className="text-gray-500 text-sm font-medium">No comments yet</p>
+            <p className="text-gray-400 text-xs mt-1">Be the first to share your thoughts!</p>
+          </div>
+        )}
       {postCommentsLoading && (
         <div className="flex items-start pb-1 w-full gap-2 mb-2 px-1 sm:px-2">
           <Skeleton

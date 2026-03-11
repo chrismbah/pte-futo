@@ -6,6 +6,6 @@ export const customTooltipTheme: CustomFlowbiteTheme["tooltip"] = {
   style: {
     dark: "bg-gray-900 text-white",
     light: "border border-gray-200 bg-white text-gray-900",
-    auto: "border border-gray-200 bg-white text-gray-900 dark:border-none dark:bg-gray-700 dark:text-white",
+    auto: "border border-gray-200 bg-white text-gray-900",
   },
 };

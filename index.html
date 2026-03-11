@@ -15,37 +15,200 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Polymer and Textile Engineering Department Platform - PTE FUTO
-    </title>
 
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="PTE-FUTO E-Learning Platform" />
+    <!-- ============================================================
+         PRIMARY SEO META TAGS
+    ============================================================ -->
+    <title>EBSUMSA | EBSU Medical Student Association E-Learning Platform</title>
+
+    <meta
+      name="description"
+      content="EBSUMSA — The official e-learning platform of the Ebonyi State University Medical Student Association. Access course materials, textbooks, past questions, GPA calculator and more for Medicine & Surgery students at EBSU."
+    />
+
+    <!-- Keywords (secondary signal, still useful for Bing/Yahoo) -->
+    <meta
+      name="keywords"
+      content="EBSUMSA, EBSU, Ebonyi State University, medical student, medicine and surgery, e-learning, past questions, course materials, GPA calculator, medical school Nigeria, EBSU medical"
+    />
+
+    <!-- Author & Publisher -->
+    <meta name="author" content="EBSUMSA — Ebonyi State University Medical Student Association" />
+    <meta name="publisher" content="EBSUMSA" />
+    <meta name="copyright" content="EBSUMSA" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical URL (prevents duplicate content penalties) -->
+    <link rel="canonical" href="https://ebsumsa.vercel.app/" />
+
+    <!-- Language & Region -->
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="NG-EB" />
+    <meta name="geo.placename" content="Abakaliki, Ebonyi State, Nigeria" />
+
+    <!-- ============================================================
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp previews)
+    ============================================================ -->
+    <meta property="og:site_name" content="EBSUMSA E-Learning Platform" />
+    <meta property="og:title" content="EBSUMSA | EBSU Medical Student Association E-Learning Platform" />
     <meta
       property="og:description"
-      content="Access course materials, textbooks, past questions, GPA calculator and more, built for Polymer and Textile Engineering students at FUTO."
+      content="Access course materials, textbooks, past questions, GPA calculator and more — built exclusively for Medicine and Surgery students at Ebonyi State University."
     />
-    <meta
-      property="og:image"
-      content="https://pte-futo.vercel.app/og-image.png"
-    /> 
-    <meta property="og:url" content="https://pte-futo.vercel.app/" />
+    <meta property="og:image" content="https://ebsumsa.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EBSUMSA E-Learning Platform for EBSU Medical Students" />
+    <meta property="og:url" content="https://ebsumsa.vercel.app/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
 
-    <!-- Twitter Cards -->
+    <!-- ============================================================
+         TWITTER / X CARDS
+    ============================================================ -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PTE-FUTO E-Learning Platform" />
+    <meta name="twitter:site" content="https://x.com/Ebsumsaofficial" />
+    <meta name="twitter:creator" content="@Ebsumsaofficial" />
+    <meta name="twitter:title" content="EBSUMSA | EBSU Medical Student E-Learning Platform" />
     <meta
       name="twitter:description"
-      content="Centralized study resources for Polymer and Textile Engineering students at FUTO."
+      content="Centralized study resources — past questions, textbooks, GPA calculator & more — for Medicine and Surgery students at EBSU."
     />
-    <meta
-      name="twitter:image"
-      content="https://pte-futo.vercel.app/og-image.png"
-    />
+    <meta name="twitter:image" content="https://ebsumsa.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="EBSUMSA E-Learning Platform" />
+
+    <!-- ============================================================
+         STRUCTURED DATA — JSON-LD (Google Rich Results)
+    ============================================================ -->
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ebonyi State University Medical Student Association",
+      "alternateName": "EBSUMSA",
+      "url": "https://ebsumsa.vercel.app/",
+      "logo": "https://ebsumsa.vercel.app/logo.png",
+      "description": "The official student association for Medicine and Surgery students at Ebonyi State University (EBSU), Nigeria.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abakaliki",
+        "addressRegion": "Ebonyi State",
+        "addressCountry": "NG"
+      },
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "Ebonyi State University",
+        "alternateName": "EBSU",
+        "url": "https://ebsu.edu.ng"
+      }
+    }
+    </script>
+
+    <!-- WebSite + Sitelinks Searchbox Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EBSUMSA E-Learning Platform",
+      "url": "https://ebsumsa.vercel.app/",
+      "description": "Official e-learning platform of the Ebonyi State University Medical Student Association — course materials, past questions, GPA calculator and more.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "EBSUMSA"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://ebsumsa.vercel.app/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- EducationalOrganization / LearningResource Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "EBSUMSA E-Learning Platform",
+      "url": "https://ebsumsa.vercel.app/",
+      "description": "A centralized digital study hub providing course materials, past questions, textbooks, and GPA calculators for Medicine and Surgery students at EBSU.",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "audienceType": "Medical Students"
+      },
+      "teaches": [
+        "Medicine and Surgery",
+        "Medical Sciences",
+        "Clinical Medicine",
+        "Anatomy",
+        "Physiology",
+        "Biochemistry",
+        "Pathology",
+        "Pharmacology",
+        "Microbiology"
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Ebonyi State University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abakaliki",
+          "addressRegion": "Ebonyi",
+          "addressCountry": "NG"
+        }
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ebsumsa.vercel.app/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ============================================================
+         PERFORMANCE & PRECONNECTS (helps Core Web Vitals → indirect SEO boost)
+    ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://ebsumsa.vercel.app" />
+
+    <!-- Puter.js for AI Chat -->
+    <script src="https://js.puter.com/v2/"></script>
+
+    <!-- PWA / Mobile -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EBSUMSA" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
   </head>
 
   <body class="selection:bg-green4 selection:text-white">
+    <!-- Accessible skip link (improves accessibility score → positive SEO signal) -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

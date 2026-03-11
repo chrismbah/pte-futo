@@ -13,10 +13,10 @@ export const FeaturedPosts: FC<BlogPostProp> = ({ blogPosts }) => {
             .filter((post) => post.postType === "featured")
             .map(
               (
-                { title, sampleImg, contents, date, author, id, postType },
+                { title, sampleImg, contents, date, author, no, postType },
                 i
               ) => (
-                <Link to={`/blog/posts/${title}/${id}/${postType}`} key={i}>
+                <Link to={`/blog/posts/${encodeURIComponent(title)}/${no}/${postType}`} key={i}>
                   <motion.div
                     variants={fadeInVariants7}
                     initial="initial"
@@ -34,19 +34,19 @@ export const FeaturedPosts: FC<BlogPostProp> = ({ blogPosts }) => {
                     />
                     <div className="p-2 sm:p-3 h-full w-2/3 md:h-2/5 md:w-full flex flex-col justify-between">
                       <div>
-                        <h5 className="mb-2 text-ss xss:text-sm md:text-lg lg:text-xl xlg:text-xll font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-ss xss:text-sm md:text-lg lg:text-xl xlg:text-xll font-bold tracking-tight text-gray-900">
                           {title}
                         </h5>
-                        <p className="mb-3 font-normal hidden md:block text-ss xl:text-xs text-gray-700 dark:text-gray-400">
-                          {typeof contents[0].content === "string" &&
+                        <p className="mb-3 font-normal hidden md:block text-ss xl:text-xs text-gray-700">
+                          {contents && contents[0] && typeof contents[0].content === "string" &&
                             contents[0].content
                               .split(" ")
                               .slice(0, 25)
                               .join(" ")}
                           ...
                         </p>{" "}
-                        <p className="mb-3 font-normal block md:hidden text-sss ss:text-xss xl:text-xs text-gray-900 dark:text-gray-400">
-                          {typeof contents[0].content === "string" &&
+                        <p className="mb-3 font-normal block md:hidden text-sss ss:text-xss xl:text-xs text-gray-700">
+                          {contents && contents[0] && typeof contents[0].content === "string" &&
                             contents[0].content
                               .split(" ")
                               .slice(0, 20)

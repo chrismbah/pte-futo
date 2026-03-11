@@ -25,3 +25,7 @@ dist-ssr
 
 # Environmental Variables
 *.env
+
+
+# Contentlayer
+.contentlayer

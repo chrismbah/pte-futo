@@ -11,6 +11,10 @@ export interface IPostComment {
   timeStamp: Date;
   profileImageURL: string;
   profileImageID: string;
+  parentCommentID?: string; // For replies
+  replies?: IPostComment[];
+  likes?: number;
+  likedBy?: string[];
 }
 export interface PostCommentsProp {
   postComments: IPostComment[];

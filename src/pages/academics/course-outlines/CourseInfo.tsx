@@ -1,36 +1,85 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
-import { courseInfo100 } from "../../../data/academics/course-outlines/levels/100/info/courseInfo100";
-import { courseInfo200 } from "../../../data/academics/course-outlines/levels/200/info/courseInfo200";
-import { courseInfo300 } from "../../../data/academics/course-outlines/levels/300/info/courseInfo300";
-import { courseInfo400 } from "../../../data/academics/course-outlines/levels/400/info/courseInfo400";
-import { courseInfo500 } from "../../../data/academics/course-outlines/levels/500/info/courseInfo500";
-import { useParams } from "react-router-dom";
-import { useCourseOutlineContext } from "../../../context/CourseOutline";
-import { ICourseInfo } from "../../../models/academics/course-outline/courseInfo";
+import { useParams, useNavigate } from "react-router-dom";
 import { OutlineIcon } from "../../../components/icons/dashboard/Outline";
 import { motion } from "framer-motion";
 import { fadeInVariants1 } from "../../../animation/variants";
+import { db } from "../../../config/firebase";
+import { doc, getDoc } from "firebase/firestore";
+import { Spinner } from "../../../components/loaders/Spinner";
+
+interface CourseOutlineData {
+  id: string;
+  courseCode: string;
+  courseTitle: string;
+  creditUnit: number;
+  creditUnits: string;
+  preRequisite: string | null;
+  level: string;
+  semester: "First" | "Second";
+  info: { heading: string; content: string }[];
+}
 export default function CourseInfo() {
-  const { id, level } = useParams<string>();
-  const { semester } = useCourseOutlineContext();
-  const [courseInfo, setCourseInfo] = useState<ICourseInfo | null>();
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const [courseInfo, setCourseInfo] = useState<CourseOutlineData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (id) {
-      if (level === "100") {
-        setCourseInfo(courseInfo100[semester][id]);
-      } else if (level === "200") {
-        setCourseInfo(courseInfo200[semester][id]);
-      } else if (level === "300") {
-        setCourseInfo(courseInfo300[semester][id]);
-      } else if (level === "400") {
-        setCourseInfo(courseInfo400[semester][id]);
-      } else if (level === "500") {
-        setCourseInfo(courseInfo500[semester][id]);
+    const fetchCourseInfo = async () => {
+      if (!id) {
+        setError("Course ID not found");
+        setIsLoading(false);
+        return;
       }
-    }
-  }, [level, id]);
+
+      try {
+        const docRef = doc(db, "courseOutlines", id);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          setCourseInfo({ id: docSnap.id, ...docSnap.data() } as CourseOutlineData);
+        } else {
+          setError("Course outline not found");
+        }
+      } catch (err) {
+        console.error("Error fetching course outline:", err);
+        setError("Failed to load course outline");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCourseInfo();
+  }, [id]);
+
+  if (isLoading) {
+    return (
+      <div className="bg-gray-50 min-h-screen flex items-center justify-center">
+        <Spinner className="w-8 h-8 text-gray-200 animate-spin fill-green1" />
+      </div>
+    );
+  }
+
+  if (error || !courseInfo) {
+    return (
+      <div className="bg-gray-50 min-h-screen flex items-center justify-center">
+        <div className="text-center py-20 text-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <p className="text-lg font-medium">{error || "Course outline not found"}</p>
+          <button 
+            onClick={() => navigate(-1)} 
+            className="mt-4 px-4 py-2 bg-green1 text-white rounded-md hover:bg-green-700 transition"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-gray-50">

@@ -7,7 +7,10 @@ const cherryPickedKeys = [
   "REACT_APP_FIREBASE_PROJECT_ID",
   "REACT_APP_FIREBASE_STORAGE_BUCKET",
   "REACT_APP_FIREBASE_MESSAGING_SENDER_ID",
-  "REACT_APP_FIREBASE_APP_ID"
+  "REACT_APP_FIREBASE_APP_ID",
+  "REACT_APP_MEASUREMENT_ID",
+  "VITE_IMAGEKIT_PUBLIC_KEY",
+  "VITE_IMAGEKIT_URL_ENDPOINT"
 ];
 
 // https://vitejs.dev/config/
@@ -21,6 +24,7 @@ export default defineConfig(({ mode }) => {
       'process.env': processEnv
     },
     plugins: [react()],
+    assetsInclude: ['**/*.heic', '**/*.HEIC', '**/*.heif', '**/*.HEIF'],
   }
 })
 
