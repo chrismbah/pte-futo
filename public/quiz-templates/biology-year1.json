@@ -1,0 +1,309 @@
+{
+  "title": "Biology - Year 1 Fundamentals",
+  "description": "Introductory biology covering cell biology, genetics, evolution, and basic physiology for Year 1 university students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is the powerhouse of the cell?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Mitochondria are called the powerhouse because they produce ATP through cellular respiration.",
+      "answers": [
+        { "answer_text": "Mitochondria", "is_correct": true },
+        { "answer_text": "Nucleus", "is_correct": false },
+        { "answer_text": "Ribosome", "is_correct": false },
+        { "answer_text": "Golgi apparatus", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the basic unit of life?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The cell is the basic structural and functional unit of all living organisms.",
+      "answers": [
+        { "answer_text": "Cell", "is_correct": true },
+        { "answer_text": "Atom", "is_correct": false },
+        { "answer_text": "Molecule", "is_correct": false },
+        { "answer_text": "Tissue", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What molecule carries genetic information?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "DNA (Deoxyribonucleic acid) stores and transmits genetic information.",
+      "answers": [
+        { "answer_text": "DNA", "is_correct": true },
+        { "answer_text": "RNA", "is_correct": false },
+        { "answer_text": "Protein", "is_correct": false },
+        { "answer_text": "ATP", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the process by which plants make food using sunlight?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Photosynthesis converts CO₂ and H₂O into glucose and O₂ using light energy.",
+      "answers": [
+        { "answer_text": "Photosynthesis", "is_correct": true },
+        { "answer_text": "Respiration", "is_correct": false },
+        { "answer_text": "Fermentation", "is_correct": false },
+        { "answer_text": "Transpiration", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What are the four bases found in DNA?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "DNA contains Adenine (A), Thymine (T), Guanine (G), and Cytosine (C). A pairs with T, G pairs with C.",
+      "answers": [
+        { "answer_text": "Adenine, Thymine, Guanine, Cytosine", "is_correct": true },
+        { "answer_text": "Adenine, Uracil, Guanine, Cytosine", "is_correct": false },
+        { "answer_text": "Alanine, Thymine, Glycine, Cysteine", "is_correct": false },
+        { "answer_text": "Adenine, Thymine, Glutamine, Cysteine", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is mitosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Mitosis is cell division that produces two identical daughter cells with the same chromosome number.",
+      "answers": [
+        { "answer_text": "Cell division producing two identical daughter cells", "is_correct": true },
+        { "answer_text": "Cell division producing four different cells", "is_correct": false },
+        { "answer_text": "Production of gametes", "is_correct": false },
+        { "answer_text": "Protein synthesis", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the function of ribosomes?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ribosomes synthesize proteins by translating mRNA into amino acid chains.",
+      "answers": [
+        { "answer_text": "Protein synthesis", "is_correct": true },
+        { "answer_text": "Energy production", "is_correct": false },
+        { "answer_text": "DNA replication", "is_correct": false },
+        { "answer_text": "Cell division", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between prokaryotic and eukaryotic cells?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Prokaryotes lack a membrane-bound nucleus; eukaryotes have a true nucleus and organelles.",
+      "answers": [
+        { "answer_text": "Prokaryotes lack a nucleus; eukaryotes have a nucleus", "is_correct": true },
+        { "answer_text": "Prokaryotes are larger than eukaryotes", "is_correct": false },
+        { "answer_text": "Eukaryotes lack ribosomes", "is_correct": false },
+        { "answer_text": "There is no difference", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the role of enzymes in biological reactions?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Enzymes are biological catalysts that speed up reactions by lowering activation energy.",
+      "answers": [
+        { "answer_text": "They catalyze (speed up) biochemical reactions", "is_correct": true },
+        { "answer_text": "They provide energy for reactions", "is_correct": false },
+        { "answer_text": "They store genetic information", "is_correct": false },
+        { "answer_text": "They transport oxygen", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is meiosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Meiosis produces four haploid gametes (sex cells) with half the chromosome number.",
+      "answers": [
+        { "answer_text": "Cell division that produces four haploid gametes", "is_correct": true },
+        { "answer_text": "Cell division that produces two identical cells", "is_correct": false },
+        { "answer_text": "The process of protein synthesis", "is_correct": false },
+        { "answer_text": "DNA replication", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the function of the cell membrane?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The cell membrane controls what enters and exits the cell (selectively permeable).",
+      "answers": [
+        { "answer_text": "Controls what enters and exits the cell", "is_correct": true },
+        { "answer_text": "Produces energy", "is_correct": false },
+        { "answer_text": "Stores genetic material", "is_correct": false },
+        { "answer_text": "Synthesizes proteins", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is ATP?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "ATP (Adenosine Triphosphate) is the primary energy currency of cells.",
+      "answers": [
+        { "answer_text": "The energy currency of the cell", "is_correct": true },
+        { "answer_text": "A type of protein", "is_correct": false },
+        { "answer_text": "A DNA base", "is_correct": false },
+        { "answer_text": "A type of lipid", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is natural selection?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Natural selection is the process where organisms better adapted to their environment survive and reproduce more.",
+      "answers": [
+        { "answer_text": "Survival and reproduction of organisms best adapted to their environment", "is_correct": true },
+        { "answer_text": "Random changes in DNA", "is_correct": false },
+        { "answer_text": "Artificial breeding by humans", "is_correct": false },
+        { "answer_text": "The creation of new species instantly", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the central dogma of molecular biology?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Central dogma: DNA → RNA → Protein (transcription then translation).",
+      "answers": [
+        { "answer_text": "DNA → RNA → Protein", "is_correct": true },
+        { "answer_text": "RNA → DNA → Protein", "is_correct": false },
+        { "answer_text": "Protein → RNA → DNA", "is_correct": false },
+        { "answer_text": "DNA → Protein → RNA", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What organelle is responsible for photosynthesis in plant cells?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Chloroplasts contain chlorophyll and are the site of photosynthesis in plants.",
+      "answers": [
+        { "answer_text": "Chloroplast", "is_correct": true },
+        { "answer_text": "Mitochondria", "is_correct": false },
+        { "answer_text": "Nucleus", "is_correct": false },
+        { "answer_text": "Vacuole", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a gene?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A gene is a segment of DNA that codes for a specific protein or functional RNA.",
+      "answers": [
+        { "answer_text": "A segment of DNA that codes for a protein", "is_correct": true },
+        { "answer_text": "A type of cell", "is_correct": false },
+        { "answer_text": "An entire chromosome", "is_correct": false },
+        { "answer_text": "A type of organelle", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is homeostasis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Homeostasis is the maintenance of a stable internal environment despite external changes.",
+      "answers": [
+        { "answer_text": "Maintenance of a stable internal environment", "is_correct": true },
+        { "answer_text": "The process of cell division", "is_correct": false },
+        { "answer_text": "Evolution of new species", "is_correct": false },
+        { "answer_text": "The breakdown of food", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the function of the nucleus?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The nucleus contains DNA and controls cell activities by regulating gene expression.",
+      "answers": [
+        { "answer_text": "Contains DNA and controls cell activities", "is_correct": true },
+        { "answer_text": "Produces energy", "is_correct": false },
+        { "answer_text": "Synthesizes proteins", "is_correct": false },
+        { "answer_text": "Digests waste materials", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between genotype and phenotype?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Genotype is the genetic makeup; phenotype is the observable characteristics.",
+      "answers": [
+        { "answer_text": "Genotype is genetic makeup; phenotype is observable traits", "is_correct": true },
+        { "answer_text": "They mean the same thing", "is_correct": false },
+        { "answer_text": "Genotype is observable; phenotype is genetic", "is_correct": false },
+        { "answer_text": "Phenotype is inherited; genotype is not", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the role of hemoglobin?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hemoglobin is a protein in red blood cells that transports oxygen.",
+      "answers": [
+        { "answer_text": "Transports oxygen in red blood cells", "is_correct": true },
+        { "answer_text": "Fights infections", "is_correct": false },
+        { "answer_text": "Clots blood", "is_correct": false },
+        { "answer_text": "Digests food", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is osmosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Osmosis is the movement of water across a semipermeable membrane from low to high solute concentration.",
+      "answers": [
+        { "answer_text": "Movement of water across a membrane from low to high solute concentration", "is_correct": true },
+        { "answer_text": "Movement of solutes down their concentration gradient", "is_correct": false },
+        { "answer_text": "Active transport of ions", "is_correct": false },
+        { "answer_text": "Breakdown of glucose", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a mutation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A mutation is a change in the DNA sequence that may affect the organism.",
+      "answers": [
+        { "answer_text": "A change in the DNA sequence", "is_correct": true },
+        { "answer_text": "Normal cell division", "is_correct": false },
+        { "answer_text": "The process of evolution", "is_correct": false },
+        { "answer_text": "Protein folding", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is cellular respiration?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Cellular respiration breaks down glucose to produce ATP: C₆H₁₂O₆ + O₂ → CO₂ + H₂O + ATP.",
+      "answers": [
+        { "answer_text": "The process of breaking down glucose to produce ATP", "is_correct": true },
+        { "answer_text": "The process of making glucose from sunlight", "is_correct": false },
+        { "answer_text": "Breathing in and out", "is_correct": false },
+        { "answer_text": "Cell division", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What are the stages of mitosis in order?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Mitosis stages: Prophase, Metaphase, Anaphase, Telophase (PMAT).",
+      "answers": [
+        { "answer_text": "Prophase, Metaphase, Anaphase, Telophase", "is_correct": true },
+        { "answer_text": "Metaphase, Anaphase, Prophase, Telophase", "is_correct": false },
+        { "answer_text": "Anaphase, Prophase, Metaphase, Telophase", "is_correct": false },
+        { "answer_text": "Telophase, Anaphase, Metaphase, Prophase", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an allele?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An allele is a variant form of a gene. Different alleles can produce different traits.",
+      "answers": [
+        { "answer_text": "A variant form of a gene", "is_correct": true },
+        { "answer_text": "A type of chromosome", "is_correct": false },
+        { "answer_text": "A protein", "is_correct": false },
+        { "answer_text": "An entire genome", "is_correct": false }
+      ]
+    }
+  ]
+}

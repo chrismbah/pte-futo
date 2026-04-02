@@ -1,0 +1,309 @@
+{
+  "title": "Philosophy and Logic - Year 1 Fundamentals",
+  "description": "Introductory philosophy and logic covering critical thinking, logical reasoning, arguments, and basic philosophical concepts for Year 1 university students.",
+  "duration_minutes": 40,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is a valid argument in logic?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A valid argument is one where IF the premises are true, the conclusion MUST be true. Validity is about structure, not truth.",
+      "answers": [
+        { "answer_text": "An argument where if the premises are true, the conclusion must be true", "is_correct": true },
+        { "answer_text": "An argument with true premises", "is_correct": false },
+        { "answer_text": "An argument everyone agrees with", "is_correct": false },
+        { "answer_text": "An argument with a true conclusion", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'syllogism'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A syllogism is a logical argument with two premises and a conclusion (e.g., All A are B, All B are C, therefore All A are C).",
+      "answers": [
+        { "answer_text": "A logical argument with two premises and a conclusion", "is_correct": true },
+        { "answer_text": "A type of logical fallacy", "is_correct": false },
+        { "answer_text": "A mathematical equation", "is_correct": false },
+        { "answer_text": "A rhetorical question", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'ad hominem' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ad hominem attacks the person making the argument rather than addressing the argument itself.",
+      "answers": [
+        { "answer_text": "Attacking the person instead of addressing their argument", "is_correct": true },
+        { "answer_text": "Using circular reasoning", "is_correct": false },
+        { "answer_text": "Appealing to authority", "is_correct": false },
+        { "answer_text": "Making a hasty generalization", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What does 'modus ponens' mean?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Modus ponens: If P then Q; P is true; therefore Q is true. It affirms the antecedent.",
+      "answers": [
+        { "answer_text": "If P then Q; P; therefore Q", "is_correct": true },
+        { "answer_text": "If P then Q; Q; therefore P", "is_correct": false },
+        { "answer_text": "If P then Q; not P; therefore not Q", "is_correct": false },
+        { "answer_text": "If P then Q; not Q; therefore not P", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is epistemology?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Epistemology is the branch of philosophy that studies knowledge, belief, and justification.",
+      "answers": [
+        { "answer_text": "The study of knowledge and how we know things", "is_correct": true },
+        { "answer_text": "The study of right and wrong", "is_correct": false },
+        { "answer_text": "The study of existence", "is_correct": false },
+        { "answer_text": "The study of beauty", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'straw man' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A straw man misrepresents someone's argument to make it easier to attack.",
+      "answers": [
+        { "answer_text": "Misrepresenting someone's argument to make it easier to attack", "is_correct": true },
+        { "answer_text": "Attacking the person instead of their argument", "is_correct": false },
+        { "answer_text": "Using emotional appeals", "is_correct": false },
+        { "answer_text": "Citing false authorities", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is deductive reasoning?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Deductive reasoning moves from general premises to a specific conclusion. If premises are true, conclusion must be true.",
+      "answers": [
+        { "answer_text": "Reasoning from general premises to specific conclusions", "is_correct": true },
+        { "answer_text": "Reasoning from specific observations to general conclusions", "is_correct": false },
+        { "answer_text": "Reasoning based on analogy", "is_correct": false },
+        { "answer_text": "Reasoning based on probability", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is inductive reasoning?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Inductive reasoning moves from specific observations to general conclusions. Conclusions are probable, not certain.",
+      "answers": [
+        { "answer_text": "Reasoning from specific observations to general conclusions", "is_correct": true },
+        { "answer_text": "Reasoning from general premises to specific conclusions", "is_correct": false },
+        { "answer_text": "Reasoning in circles", "is_correct": false },
+        { "answer_text": "Reasoning by contradiction", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is ethics in philosophy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ethics is the branch of philosophy dealing with moral principles, right and wrong conduct.",
+      "answers": [
+        { "answer_text": "The study of moral principles and right/wrong conduct", "is_correct": true },
+        { "answer_text": "The study of knowledge", "is_correct": false },
+        { "answer_text": "The study of logic", "is_correct": false },
+        { "answer_text": "The study of existence", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'false dilemma' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A false dilemma presents only two options when more exist (either/or fallacy).",
+      "answers": [
+        { "answer_text": "Presenting only two options when more exist", "is_correct": true },
+        { "answer_text": "Using circular reasoning", "is_correct": false },
+        { "answer_text": "Attacking the person", "is_correct": false },
+        { "answer_text": "Making hasty generalizations", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What does 'modus tollens' mean?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Modus tollens: If P then Q; not Q; therefore not P. It denies the consequent.",
+      "answers": [
+        { "answer_text": "If P then Q; not Q; therefore not P", "is_correct": true },
+        { "answer_text": "If P then Q; P; therefore Q", "is_correct": false },
+        { "answer_text": "If P then Q; Q; therefore P", "is_correct": false },
+        { "answer_text": "If P then Q; not P; therefore not Q", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is metaphysics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Metaphysics studies the fundamental nature of reality, existence, and being.",
+      "answers": [
+        { "answer_text": "The study of the fundamental nature of reality and existence", "is_correct": true },
+        { "answer_text": "The study of physics beyond Newton", "is_correct": false },
+        { "answer_text": "The study of moral values", "is_correct": false },
+        { "answer_text": "The study of language", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'circular argument' (begging the question)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Circular reasoning assumes the conclusion in the premises - the argument proves itself with itself.",
+      "answers": [
+        { "answer_text": "An argument where the conclusion is assumed in the premises", "is_correct": true },
+        { "answer_text": "An argument that goes around in physical circles", "is_correct": false },
+        { "answer_text": "An argument with many premises", "is_correct": false },
+        { "answer_text": "An argument asking questions", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between 'necessary' and 'sufficient' conditions?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Necessary: must be present for outcome. Sufficient: guarantees the outcome. Being a dog is sufficient for being an animal; being an animal is necessary for being a dog.",
+      "answers": [
+        { "answer_text": "Necessary must be present; sufficient guarantees the outcome", "is_correct": true },
+        { "answer_text": "They mean the same thing", "is_correct": false },
+        { "answer_text": "Sufficient must be present; necessary guarantees the outcome", "is_correct": false },
+        { "answer_text": "Neither affects the outcome", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'appeal to authority' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Appeal to authority uses an irrelevant or unqualified authority as evidence for an argument.",
+      "answers": [
+        { "answer_text": "Using an unqualified or irrelevant authority as evidence", "is_correct": true },
+        { "answer_text": "Citing peer-reviewed research", "is_correct": false },
+        { "answer_text": "Attacking someone's character", "is_correct": false },
+        { "answer_text": "Using emotional manipulation", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is utilitarianism?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Utilitarianism judges actions by their consequences - the greatest good for the greatest number.",
+      "answers": [
+        { "answer_text": "The ethical theory that actions should maximize overall happiness", "is_correct": true },
+        { "answer_text": "The theory that we should follow rules regardless of consequences", "is_correct": false },
+        { "answer_text": "The theory that morality is relative", "is_correct": false },
+        { "answer_text": "The theory that only self-interest matters", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'hasty generalization'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A hasty generalization draws a broad conclusion from too few examples or insufficient evidence.",
+      "answers": [
+        { "answer_text": "Drawing a broad conclusion from insufficient evidence", "is_correct": true },
+        { "answer_text": "Taking too long to reach a conclusion", "is_correct": false },
+        { "answer_text": "Using circular reasoning", "is_correct": false },
+        { "answer_text": "Attacking someone personally", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'slippery slope' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Slippery slope argues that one action will inevitably lead to extreme negative consequences without justification.",
+      "answers": [
+        { "answer_text": "Claiming one action will inevitably lead to extreme consequences", "is_correct": true },
+        { "answer_text": "Making an argument on a hill", "is_correct": false },
+        { "answer_text": "Using emotional appeals", "is_correct": false },
+        { "answer_text": "Misrepresenting an opponent's argument", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'sound' argument?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A sound argument is valid AND has all true premises. Soundness = validity + truth.",
+      "answers": [
+        { "answer_text": "A valid argument with true premises", "is_correct": true },
+        { "answer_text": "An argument that sounds good", "is_correct": false },
+        { "answer_text": "Any argument with a true conclusion", "is_correct": false },
+        { "answer_text": "An argument made loudly", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Kant's categorical imperative?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Kant's categorical imperative: Act only according to rules you could will to become universal laws.",
+      "answers": [
+        { "answer_text": "Act only according to rules you could will to be universal laws", "is_correct": true },
+        { "answer_text": "Always maximize happiness", "is_correct": false },
+        { "answer_text": "Follow whatever authority commands", "is_correct": false },
+        { "answer_text": "Act in your own self-interest", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'red herring' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A red herring introduces an irrelevant topic to divert attention from the original issue.",
+      "answers": [
+        { "answer_text": "Introducing an irrelevant topic to distract from the issue", "is_correct": true },
+        { "answer_text": "Using a fish as an example", "is_correct": false },
+        { "answer_text": "Making a valid argument", "is_correct": false },
+        { "answer_text": "Attacking someone's character", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the law of non-contradiction?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The law of non-contradiction: Something cannot be both true and false at the same time in the same respect.",
+      "answers": [
+        { "answer_text": "Something cannot be both true and false at the same time", "is_correct": true },
+        { "answer_text": "Everything is either true or false", "is_correct": false },
+        { "answer_text": "If something is true, it's always true", "is_correct": false },
+        { "answer_text": "Contradictions are always false", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is empiricism?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Empiricism holds that knowledge comes primarily from sensory experience and observation.",
+      "answers": [
+        { "answer_text": "The view that knowledge comes from sensory experience", "is_correct": true },
+        { "answer_text": "The view that knowledge comes from reason alone", "is_correct": false },
+        { "answer_text": "The view that we cannot know anything", "is_correct": false },
+        { "answer_text": "The view that truth is relative", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is rationalism?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Rationalism holds that reason and logic are the primary sources of knowledge, not just experience.",
+      "answers": [
+        { "answer_text": "The view that reason is the primary source of knowledge", "is_correct": true },
+        { "answer_text": "The view that only experience gives knowledge", "is_correct": false },
+        { "answer_text": "The view that emotions guide truth", "is_correct": false },
+        { "answer_text": "The view that knowledge is impossible", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the 'appeal to emotion' fallacy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Appeal to emotion manipulates feelings instead of providing logical evidence.",
+      "answers": [
+        { "answer_text": "Using emotions to persuade instead of logical evidence", "is_correct": true },
+        { "answer_text": "Having emotions while arguing", "is_correct": false },
+        { "answer_text": "Making a valid emotional argument", "is_correct": false },
+        { "answer_text": "Discussing emotional topics", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "title": "Chemistry - Year 1 Fundamentals",
+  "description": "Introductory chemistry covering atomic structure, bonding, reactions, and basic organic chemistry for Year 1 university students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is the atomic number of an element?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The atomic number is the number of protons in the nucleus, which defines the element.",
+      "answers": [
+        { "answer_text": "The number of protons in the nucleus", "is_correct": true },
+        { "answer_text": "The number of neutrons in the nucleus", "is_correct": false },
+        { "answer_text": "The total number of protons and neutrons", "is_correct": false },
+        { "answer_text": "The number of electrons in the outer shell", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of bond forms between sodium (Na) and chlorine (Cl)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ionic bonds form between metals and non-metals through electron transfer. Na donates an electron to Cl.",
+      "answers": [
+        { "answer_text": "Ionic bond", "is_correct": true },
+        { "answer_text": "Covalent bond", "is_correct": false },
+        { "answer_text": "Metallic bond", "is_correct": false },
+        { "answer_text": "Hydrogen bond", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Avogadro's number?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Avogadro's number (6.022 × 10²³) is the number of particles in one mole of a substance.",
+      "answers": [
+        { "answer_text": "6.022 × 10²³", "is_correct": true },
+        { "answer_text": "3.14 × 10²³", "is_correct": false },
+        { "answer_text": "6.022 × 10²⁰", "is_correct": false },
+        { "answer_text": "1.602 × 10⁻¹⁹", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the pH of a neutral solution at 25°C?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A neutral solution has pH 7, where [H⁺] = [OH⁻] = 10⁻⁷ M.",
+      "answers": [
+        { "answer_text": "7", "is_correct": true },
+        { "answer_text": "0", "is_correct": false },
+        { "answer_text": "14", "is_correct": false },
+        { "answer_text": "1", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the electron configuration of carbon (atomic number 6)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Carbon has 6 electrons: 2 in the 1s orbital, 2 in 2s, and 2 in 2p.",
+      "answers": [
+        { "answer_text": "1s² 2s² 2p²", "is_correct": true },
+        { "answer_text": "1s² 2s⁴", "is_correct": false },
+        { "answer_text": "1s² 2p⁴", "is_correct": false },
+        { "answer_text": "2s² 2p⁴", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a covalent bond?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A covalent bond involves sharing of electron pairs between atoms, typically between non-metals.",
+      "answers": [
+        { "answer_text": "A bond formed by sharing electrons between atoms", "is_correct": true },
+        { "answer_text": "A bond formed by transfer of electrons", "is_correct": false },
+        { "answer_text": "A bond between metal atoms", "is_correct": false },
+        { "answer_text": "An intermolecular force", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the molar mass of water (H₂O)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "H₂O: (2 × 1) + 16 = 18 g/mol (H = 1 g/mol, O = 16 g/mol).",
+      "answers": [
+        { "answer_text": "18 g/mol", "is_correct": true },
+        { "answer_text": "16 g/mol", "is_correct": false },
+        { "answer_text": "20 g/mol", "is_correct": false },
+        { "answer_text": "17 g/mol", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What happens in an exothermic reaction?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Exothermic reactions release heat to the surroundings; ΔH is negative.",
+      "answers": [
+        { "answer_text": "Heat is released to the surroundings", "is_correct": true },
+        { "answer_text": "Heat is absorbed from the surroundings", "is_correct": false },
+        { "answer_text": "No energy change occurs", "is_correct": false },
+        { "answer_text": "Light is always produced", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the octet rule?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The octet rule states atoms tend to gain, lose, or share electrons to have 8 electrons in their valence shell.",
+      "answers": [
+        { "answer_text": "Atoms tend to have 8 electrons in their outer shell", "is_correct": true },
+        { "answer_text": "Atoms always have 8 protons", "is_correct": false },
+        { "answer_text": "Molecules always have 8 atoms", "is_correct": false },
+        { "answer_text": "Chemical reactions require 8 steps", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an isotope?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons.",
+      "answers": [
+        { "answer_text": "Atoms with the same number of protons but different neutrons", "is_correct": true },
+        { "answer_text": "Atoms with different numbers of protons", "is_correct": false },
+        { "answer_text": "Atoms with no electrons", "is_correct": false },
+        { "answer_text": "Molecules with the same formula", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the formula for calculating molarity?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Molarity (M) = moles of solute / liters of solution.",
+      "answers": [
+        { "answer_text": "M = moles of solute / liters of solution", "is_correct": true },
+        { "answer_text": "M = grams of solute / liters of solution", "is_correct": false },
+        { "answer_text": "M = moles of solute × liters of solution", "is_correct": false },
+        { "answer_text": "M = mass / volume", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is oxidation in terms of electrons?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Oxidation Is Loss of electrons (OIL); Reduction Is Gain of electrons (RIG).",
+      "answers": [
+        { "answer_text": "Loss of electrons", "is_correct": true },
+        { "answer_text": "Gain of electrons", "is_correct": false },
+        { "answer_text": "Gain of oxygen only", "is_correct": false },
+        { "answer_text": "Loss of protons", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the shape of a methane (CH₄) molecule?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Methane has 4 bonding pairs and no lone pairs, giving it a tetrahedral shape with 109.5° bond angles.",
+      "answers": [
+        { "answer_text": "Tetrahedral", "is_correct": true },
+        { "answer_text": "Square planar", "is_correct": false },
+        { "answer_text": "Trigonal pyramidal", "is_correct": false },
+        { "answer_text": "Linear", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Le Chatelier's Principle?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Le Chatelier's Principle: When a system at equilibrium is disturbed, it shifts to counteract the change.",
+      "answers": [
+        { "answer_text": "A system at equilibrium will shift to oppose any change applied to it", "is_correct": true },
+        { "answer_text": "Chemical reactions always go to completion", "is_correct": false },
+        { "answer_text": "Energy is always conserved", "is_correct": false },
+        { "answer_text": "Reactions speed up when heated", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the functional group of alcohols?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Alcohols contain the hydroxyl (-OH) functional group attached to a carbon atom.",
+      "answers": [
+        { "answer_text": "-OH (hydroxyl group)", "is_correct": true },
+        { "answer_text": "-COOH (carboxyl group)", "is_correct": false },
+        { "answer_text": "-CHO (aldehyde group)", "is_correct": false },
+        { "answer_text": "-NH₂ (amino group)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the ideal gas law equation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "PV = nRT, where P is pressure, V is volume, n is moles, R is gas constant, T is temperature.",
+      "answers": [
+        { "answer_text": "PV = nRT", "is_correct": true },
+        { "answer_text": "PV = mRT", "is_correct": false },
+        { "answer_text": "PT = nRV", "is_correct": false },
+        { "answer_text": "P = nRT/V²", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is electronegativity?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Electronegativity is an atom's ability to attract electrons in a chemical bond. Fluorine is most electronegative.",
+      "answers": [
+        { "answer_text": "The ability of an atom to attract electrons in a bond", "is_correct": true },
+        { "answer_text": "The number of electrons an atom has", "is_correct": false },
+        { "answer_text": "The charge of an ion", "is_correct": false },
+        { "answer_text": "The energy needed to remove an electron", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a catalyst?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A catalyst speeds up a reaction by lowering the activation energy without being consumed.",
+      "answers": [
+        { "answer_text": "A substance that speeds up a reaction without being consumed", "is_correct": true },
+        { "answer_text": "A reactant that is completely used up", "is_correct": false },
+        { "answer_text": "The product of a reaction", "is_correct": false },
+        { "answer_text": "A substance that slows down reactions", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "How many valence electrons does oxygen have?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Oxygen (Group 16) has 6 valence electrons in its outer shell.",
+      "answers": [
+        { "answer_text": "6", "is_correct": true },
+        { "answer_text": "2", "is_correct": false },
+        { "answer_text": "8", "is_correct": false },
+        { "answer_text": "4", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between an atom and an ion?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An atom is electrically neutral; an ion has a charge due to gaining or losing electrons.",
+      "answers": [
+        { "answer_text": "An ion has a charge; an atom is neutral", "is_correct": true },
+        { "answer_text": "An ion is smaller than an atom", "is_correct": false },
+        { "answer_text": "Atoms have no electrons", "is_correct": false },
+        { "answer_text": "There is no difference", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the name of the compound NaCl?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "NaCl is sodium chloride, commonly known as table salt.",
+      "answers": [
+        { "answer_text": "Sodium chloride", "is_correct": true },
+        { "answer_text": "Sodium chlorine", "is_correct": false },
+        { "answer_text": "Chlorine sodium", "is_correct": false },
+        { "answer_text": "Sodium dichloride", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a redox reaction?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A redox reaction involves both oxidation (loss of electrons) and reduction (gain of electrons).",
+      "answers": [
+        { "answer_text": "A reaction involving both oxidation and reduction", "is_correct": true },
+        { "answer_text": "A reaction that only releases heat", "is_correct": false },
+        { "answer_text": "A reaction between acids and bases", "is_correct": false },
+        { "answer_text": "A reaction that produces a precipitate", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the hybridization of carbon in ethene (C₂H₄)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "In ethene, carbon is sp² hybridized with one unhybridized p orbital forming the pi bond.",
+      "answers": [
+        { "answer_text": "sp²", "is_correct": true },
+        { "answer_text": "sp³", "is_correct": false },
+        { "answer_text": "sp", "is_correct": false },
+        { "answer_text": "sp³d", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What does the rate of a chemical reaction depend on?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Reaction rate depends on concentration, temperature, surface area, and presence of catalysts.",
+      "answers": [
+        { "answer_text": "Temperature, concentration, surface area, and catalysts", "is_correct": true },
+        { "answer_text": "Only temperature", "is_correct": false },
+        { "answer_text": "Only the type of reaction", "is_correct": false },
+        { "answer_text": "The color of reactants", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the product when an acid reacts with a base?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Neutralization: Acid + Base → Salt + Water.",
+      "answers": [
+        { "answer_text": "Salt and water", "is_correct": true },
+        { "answer_text": "Only water", "is_correct": false },
+        { "answer_text": "Carbon dioxide and water", "is_correct": false },
+        { "answer_text": "Hydrogen gas", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 import {
   collection,
   setDoc,
-  getDocs,
   query,
   where,
   deleteDoc,
@@ -25,6 +24,8 @@ export const useBlogComments = () => {
   const navigate = useNavigate();
   const commentsRef = collection(db, "postsComments");
   const [userComment, setUserComment] = useState<string>("");
+  const [replyComment, setReplyComment] = useState<string>("");
+  const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const [postComments, setPostComments] = useState<IPostComment[] | null>(null);
   const [postCommentsLoading, setPostCommentsLoading] = useState<boolean>(true);
   const [postCommentsError, setPostCommentsError] = useState<boolean>(false);
@@ -34,25 +35,40 @@ export const useBlogComments = () => {
   const { userID, studentDetails } = useGetUserInfo();
 
   const getPostComments = async () => {
+    if (!postID) return;
+    
     setPostCommentsLoading(true);
+    setPostCommentsError(false);
     try {
-      if (postID) {
-        const postCommentsRef = query(
-          commentsRef,
-          where("commentPostID", "==", postID)
-        );
-        const data = await getDocs(postCommentsRef);
-        const comments = data.docs.map((doc) => ({
-          ...doc.data(),
-        })) as IPostComment[];
-        setUserComment("");
-        setPostComments(comments);
-        setPostCommentsLoading(false);
-        console.log(comments);
-      }
+      const postCommentsRef = query(
+        commentsRef,
+        where("commentPostID", "==", postID)
+      );
+      
+      // Set up real-time listener instead of just fetching once
+      const unsubscribe = onSnapshot(
+        postCommentsRef,
+        (data) => {
+          const comments = data.docs.map((doc) => ({
+            ...doc.data(),
+          })) as IPostComment[];
+          setPostComments(comments);
+          setPostCommentsLoading(false);
+          console.log("[v0] Comments updated:", comments);
+        },
+        (err) => {
+          console.error("[v0] Error listening to comments:", err);
+          setPostCommentsError(true);
+          setPostCommentsLoading(false);
+        }
+      );
+      
+      // Return unsubscribe function for cleanup
+      return unsubscribe;
     } catch (err) {
+      console.error("[v0] Error setting up comments listener:", err);
       setPostCommentsError(true);
-      console.log("Couldnt get comments");
+      setPostCommentsLoading(false);
     }
   };
   const addUserComment = async () => {
@@ -102,21 +118,69 @@ export const useBlogComments = () => {
     }
   };
 
+  const addReplyComment = async (parentCommentID: string) => {
+    if (!userID) {
+      navigate("/login");
+      notifyUser("info", "Please login to reply");
+      return;
+    }
+
+    if (!studentDetails || !postID) {
+      notifyUser("error", "Something went wrong. Please try again");
+      return;
+    }
+
+    if (!replyComment.trim()) {
+      notifyUser("info", "Please add a reply");
+      return;
+    }
+
+    try {
+      const { firstName, lastName, email, profileImageID, profileImageURL } =
+        studentDetails;
+      const commentID = uuid();
+      const replyInfo: IPostComment = {
+        commentPostID: postID,
+        commentUserID: userID,
+        commentID,
+        firstName,
+        lastName,
+        email,
+        comment: replyComment,
+        time: getCurrentTime(),
+        date: getCurrentDateInShortFormat(),
+        timeStamp: new Date(),
+        profileImageID,
+        profileImageURL,
+        parentCommentID,
+      };
+
+      await setDoc(doc(db, "postsComments", commentID), replyInfo);
+      setReplyComment("");
+      setReplyingTo(null);
+      notifyUser("success", "Reply posted!");
+    } catch (err) {
+      notifyUser(
+        "error",
+        "Couldn't post reply. Please check your network connection and try again."
+      );
+    }
+  };
+
   const deleteUserComment = async (
     commentID: string,
     commentUserID: string
   ) => {
     if (commentUserID === userID) {
       setDeleteCommentLoading(true);
-      console.log(commentUserID, userID);
-      console.log(commentID);
       try {
         await deleteDoc(doc(commentsRef, commentID));
         notifyUser("success", "Comment deleted.");
-        getPostComments();
+        // Real-time listener in useEffect will automatically update the comments
         setDeleteCommentLoading(false);
       } catch (err) {
-        notifyUser("error", "Could'nt delete comment");
+        console.error("[v0] Error deleting comment:", err);
+        notifyUser("error", "Couldn't delete comment");
         setDeleteCommentLoading(false);
         setDeleteCommentError(true);
       }
@@ -150,5 +214,10 @@ export const useBlogComments = () => {
     deleteUserComment,
     deleteCommentLoading,
     deleteCommentError,
+    replyComment,
+    setReplyComment,
+    replyingTo,
+    setReplyingTo,
+    addReplyComment,
   };
 };

@@ -8,7 +8,7 @@ export default function LearningResourcesContent() {
   const { resourcesType, setResourcesType } = useLearningResourcesContext();
 
   return (
-    <div className="min-h-screen bg-gray-50 overflow-x-hidden">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <div className="box-width2">
         <div className="page-section">
           <div className="w-full flex items-center justify-center mb-6 flex-col">

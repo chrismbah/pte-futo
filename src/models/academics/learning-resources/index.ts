@@ -6,6 +6,8 @@ export interface LevelCard {
   level: string;
   title: string;
   desc: string;
+  section?: "preclinical" | "clinical";
+  driveUrl?: string;
 }
 export interface CourseCard {
   id: string;
@@ -20,22 +22,35 @@ export interface Course {
   id: string;
   tip: string;
 }
-  
+
+// Preclinical courses structure (with semesters)
 export interface Courses {
-  [level: string]:{
+  [level: string]: {
     [semester: string]: {
       courseInfo: Course[];
     };
-  }
-  }
-  export interface Content {
-    name: string;
-    size: number;
-    path: string;
-  }
-  
+  };
+}
+
+// Clinical courses structure (no semesters - continuous rotations)
+export interface ClinicalLevelCourses {
+  courseInfo: Course[];
+}
+
+export interface ClinicalCourses {
+  [level: string]: ClinicalLevelCourses;
+}
+
+export interface Content {
+  name: string;
+  size: number;
+  path: string;
+}
+
 export interface FileMetadata {
   name: string;
   path: string;
   size: number;
+  url?: string;
+  description?: string;
 }

@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="white" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="theme-color" content="#00522a" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+    <link rel="shortcut icon" href="/logo.png" />
 
-    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <!-- hamburgers.css removed — file does not exist in build output -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,38 +18,266 @@
       referrerpolicy="no-referrer"
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Polymer and Textile Engineering Department Platform - PTE FUTO
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="PTE-FUTO E-Learning Platform" />
+    <!-- ============================================================
+         PRIMARY SEO META TAGS
+    ============================================================ -->
+    <title>EBSUMSA | EBSU Medical Student Association</title>
+
+    <meta
+      name="description"
+      content="EBSUMSA — The official e-learning platform of the Ebonyi State University Medical Student Association. Access course materials, textbooks, past questions, an active student community and more for Medicine & Surgery students at EBSU."
+    />
+
+    <!-- Keywords (secondary signal, still useful for Bing/Yahoo) -->
+    <meta
+      name="keywords"
+      content="EBSUMSA, EBSU, Ebonyi State University, medical student, medicine and surgery, e-learning, past questions, course materials, active community, medical school Nigeria, EBSU medical, student community"
+    />
+
+    <!-- Author & Publisher -->
+    <meta name="author" content="EBSUMSA — Ebonyi State University Medical Student Association" />
+    <meta name="publisher" content="EBSUMSA" />
+    <meta name="copyright" content="EBSUMSA" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical URL (prevents duplicate content penalties) -->
+    <link rel="canonical" href="https://www.ebsumsa.com.ng/" />
+
+    <!-- Language & Region -->
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="NG-EB" />
+    <meta name="geo.placename" content="Abakaliki, Ebonyi State, Nigeria" />
+
+    <!-- ============================================================
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp previews)
+    ============================================================ -->
+    <meta property="og:site_name" content="EBSUMSA E-Learning Platform" />
+    <meta property="og:title" content="EBSUMSA | EBSU Medical Student Association" />
     <meta
       property="og:description"
-      content="Access course materials, textbooks, past questions, GPA calculator and more, built for Polymer and Textile Engineering students at FUTO."
+      content="Access course materials, textbooks, past questions, an active student community and more — built exclusively for Medicine and Surgery students at Ebonyi State University."
     />
-    <meta
-      property="og:image"
-      content="https://pte-futo.vercel.app/og-image.png"
-    /> 
-    <meta property="og:url" content="https://pte-futo.vercel.app/" />
+    <meta property="og:image" content="https://www.ebsumsa.com.ng/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EBSUMSA E-Learning Platform for EBSU Medical Students" />
+    <meta property="og:url" content="https://www.ebsumsa.com.ng/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
 
-    <!-- Twitter Cards -->
+    <!-- ============================================================
+         TWITTER / X CARDS
+    ============================================================ -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PTE-FUTO E-Learning Platform" />
+    <meta name="twitter:site" content="https://x.com/Ebsumsaofficial" />
+    <meta name="twitter:creator" content="@Ebsumsaofficial" />
+    <meta name="twitter:title" content="EBSUMSA | EBSU Medical Student Association" />
     <meta
       name="twitter:description"
-      content="Centralized study resources for Polymer and Textile Engineering students at FUTO."
+      content="Centralized study resources — past questions, textbooks, active student community & more — for Medicine and Surgery students at EBSU."
     />
-    <meta
-      name="twitter:image"
-      content="https://pte-futo.vercel.app/og-image.png"
-    />
+    <meta name="twitter:image" content="https://www.ebsumsa.com.ng/og-image.png" />
+    <meta name="twitter:image:alt" content="EBSUMSA E-Learning Platform" />
+
+    <!-- ============================================================
+         STRUCTURED DATA — JSON-LD (Google Rich Results)
+    ============================================================ -->
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ebonyi State University Medical Student Association",
+      "alternateName": "EBSUMSA",
+      "url": "https://www.ebsumsa.com.ng/",
+      "logo": "https://www.ebsumsa.com.ng/logo.png",
+      "description": "The official student association for Medicine and Surgery students at Ebonyi State University (EBSU), Nigeria.",
+      "email": "ebsumsaleadership@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abakaliki",
+        "addressRegion": "Ebonyi State",
+        "addressCountry": "NG"
+      },
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "Ebonyi State University",
+        "alternateName": "EBSU",
+        "url": "https://ebsu.edu.ng"
+      },
+      "sameAs": [
+        "https://x.com/Ebsumsaofficial"
+      ]
+    }
+    </script>
+
+    <!-- WebSite + Sitelinks Searchbox Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EBSUMSA",
+      "url": "https://www.ebsumsa.com.ng/",
+      "description": "Official e-learning platform of the Ebonyi State University Medical Student Association — course materials, past questions, active student community and more.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "EBSUMSA",
+        "logo": "https://www.ebsumsa.com.ng/logo.png"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.ebsumsa.com.ng/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- ItemList Schema — tells Google about key pages (helps trigger sitelinks) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "EBSUMSA Key Pages",
+      "itemListElement": [
+        {
+          "@type": "SiteLinksSearchBox",
+          "url": "https://www.ebsumsa.com.ng/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Login",
+          "url": "https://www.ebsumsa.com.ng/login"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Register",
+          "url": "https://www.ebsumsa.com.ng/signup"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Study Resources",
+          "url": "https://www.ebsumsa.com.ng/resources"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Student Community",
+          "url": "https://www.ebsumsa.com.ng/community"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Exam Timetable",
+          "url": "https://www.ebsumsa.com.ng/exam-timetable"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "EBSUMSA Team",
+          "url": "https://www.ebsumsa.com.ng/students/ebsumsa-team"
+        }
+      ]
+    }
+    </script>
+
+    <!-- EducationalOrganization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "EBSUMSA E-Learning Platform",
+      "url": "https://www.ebsumsa.com.ng/",
+      "description": "A centralized digital study hub providing course materials, past questions, textbooks, and an active student community for Medicine and Surgery students at EBSU.",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "audienceType": "Medical Students"
+      },
+      "teaches": [
+        "Medicine and Surgery",
+        "Medical Sciences",
+        "Clinical Medicine",
+        "Anatomy",
+        "Physiology",
+        "Biochemistry",
+        "Pathology",
+        "Pharmacology",
+        "Microbiology"
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Ebonyi State University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abakaliki",
+          "addressRegion": "Ebonyi",
+          "addressCountry": "NG"
+        }
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.ebsumsa.com.ng/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ============================================================
+         PERFORMANCE & PRECONNECTS (helps Core Web Vitals → indirect SEO boost)
+    ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://ebsumsa.vercel.app" />
+
+    <!-- Puter.js for AI Chat — loaded async to avoid blocking render -->
+    <script src="https://js.puter.com/v2/" async defer></script>
+
+    <!-- Paystack inline payment SDK -->
+    <script src="https://js.paystack.co/v1/inline.js" async defer></script>
+
+    <!-- Remita inline payment SDK for school fees -->
+    <script src="https://remitademo.net/payment/v1/remita-pay-inline.bundle.js" async defer></script>
+
+    <!-- Apple PWA meta tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="EBSUMSA" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+
   </head>
 
   <body class="selection:bg-green4 selection:text-white">
+    <!-- Accessible skip link (improves accessibility score → positive SEO signal) -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { playSound } from '../useSound';
 
 export const useNetworkNotifications = () => {
   const [isOffline, setIsOffline] = useState(false);
@@ -6,11 +7,13 @@ export const useNetworkNotifications = () => {
 
   useEffect(() => {
     const handleOffline = () => {
+      playSound("message");
       setIsOffline(true);
       setMessage('You are currently offline.');
     };
 
     const handleOnline = () => {
+      playSound("notify");
       setIsOffline(false);
       setMessage("You're back Online!");
     };

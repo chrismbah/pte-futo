@@ -15,7 +15,7 @@ export const CourseOutlineCard: FC<CourseOutlines> = ({
        bg-white shadow-4 transition duration-200 ease-in hover:shadow-md rounded-lg"
       >
         <img src={icon} alt="Book" className="w-16 h-16" />
-        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
           {title}
         </h5>
         <p className="mb-3 font-[500] text-gray-500 text-ss sm:text-sm">

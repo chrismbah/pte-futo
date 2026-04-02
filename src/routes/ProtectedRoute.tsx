@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ReactNode, FC } from "react";
 import { Navigate } from "react-router-dom";
 import { useGetUserInfo } from "../hooks/auth/useGetUserInfo";
@@ -11,13 +10,15 @@ interface ProtectedRouteProps {
 const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
   const { user, loading } = useGetUserInfo();
 
-  if (!user && !loading) {
-    return <Navigate to="/login" />;
-  } else if (loading) {
+  if (loading) {
     return <LogoSpinner />;
-  } else {
-    return children;
   }
+
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return children;
 };
 
 export default ProtectedRoute;

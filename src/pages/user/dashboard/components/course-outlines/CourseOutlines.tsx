@@ -1,42 +1,116 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
-import { CourseOptions } from "./CourseOptions";
-import { ICourseInfo } from "../../../../../models/academics/course-outline/courseInfo";
-import { courseInfo100 } from "../../../../../data/academics/course-outlines/levels/100/info/courseInfo100";
-import { courseInfo200 } from "../../../../../data/academics/course-outlines/levels/200/info/courseInfo200";
-import { courseInfo300 } from "../../../../../data/academics/course-outlines/levels/300/info/courseInfo300";
-import { courseInfo400 } from "../../../../../data/academics/course-outlines/levels/400/info/courseInfo400";
-import { courseInfo500 } from "../../../../../data/academics/course-outlines/levels/500/info/courseInfo500";
 import { OutlineIcon } from "../../../../../components/icons/dashboard/Outline";
 import reading from "../../../../../assets/svg/illustrations/reading.svg";
-export default function CourseOutlines() {
-  const [semester, setSemester] = useState<string | null>();
-  const [level, setLevel] = useState<string | null>();
-  const [course, setCourse] = useState<string | null>();
-  const [courseInfo, setCourseInfo] = useState<ICourseInfo | null>();
+import { db } from "../../../../../config/firebase";
+import { collection, getDocs } from "firebase/firestore";
+import { Spinner } from "../../../../../components/loaders/Spinner";
+import { useGetUserInfo } from "../../../../../hooks/auth/useGetUserInfo";
+import { Link } from "react-router-dom";
+import { trackActivity } from "../../../../../hooks/analytics/useAnalytics";
 
+interface CourseOutlineEntry {
+  id: string;
+  courseCode: string;
+  courseTitle: string;
+  creditUnit: number;
+  creditUnits: string;
+  preRequisite: string | null;
+  level: string;
+  semester: "First" | "Second";
+  info: { heading: string; content: string }[];
+}
+
+interface CourseInfoDisplay {
+  courseCode: string;
+  courseTitle: string;
+  creditUnit: number;
+  creditUnits: string;
+  preRequisite: string | null;
+  info: { heading: string; content: string }[];
+}
+
+export default function CourseOutlines() {
+  const { studentDetails } = useGetUserInfo();
+  const [semester, setSemester] = useState<string | null>(null);
+  const [level, setLevel] = useState<string | null>(null);
+  const [course, setCourse] = useState<string | null>(null);
+  const [courseInfo, setCourseInfo] = useState<CourseInfoDisplay | null>(null);
+  const [availableCourses, setAvailableCourses] = useState<CourseOutlineEntry[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [allOutlines, setAllOutlines] = useState<CourseOutlineEntry[]>([]);
+  
+  // Check if user is admin
+  const ADMIN_EMAILS = ["patronkwo@gmail.com", "kenronkwo@gmail.com", "ebsumsapresident2526@gmail.com", "ebsumsa102@gmail.com", "oohveeyuu070@gmail.com"];
+  const isAdmin = ADMIN_EMAILS.includes((studentDetails?.email || '').toLowerCase()) || studentDetails?.email?.toLowerCase().includes("admin");
+
+  // Fetch all course outlines from Firestore on mount
   useEffect(() => {
-    if (semester && course) {
-      if (level === "100") {
-        setCourseInfo(courseInfo100[semester][course]);
-        console.log(courseInfo);
-      } else if (level === "200") {
-        setCourseInfo(courseInfo200[semester][course]);
-        console.log(courseInfo);
-      } else if (level === "300") {
-        setCourseInfo(courseInfo300[semester][course]);
-        console.log(courseInfo);
-      } else if (level === "400") {
-        setCourseInfo(courseInfo400[semester][course]);
-        console.log(courseInfo);
-      } else if (level === "500") {
-        setCourseInfo(courseInfo500[semester][course]);
-        console.log(courseInfo);
+    trackActivity("page_visit", "Course Outlines");
+    const fetchAllOutlines = async () => {
+      try {
+        const snapshot = await getDocs(collection(db, "courseOutlines"));
+        const outlines = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        })) as CourseOutlineEntry[];
+        setAllOutlines(outlines);
+      } catch (error) {
+        console.error("Error fetching course outlines:", error);
       }
+    };
+    fetchAllOutlines();
+  }, []);
+
+  // Update available courses when level and semester change (only Firestore data)
+  useEffect(() => {
+    if (level && semester) {
+      setCourse(null);
+      setCourseInfo(null);
+      
+      // Get courses from Firestore only (admin-created outlines)
+      const firestoreCourses = allOutlines.filter(
+        (o) => o.level === level && o.semester === semester
+      );
+      
+      setAvailableCourses(firestoreCourses);
+    } else {
+      setAvailableCourses([]);
     }
-  }, [level, course, semester, courseInfo]);
+  }, [level, semester, allOutlines]);
+
+  // Fetch course info when course is selected
+  useEffect(() => {
+    if (!semester || !course || !level) {
+      setCourseInfo(null);
+      return;
+    }
+
+    trackActivity("outline_view", `${course} (${level}L, ${semester} Semester)`);
+    setIsLoading(true);
+
+    // Find in Firestore data only
+    const firestoreOutline = allOutlines.find(
+      (o) => o.level === level && o.semester === semester && o.courseCode === course
+    );
+
+    if (firestoreOutline) {
+      setCourseInfo({
+        courseCode: firestoreOutline.courseCode,
+        courseTitle: firestoreOutline.courseTitle,
+        creditUnit: firestoreOutline.creditUnit,
+        creditUnits: firestoreOutline.creditUnits,
+        preRequisite: firestoreOutline.preRequisite,
+        info: firestoreOutline.info,
+      });
+    } else {
+      setCourseInfo(null);
+    }
+    
+    setIsLoading(false);
+  }, [level, course, semester, allOutlines]);
   return (
-    <div className="min-h-screen w-full bg-gray-50">
+    <div className="min-h-screen w-full bg-white">
       <div className="box-width">
         <div className="px-3 ss:px-8 sm:px-14 sm:py-24 pt-20">
           <div className="w-full flex items-center justify-center mb-6 flex-col">
@@ -48,6 +122,21 @@ export default function CourseOutlines() {
               <p className="section-p text-center">
                 Select your level, semester and course code
               </p>
+              {/* Admin Quick Link */}
+              {isAdmin && (
+                <div className="mt-3 flex justify-center">
+                  <Link
+                    to="/admin?tab=outlines"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-green1 hover:bg-green2 text-white text-sm font-medium rounded-lg transition-colors shadow-md"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Manage Course Outlines
+                  </Link>
+                </div>
+              )}
             </div>
             <div className="flex gap-1 ss:gap-5 mb-4">
               <div>
@@ -64,8 +153,9 @@ export default function CourseOutlines() {
                   <option value="100">100L</option>
                   <option value="200">200L</option>
                   <option value="300">300L</option>
-                  <option value="400">400L</option>
-                  <option value="500">500L</option>
+                  <option value="400">400L (Clinical)</option>
+                  <option value="500">500L (Clinical)</option>
+                  <option value="600">600L (Clinical)</option>
                 </select>
               </div>{" "}
               <div>
@@ -87,19 +177,28 @@ export default function CourseOutlines() {
                 <select
                   id="underline_select"
                   onChange={(e) => setCourse(e.target.value)}
-                  className="bg-white cursor-pointer border-none shadow text-gray-900 text-xss xss:text-ss ss:text-sm font-medium rounded-lg border border-transparent focus:ring-green1 focus:border-gray-500 block w-full p-1.5 sm:p-2 "
+                  value={course || ""}
+                  disabled={!level || !semester}
+                  className="bg-white cursor-pointer border-none shadow text-gray-900 text-xss xss:text-ss ss:text-sm font-medium rounded-lg border border-transparent focus:ring-green1 focus:border-gray-500 block w-full p-1.5 sm:p-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <option selected disabled defaultChecked>
-                    Select Course
+                  <option value="" disabled>
+                    {!level || !semester ? "Select level & semester first" : availableCourses.length === 0 ? "No courses available" : "Select Course"}
                   </option>
-                  {level && semester && (
-                    <CourseOptions semester={semester} level={level} />
-                  )}
+                  {availableCourses.map((c) => (
+                    <option key={c.id} value={c.courseCode}>
+                      {c.courseCode} - {c.courseTitle}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
-            {courseInfo ? (
-              <div className="course-info rounded-lg bg-white shadow p-3 sm:p-6 max-w-2xl relative">
+            {isLoading ? (
+              <div className="w-full mt-10 flex items-center justify-center flex-col gap-3">
+                <Spinner className="w-8 h-8 text-gray-200 animate-spin fill-green1" />
+                <p className="text-sm text-gray-600">Loading course information...</p>
+              </div>
+            ) : courseInfo ? (
+              <div className="course-info rounded-lg bg-white shadow p-3 sm:p-6 max-w-2xl relative animate-fadeIn">
                 <div className="relative">
                   <OutlineIcon className="fill-green1 w-4 h-4 xss:w-6 xss:h-6 absolute top-0 right-0" />
                   <div className="mb-4">
@@ -118,13 +217,31 @@ export default function CourseOutlines() {
                         {courseInfo.creditUnit}
                       </span>
                     </p>
+                    {courseInfo.creditUnits && (
+                      <p className="text-gray-800 font-medium text-sm sm:text-xs md:text-xs ">
+                        Credit Units:{" "}
+                        <span className="font-semibold">
+                          {courseInfo.creditUnits}
+                        </span>
+                      </p>
+                    )}
+                    {courseInfo.preRequisite && (
+                      <p className="text-gray-800 font-medium text-sm sm:text-xs md:text-xs ">
+                        Pre-Requisite:{" "}
+                        <span className="font-semibold">
+                          {courseInfo.preRequisite}
+                        </span>
+                      </p>
+                    )}
                   </div>
 
-                  {courseInfo.info.map(({ heading, content }) => (
-                    <div className="mb-4">
-                      <p className="font-semibold text-gray-800 text-sm sm:text-xs md:text-xs">
-                        {heading}
-                      </p>
+                  {courseInfo.info.map(({ heading, content }, index) => (
+                    <div className="mb-4" key={index}>
+                      {heading && (
+                        <p className="font-semibold text-gray-800 text-sm sm:text-xs md:text-xs">
+                          {heading}
+                        </p>
+                      )}
                       <p className=" text-gray-700 font-medium text-ss md:text-sm">
                         {content}
                       </p>
@@ -140,7 +257,9 @@ export default function CourseOutlines() {
                   className=" w-[70%] xss:w-[200px] sm:w-[230px]"
                 />
                 <p className="text-sm ss:text-xs text-gray-700 font-medium text-center">
-                  Select a level, semester and course respectively.
+                  {level && semester && availableCourses.length === 0 
+                    ? "No course outlines available for this selection yet."
+                    : "Select a level, semester and course respectively."}
                 </p>
               </div>
             )}

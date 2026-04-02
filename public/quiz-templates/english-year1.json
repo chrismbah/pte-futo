@@ -1,0 +1,309 @@
+{
+  "title": "English - Year 1 Language & Literature",
+  "description": "Introductory English covering grammar, vocabulary, literary devices, and comprehension for Year 1 university students.",
+  "duration_minutes": 40,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is a 'metaphor'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A metaphor is a figure of speech that directly compares two unlike things without using 'like' or 'as'.",
+      "answers": [
+        { "answer_text": "A direct comparison between two unlike things without using 'like' or 'as'", "is_correct": true },
+        { "answer_text": "A comparison using 'like' or 'as'", "is_correct": false },
+        { "answer_text": "An exaggeration for effect", "is_correct": false },
+        { "answer_text": "Giving human qualities to non-human things", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which sentence is grammatically correct?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Subject-verb agreement requires 'were' with 'they' and 'was' with singular subjects.",
+      "answers": [
+        { "answer_text": "Neither the students nor the teacher was present.", "is_correct": true },
+        { "answer_text": "Neither the students nor the teacher were present.", "is_correct": false },
+        { "answer_text": "Neither the students or the teacher was present.", "is_correct": false },
+        { "answer_text": "Neither the students nor the teacher are present.", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'alliteration'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Alliteration is the repetition of consonant sounds at the beginning of nearby words.",
+      "answers": [
+        { "answer_text": "Repetition of consonant sounds at the beginning of words", "is_correct": true },
+        { "answer_text": "Repetition of vowel sounds", "is_correct": false },
+        { "answer_text": "Words that sound like what they describe", "is_correct": false },
+        { "answer_text": "A type of rhyme scheme", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the past participle of 'write'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The verb 'write' has irregular forms: write, wrote, written.",
+      "answers": [
+        { "answer_text": "Written", "is_correct": true },
+        { "answer_text": "Wrote", "is_correct": false },
+        { "answer_text": "Writed", "is_correct": false },
+        { "answer_text": "Writing", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What literary device is used in 'The wind whispered through the trees'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Personification gives human qualities (whispering) to non-human things (wind).",
+      "answers": [
+        { "answer_text": "Personification", "is_correct": true },
+        { "answer_text": "Simile", "is_correct": false },
+        { "answer_text": "Hyperbole", "is_correct": false },
+        { "answer_text": "Onomatopoeia", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'thesis statement'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A thesis statement presents the main argument or claim of an essay, usually in the introduction.",
+      "answers": [
+        { "answer_text": "The main argument or claim of an essay", "is_correct": true },
+        { "answer_text": "The conclusion of an essay", "is_correct": false },
+        { "answer_text": "A quote from a source", "is_correct": false },
+        { "answer_text": "The title of an academic paper", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which word is a synonym for 'ephemeral'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ephemeral means lasting for a very short time, similar to 'transient'.",
+      "answers": [
+        { "answer_text": "Transient", "is_correct": true },
+        { "answer_text": "Permanent", "is_correct": false },
+        { "answer_text": "Ancient", "is_correct": false },
+        { "answer_text": "Massive", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'irony'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Irony occurs when there's a contrast between expectation and reality, or between what is said and what is meant.",
+      "answers": [
+        { "answer_text": "A contrast between expectation and reality", "is_correct": true },
+        { "answer_text": "A very sad situation", "is_correct": false },
+        { "answer_text": "A funny joke", "is_correct": false },
+        { "answer_text": "An angry statement", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of clause is 'Although it was raining'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "This is a subordinate (dependent) clause - it cannot stand alone as a complete sentence.",
+      "answers": [
+        { "answer_text": "Subordinate/Dependent clause", "is_correct": true },
+        { "answer_text": "Independent clause", "is_correct": false },
+        { "answer_text": "Relative clause", "is_correct": false },
+        { "answer_text": "Main clause", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between 'affect' and 'effect'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "'Affect' is typically a verb meaning to influence; 'effect' is typically a noun meaning a result.",
+      "answers": [
+        { "answer_text": "'Affect' is usually a verb; 'effect' is usually a noun", "is_correct": true },
+        { "answer_text": "They mean the same thing", "is_correct": false },
+        { "answer_text": "'Effect' is usually a verb; 'affect' is usually a noun", "is_correct": false },
+        { "answer_text": "'Affect' is British spelling; 'effect' is American", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'simile'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A simile compares two things using 'like' or 'as' (e.g., 'brave as a lion').",
+      "answers": [
+        { "answer_text": "A comparison using 'like' or 'as'", "is_correct": true },
+        { "answer_text": "A direct comparison without 'like' or 'as'", "is_correct": false },
+        { "answer_text": "An extreme exaggeration", "is_correct": false },
+        { "answer_text": "A contradictory statement", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the function of a 'topic sentence'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A topic sentence introduces the main idea of a paragraph.",
+      "answers": [
+        { "answer_text": "To introduce the main idea of a paragraph", "is_correct": true },
+        { "answer_text": "To conclude an essay", "is_correct": false },
+        { "answer_text": "To provide evidence", "is_correct": false },
+        { "answer_text": "To list references", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'hyperbole'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hyperbole is an extreme exaggeration used for emphasis or effect (e.g., 'I'm so hungry I could eat a horse').",
+      "answers": [
+        { "answer_text": "An extreme exaggeration for emphasis", "is_correct": true },
+        { "answer_text": "An understatement", "is_correct": false },
+        { "answer_text": "A direct comparison", "is_correct": false },
+        { "answer_text": "A word that sounds like its meaning", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which sentence uses the correct form of 'their/there/they're'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "'They're' = they are; 'their' = possessive; 'there' = location/existence.",
+      "answers": [
+        { "answer_text": "They're going to their house over there.", "is_correct": true },
+        { "answer_text": "Their going to they're house over there.", "is_correct": false },
+        { "answer_text": "There going to their house over they're.", "is_correct": false },
+        { "answer_text": "They're going to there house over their.", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'onomatopoeia'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Onomatopoeia is a word that imitates the sound it describes (e.g., 'buzz', 'hiss', 'splash').",
+      "answers": [
+        { "answer_text": "A word that imitates the sound it describes", "is_correct": true },
+        { "answer_text": "Repetition of vowel sounds", "is_correct": false },
+        { "answer_text": "A figure of speech involving exaggeration", "is_correct": false },
+        { "answer_text": "A type of poem", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between 'who' and 'whom'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "'Who' is a subject pronoun (like 'he'); 'whom' is an object pronoun (like 'him').",
+      "answers": [
+        { "answer_text": "'Who' is a subject pronoun; 'whom' is an object pronoun", "is_correct": true },
+        { "answer_text": "They are interchangeable", "is_correct": false },
+        { "answer_text": "'Whom' is outdated and no longer used", "is_correct": false },
+        { "answer_text": "'Who' is formal; 'whom' is informal", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an 'oxymoron'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An oxymoron combines contradictory terms (e.g., 'deafening silence', 'living dead').",
+      "answers": [
+        { "answer_text": "A combination of contradictory terms", "is_correct": true },
+        { "answer_text": "A type of comparison", "is_correct": false },
+        { "answer_text": "An exaggerated statement", "is_correct": false },
+        { "answer_text": "A repeated sound", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the purpose of a 'rhetorical question'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A rhetorical question is asked for effect, not to get an answer - it makes a point or provokes thought.",
+      "answers": [
+        { "answer_text": "To make a point or provoke thought, not to get an answer", "is_correct": true },
+        { "answer_text": "To gather information", "is_correct": false },
+        { "answer_text": "To start a conversation", "is_correct": false },
+        { "answer_text": "To confuse the reader", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'assonance'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Assonance is the repetition of vowel sounds in nearby words (e.g., 'The rain in Spain').",
+      "answers": [
+        { "answer_text": "Repetition of vowel sounds in nearby words", "is_correct": true },
+        { "answer_text": "Repetition of consonant sounds at the start of words", "is_correct": false },
+        { "answer_text": "Words that rhyme perfectly", "is_correct": false },
+        { "answer_text": "A type of metaphor", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an 'antonym'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An antonym is a word with the opposite meaning (e.g., 'hot' and 'cold').",
+      "answers": [
+        { "answer_text": "A word with the opposite meaning", "is_correct": true },
+        { "answer_text": "A word with the same meaning", "is_correct": false },
+        { "answer_text": "A word that sounds similar", "is_correct": false },
+        { "answer_text": "A word with multiple meanings", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What tense is the sentence 'She will have finished by tomorrow'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "This is future perfect tense - an action that will be completed before a future time.",
+      "answers": [
+        { "answer_text": "Future perfect", "is_correct": true },
+        { "answer_text": "Simple future", "is_correct": false },
+        { "answer_text": "Present perfect", "is_correct": false },
+        { "answer_text": "Past perfect", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a 'protagonist'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The protagonist is the main character in a story, often the hero.",
+      "answers": [
+        { "answer_text": "The main character of a story", "is_correct": true },
+        { "answer_text": "The villain of a story", "is_correct": false },
+        { "answer_text": "A minor character", "is_correct": false },
+        { "answer_text": "The narrator", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'foreshadowing'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Foreshadowing is when an author gives hints about future events in a story.",
+      "answers": [
+        { "answer_text": "Hints about future events in a story", "is_correct": true },
+        { "answer_text": "A flashback to past events", "is_correct": false },
+        { "answer_text": "The climax of a story", "is_correct": false },
+        { "answer_text": "The moral of a story", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the correct plural of 'criterion'?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "'Criterion' is Greek-origin; its plural is 'criteria' (like 'phenomenon/phenomena').",
+      "answers": [
+        { "answer_text": "Criteria", "is_correct": true },
+        { "answer_text": "Criterions", "is_correct": false },
+        { "answer_text": "Criterias", "is_correct": false },
+        { "answer_text": "Criteriorum", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 'juxtaposition' in literature?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Juxtaposition places two contrasting things side by side for comparison or emphasis.",
+      "answers": [
+        { "answer_text": "Placing contrasting elements side by side", "is_correct": true },
+        { "answer_text": "Using similar words repeatedly", "is_correct": false },
+        { "answer_text": "A type of rhyme", "is_correct": false },
+        { "answer_text": "The structure of a poem", "is_correct": false }
+      ]
+    }
+  ]
+}

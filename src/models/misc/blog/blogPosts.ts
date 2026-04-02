@@ -1,19 +1,29 @@
 export interface BlogPost {
   no:number;
   author: string;
+  authorImage?: string;
   title: string;
   postType: "top" | "featured" | "others";
+  category?: string;
+  tags?: string[];
   sampleImg: string;
   contents: ContentBlock[];
+  likes?: number;
+  likedBy?: string[];
 }
 export interface TBlogPost {
   no:number;
   author: string;
+  authorImage?: string;
   title: string;
   postType: "top" | "featured" | "others";
+  category?: string;
+  tags?: string[];
   sampleImg: string;
   contents: ContentBlock[];
   date: string;
+  likes?: number;
+  likedBy?: string[];
 }
 
 export interface ContentBlock {
@@ -27,11 +37,16 @@ export interface ContentBlockProp{
     id: string;
     no: number;
     author: string;
+    authorImage?: string;
     date: string;
     title: string; 
     sampleImg: string;
     postType: string;
+    category?: string;
+    tags?: string[];
     contents: ContentBlock[];
+    likes?: number;
+    likedBy?: string[];
   }
   export interface BlogPostProp {
     blogPosts: IBlogPost[]

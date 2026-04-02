@@ -1,8 +1,11 @@
 {
-    "rewrites":[
-        { 
-            "source":"/(.*)",
-            "destination":"/"
-        }
-    ]
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/"
+    }
+  ]
 }

@@ -1,0 +1,309 @@
+{
+  "title": "Physics - Year 1 Fundamentals",
+  "description": "Introductory physics covering mechanics, thermodynamics, waves, and basic electromagnetism for Year 1 university students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is Newton's First Law of Motion?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Newton's First Law (Law of Inertia): An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.",
+      "answers": [
+        { "answer_text": "An object remains at rest or in uniform motion unless acted upon by an external force", "is_correct": true },
+        { "answer_text": "Force equals mass times acceleration", "is_correct": false },
+        { "answer_text": "For every action, there is an equal and opposite reaction", "is_correct": false },
+        { "answer_text": "Energy cannot be created or destroyed", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the SI unit of force?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The Newton (N) is the SI unit of force. 1 N = 1 kg·m/s².",
+      "answers": [
+        { "answer_text": "Newton (N)", "is_correct": true },
+        { "answer_text": "Joule (J)", "is_correct": false },
+        { "answer_text": "Watt (W)", "is_correct": false },
+        { "answer_text": "Pascal (Pa)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the formula for kinetic energy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Kinetic energy = ½mv², where m is mass and v is velocity.",
+      "answers": [
+        { "answer_text": "KE = ½mv²", "is_correct": true },
+        { "answer_text": "KE = mv", "is_correct": false },
+        { "answer_text": "KE = mgh", "is_correct": false },
+        { "answer_text": "KE = ma", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the speed of light in a vacuum?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The speed of light in a vacuum is approximately 3 × 10⁸ m/s (299,792,458 m/s exactly).",
+      "answers": [
+        { "answer_text": "3 × 10⁸ m/s", "is_correct": true },
+        { "answer_text": "3 × 10⁶ m/s", "is_correct": false },
+        { "answer_text": "3 × 10¹⁰ m/s", "is_correct": false },
+        { "answer_text": "3 × 10⁵ m/s", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the relationship between wavelength (λ), frequency (f), and wave speed (v)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Wave speed equals wavelength times frequency: v = λf.",
+      "answers": [
+        { "answer_text": "v = λf", "is_correct": true },
+        { "answer_text": "v = λ/f", "is_correct": false },
+        { "answer_text": "v = f/λ", "is_correct": false },
+        { "answer_text": "v = λ + f", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Ohm's Law?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ohm's Law: V = IR, where V is voltage, I is current, and R is resistance.",
+      "answers": [
+        { "answer_text": "V = IR", "is_correct": true },
+        { "answer_text": "V = I/R", "is_correct": false },
+        { "answer_text": "V = I + R", "is_correct": false },
+        { "answer_text": "V = R/I", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the acceleration due to gravity on Earth's surface?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The acceleration due to gravity on Earth is approximately 9.8 m/s² (often rounded to 10 m/s²).",
+      "answers": [
+        { "answer_text": "9.8 m/s²", "is_correct": true },
+        { "answer_text": "6.67 m/s²", "is_correct": false },
+        { "answer_text": "3.14 m/s²", "is_correct": false },
+        { "answer_text": "1.62 m/s²", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the First Law of Thermodynamics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The First Law is conservation of energy: energy cannot be created or destroyed, only converted.",
+      "answers": [
+        { "answer_text": "Energy cannot be created or destroyed, only converted from one form to another", "is_correct": true },
+        { "answer_text": "Heat flows from hot to cold objects", "is_correct": false },
+        { "answer_text": "Entropy always increases", "is_correct": false },
+        { "answer_text": "Absolute zero cannot be reached", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of wave is sound?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Sound is a longitudinal (compression) wave - particles oscillate parallel to the direction of wave travel.",
+      "answers": [
+        { "answer_text": "Longitudinal wave", "is_correct": true },
+        { "answer_text": "Transverse wave", "is_correct": false },
+        { "answer_text": "Electromagnetic wave", "is_correct": false },
+        { "answer_text": "Standing wave", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the formula for gravitational potential energy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Gravitational PE = mgh, where m is mass, g is gravitational acceleration, and h is height.",
+      "answers": [
+        { "answer_text": "PE = mgh", "is_correct": true },
+        { "answer_text": "PE = ½mv²", "is_correct": false },
+        { "answer_text": "PE = mg", "is_correct": false },
+        { "answer_text": "PE = mv²/h", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the SI unit of electric current?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The Ampere (A) is the SI unit of electric current.",
+      "answers": [
+        { "answer_text": "Ampere (A)", "is_correct": true },
+        { "answer_text": "Volt (V)", "is_correct": false },
+        { "answer_text": "Ohm (Ω)", "is_correct": false },
+        { "answer_text": "Coulomb (C)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the formula for work done?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Work = Force × Distance × cos(θ), or simply W = Fd when force is parallel to displacement.",
+      "answers": [
+        { "answer_text": "W = Fd cos(θ)", "is_correct": true },
+        { "answer_text": "W = mv", "is_correct": false },
+        { "answer_text": "W = ma", "is_correct": false },
+        { "answer_text": "W = Pt", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What happens to the resistance when resistors are connected in series?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "In series, total resistance is the sum: R_total = R₁ + R₂ + R₃ + ...",
+      "answers": [
+        { "answer_text": "Total resistance increases (R_total = R₁ + R₂)", "is_correct": true },
+        { "answer_text": "Total resistance decreases", "is_correct": false },
+        { "answer_text": "Total resistance stays the same", "is_correct": false },
+        { "answer_text": "Total resistance becomes zero", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is momentum?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Momentum (p) = mass × velocity. It's a vector quantity.",
+      "answers": [
+        { "answer_text": "p = mv (mass times velocity)", "is_correct": true },
+        { "answer_text": "p = ma (mass times acceleration)", "is_correct": false },
+        { "answer_text": "p = ½mv² (half mass times velocity squared)", "is_correct": false },
+        { "answer_text": "p = Ft (force times time)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the principle of superposition for waves?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "When waves overlap, the resultant displacement equals the sum of individual displacements.",
+      "answers": [
+        { "answer_text": "When waves overlap, the total displacement is the sum of individual displacements", "is_correct": true },
+        { "answer_text": "Waves always cancel each other out", "is_correct": false },
+        { "answer_text": "Waves cannot pass through each other", "is_correct": false },
+        { "answer_text": "The faster wave always dominates", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is power defined as?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Power is the rate of doing work or energy transfer: P = W/t or P = E/t.",
+      "answers": [
+        { "answer_text": "Rate of doing work (P = W/t)", "is_correct": true },
+        { "answer_text": "Total work done", "is_correct": false },
+        { "answer_text": "Force times distance", "is_correct": false },
+        { "answer_text": "Mass times acceleration", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the SI unit of power?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The Watt (W) is the SI unit of power. 1 W = 1 J/s.",
+      "answers": [
+        { "answer_text": "Watt (W)", "is_correct": true },
+        { "answer_text": "Joule (J)", "is_correct": false },
+        { "answer_text": "Newton (N)", "is_correct": false },
+        { "answer_text": "Horsepower (hp)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Newton's Third Law?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Newton's Third Law: For every action, there is an equal and opposite reaction.",
+      "answers": [
+        { "answer_text": "For every action, there is an equal and opposite reaction", "is_correct": true },
+        { "answer_text": "F = ma", "is_correct": false },
+        { "answer_text": "Objects at rest stay at rest", "is_correct": false },
+        { "answer_text": "Energy is conserved", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the frequency of a wave if its period is 0.5 seconds?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Frequency = 1/Period. So f = 1/0.5 = 2 Hz.",
+      "answers": [
+        { "answer_text": "2 Hz", "is_correct": true },
+        { "answer_text": "0.5 Hz", "is_correct": false },
+        { "answer_text": "5 Hz", "is_correct": false },
+        { "answer_text": "1 Hz", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between scalar and vector quantities?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Scalars have only magnitude (e.g., mass, speed); vectors have both magnitude and direction (e.g., velocity, force).",
+      "answers": [
+        { "answer_text": "Scalars have magnitude only; vectors have magnitude and direction", "is_correct": true },
+        { "answer_text": "Scalars are larger than vectors", "is_correct": false },
+        { "answer_text": "Vectors are always positive", "is_correct": false },
+        { "answer_text": "There is no difference", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is specific heat capacity?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Specific heat capacity is the energy needed to raise 1 kg of a substance by 1°C (or 1 K).",
+      "answers": [
+        { "answer_text": "Energy required to raise 1 kg of a substance by 1°C", "is_correct": true },
+        { "answer_text": "The maximum temperature a substance can reach", "is_correct": false },
+        { "answer_text": "The rate of heat transfer", "is_correct": false },
+        { "answer_text": "The temperature at which a substance melts", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the formula for electric power?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Electric power P = IV = I²R = V²/R, where I is current, V is voltage, R is resistance.",
+      "answers": [
+        { "answer_text": "P = IV", "is_correct": true },
+        { "answer_text": "P = IR", "is_correct": false },
+        { "answer_text": "P = V/I", "is_correct": false },
+        { "answer_text": "P = I/V", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What causes an object to undergo circular motion?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Centripetal force, directed toward the center, causes circular motion.",
+      "answers": [
+        { "answer_text": "Centripetal force directed toward the center", "is_correct": true },
+        { "answer_text": "Tangential force along the path", "is_correct": false },
+        { "answer_text": "Gravitational force only", "is_correct": false },
+        { "answer_text": "No force is needed", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the law of conservation of momentum?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "In a closed system with no external forces, total momentum before = total momentum after.",
+      "answers": [
+        { "answer_text": "Total momentum in a closed system remains constant", "is_correct": true },
+        { "answer_text": "Momentum always increases over time", "is_correct": false },
+        { "answer_text": "Momentum equals kinetic energy", "is_correct": false },
+        { "answer_text": "Momentum is only conserved in elastic collisions", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the unit of frequency?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Frequency is measured in Hertz (Hz), which equals cycles per second (s⁻¹).",
+      "answers": [
+        { "answer_text": "Hertz (Hz)", "is_correct": true },
+        { "answer_text": "Meters (m)", "is_correct": false },
+        { "answer_text": "Seconds (s)", "is_correct": false },
+        { "answer_text": "Newtons (N)", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ISignUpForm } from "../../models/auth/form";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../../config/firebase";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { setDoc, doc } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 import { signUpSchema } from "../../validation";
@@ -17,6 +17,7 @@ import { StudentDetails } from "../../models/auth/studentDetails";
 export default function useSignUpUser() {
   const [loading, setLoading] = useState<boolean>(false);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { reset } = useForm<ISignUpForm>({
     resolver: yupResolver(signUpSchema),
   });
@@ -45,10 +46,18 @@ export default function useSignUpUser() {
       await setDoc(doc(db, "userInfo", userID), userInfo);
       setLoading(false);
       reset();
-      navigate("/");
+      
+      // Check for redirect parameter, otherwise go to home
+      const redirectUrl = searchParams.get("redirect");
+      if (redirectUrl) {
+        navigate(redirectUrl);
+      } else {
+        navigate("/");
+      }
+      
       notifyUser(
         "success",
-        "Sign in successful. Welcome to Polymer and Textile Engineering Department."
+        "Sign up successful. Welcome to the Medicine and Surgery Portal."
       );
     } catch (error: any) {
       if (error.code === "auth/email-already-in-use") {

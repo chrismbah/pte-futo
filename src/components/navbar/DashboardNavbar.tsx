@@ -15,12 +15,7 @@ import { ProfileIcon } from "../icons/nav/ProfileIcon";
 import { useEffect, useState } from "react";
 import { BurgerIcon } from "../icons/nav/BurgerIcon";
 import { NavLink } from "react-router-dom";
-import { BellIcon } from "../icons/nav/BellIcon";
-import {
-  Popover,
-  PopoverHandler,
-  PopoverContent,
-} from "@material-tailwind/react";
+import { NotificationDropdown } from "../notifications/NotificationDropdown";
 import { fadeInVariants4 } from "../../animation/variants";
 import { motion } from "framer-motion";
 import { useLoadImage } from "../../hooks/user-profile/useLoadImage";
@@ -32,7 +27,6 @@ export const DashboardNavbar = () => {
   const email = studentDetails?.email;
 
   const { setOpenSignOutModal } = useModalContext();
-  const [openPopover, setOpenPopover] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const { isImageLoading, setIsImageLoading, LoadingPlaceholder } = useLoadImage()
   useEffect(() => {
@@ -44,13 +38,10 @@ export const DashboardNavbar = () => {
   }, [isNavOpen]);
 
   const toggleMenu = () => setIsNavOpen(!isNavOpen);
-  const triggers = {
-    onMouseLeave: () => setOpenPopover(false),
-    onMouseEnter: () => setOpenPopover(true),
-  };
+
   return (
     <>
-      <nav className="dashboard w-full fixed top-0 left-0 px-2 py-4 xsm:p-4 bg-white shadow-sm z-10">
+      <nav className="dashboard w-full fixed top-0 left-0 px-2 py-4 xsm:p-4 bg-white shadow-sm z-50">
         <div className="max-w-[1720px] w-full mx-auto">
           <div className="flex items-center flex-between flex-wrap">
             <div className="flex items-center justify-start">
@@ -69,7 +60,7 @@ export const DashboardNavbar = () => {
                     alt="PTE Logo"
                   />
                   <div className="mr-2 text-black w-[100%] hidden xsss:block sm:block sm:w-[70%] self-center whitespace-wrap text-xss ss:text-ss lg:text-sm font-[900]">
-                    Polymer and Textile <br /> Engineering, FUTO
+                    Medicine and Surgery <br /> Department, EBSU
                   </div>
                 </div>
               </a>
@@ -113,7 +104,7 @@ export const DashboardNavbar = () => {
                       alt="PTE Logo"
                     />
                     <div className="mr-2 text-black w-[100%] sm:w-[70%] self-center whitespace-wrap text-xss ss:text-ss lg:text-sm font-[900]">
-                      Polymer and Textile <br /> Engineering, FUTO
+                      Medicine and Surgery <br /> Department, EBSU
                     </div>
                   </div>
                 </div>
@@ -144,15 +135,6 @@ export const DashboardNavbar = () => {
                 </NavLink>{" "}
                 <NavLink
                   onClick={() => setIsNavOpen(false)}
-                  to="/u/gpa-calculator"
-                  className={
-                    "w-full p-3 hover:text-green1 hover:bg-gray-100 rounded-md transition"
-                  }
-                >
-                  GPA Calculator
-                </NavLink>{" "}
-                <NavLink
-                  onClick={() => setIsNavOpen(false)}
                   to="/u/course-outlines"
                   className={
                     "w-full p-3 hover:text-green1 hover:bg-gray-100 rounded-md transition"
@@ -178,43 +160,35 @@ export const DashboardNavbar = () => {
                 >
                   Profile
                 </NavLink>
+                {/* Admin Link - Only visible to admin users */}
+                {(["patronkwo@gmail.com","kenronkwo@gmail.com","ebsumsapresident2526@gmail.com","ebsumsa102@gmail.com","oohveeyuu070@gmail.com"].includes((studentDetails?.email || '').toLowerCase()) || studentDetails?.email?.toLowerCase().includes("admin")) && (
+                  <NavLink
+                    onClick={() => setIsNavOpen(false)}
+                    to="/admin"
+                    className={
+                      "w-full p-3 hover:text-red-600 hover:bg-red-50 rounded-md transition text-red-600 font-semibold flex items-center gap-2"
+                    }
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                    </svg>
+                    Admin Panel
+                  </NavLink>
+                )}
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <Popover
-                placement="right"
-                animate={{
-                  mount: { scale: 1, y: 0 },
-                  unmount: { scale: 0, y: 25 },
+              <motion.div
+                variants={fadeInVariants4}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
                 }}
-                open={openPopover}
-                handler={setOpenPopover}
+                custom={3}
               >
-                <PopoverHandler {...triggers}>
-                  <motion.button
-                    variants={fadeInVariants4}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={3}
-                  >
-                    <BellIcon className="w-6 h-6 mt-1 fill-green1" />
-                  </motion.button>
-                </PopoverHandler>
-                {user && (
-                  <PopoverContent
-                    className="z-50 p-2"
-                    placeholder={""}
-                    {...triggers}
-                  >
-                    <p className="text-xss sm:text-ss font-semibold text-gray-700">
-                      You have 0 new notifications
-                    </p>
-                  </PopoverContent>
-                )}
-              </Popover>
+                <NotificationDropdown />
+              </motion.div>
               <motion.div
                 variants={fadeInVariants4}
                 initial="initial"
@@ -234,7 +208,17 @@ export const DashboardNavbar = () => {
                     <Dropdown
                       arrowIcon={false}
                       inline
-                      className="z-[9999] "
+                      className="z-[9999]"
+                      theme={{
+                        floating: {
+                          base: "z-10 w-fit divide-y divide-gray-100 rounded-lg shadow focus:outline-none",
+                          content: "py-1 text-sm text-gray-700",
+                          target: "w-fit",
+                          style: {
+                            auto: "border border-gray-200 bg-white text-gray-900",
+                          },
+                        },
+                      }}
                       label={
                         <>
                           {studentDetails &&

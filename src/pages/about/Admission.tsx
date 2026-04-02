@@ -7,193 +7,77 @@ export default function Admission() {
         <div className="px-2 sm:px-14 sm:py-10 py-6 my-16 ss:mt-20 sm:my-24 bg-white shadow rounded-lg">
           <h2 className="">
             <div className="bar-style" />
-            Programme Structure
+            Medicine and Surgery Programme - EBSU
           </h2>
           <p className="text-gray-700 font-semibold text-ss ss:text-sm xlg:text-xs mb-4">
-            Students spend a total of five years to obtain the B.Eng. (Polymer
-            and Textile Engineering) Degree
+            Ebonyi State University offers a comprehensive six-year Bachelor of Medicine, Bachelor of Surgery (MBBS) programme designed to produce competent and compassionate medical doctors.
           </p>
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-1">
+          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-4">
             The Programme is structured as follows:
           </p>
-          <ol className=" space-y-2 list-disc list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
+          <ol className=" space-y-2 list-decimal list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
             <li>
-              Common University courses of the first year which include the
-              basic sciences of Mathematics, Physics, Chemistry and Biology; the
-              Basic Engineering Courses of Engineering drawing and Workshop
-              practice; and General Studies courses of Use of English and Social
-              Sciences.
+              <span className="font-semibold">Pre-Clinical Phase (Year 1-2):</span> Students study Anatomy, Physiology, Biochemistry, Medical Microbiology, and Pathology, providing foundational knowledge for clinical practice.
             </li>
             <li>
-              The first-year courses are accomplished through the formal
-              University lectures, tutorials, practicals, assignments and
-              examinations.
+              <span className="font-semibold">Clinical Phase (Year 3-5):</span> Students undertake clinical rotations in medicine, surgery, pediatrics, obstetrics and gynecology, psychiatry, and other specialties, gaining practical clinical experience.
             </li>
             <li>
-              Polymer and Textile Engineering Courses actually start with the
-              second year PTE 202 (Introduction to Polymer and Textile
-              Engineering), in the Rain Semester. The remaining 2nd-year courses
-              are the Common School of Engineering Courses taken through the
-              formal University lectures, tutorials, practicals, assignments and
-              examination, followed by a 3-months industrial attachment period
-              during the long vacation (SIW 200). Thereafter, an Industrial
-              training (IT) report is submitted and defended by each student and
-              graded.
-            </li>{" "}
-            <li>
-              In the 3rd year, some common School of Engineering courses
-              embracing formal University lectures, tutorials, practicals,
-              assignments and examinations, followed by a 3-months industrial
-              attachment period during the long vacation (SIW 300). Thereafter
-              an Industrial Training (IT) report is submitted and defended by
-              each student and graded. The remaining courses are Polymer and
-              Textile Engineering.
-            </li>{" "}
-            <li>
-              In-depth studies in Polymer and Textile Engineering comes as
-              specialization courses, experimental and design projects and
-              laboratory practices are in the fourth and final year.
+              <span className="font-semibold">Final Year (Year 6):</span> Students complete advanced clinical attachments, electives, and prepare for final examinations and internship.
             </li>
             <li>
-              In the 4th year, core Polymer and Textile Engineering Courses,
-              including some electives are taken during the 1st semester. A four
-              months industrial attachment period follows in the second semester
-              (SIW400). This is also followed by a 2-months industrial
-              attachment during the long vacation period (SIW400/401).
-              Therefore, a combined Industrial Training report (SIW 400/401) is
-              submitted and defended by each student and graded. One common
-              engineering course ENG 405 is also taken in the Harmattan
-              semester.
-            </li>
-            <li>
-              In the 5th year, 500 level courses including electives, projects,
-              seminars etc. are taken, and a B.Eng. Project Report is submitted
-              and defended by each student.
+              <span className="font-semibold">Internship Programme:</span> Following graduation, doctors complete a mandatory one-year internship programme rotating through various medical departments before full registration.
             </li>
           </ol>
-          <div className="mb-4">
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              The following standard terminology shall be used for different
-              categories of courses:
-            </p>
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              <span className="font-semibold text-gray-900">Compulsory:</span>{" "}
-              Courses specified by the Department which a student must take and
-              pass;
-            </p>
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              <span className="font-semibold text-gray-900">Required:</span>{" "}
-              Courses specified by the Department which a student must take but
-              not necessarily pass. Where there is a group of such courses, the
-              department must state the minimum number of units to be passed.
-            </p>
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              <span className="font-semibold text-gray-900">Elective:</span>{" "}
-              Courses specified by the Department from which a student can take
-              in order to make up the required additional units for the award of
-              the degree;
-            </p>
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              <span className="font-semibold text-gray-900">
-                Pre-requisite:
-              </span>{" "}
-              A course whose knowledge is essential prior to take other
-              specified courses;
-            </p>
-            <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              <span className="font-semibold text-gray-900">Concurrent:</span>{" "}
-              Specified courses which must be taken within the same semester,
-              usually pre-requisite courses.
-            </p>
-          </div>
-          <div className="mb-4">
-            <ol className=" space-y-2 list-decimal list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
-              <li>
-                Appropriate pre-requisites and/or concurrent requirements may be
-                prescribed for courses. A pre-requisite requirement is fulfilled
-                by completing and passing the pre-requisite, except that a
-                student who fails a course but obtains at least a specified
-                minimum standard on it shall be deemed to possess the course for
-                pre-requisite courses. Pre-requisite course may also be waived
-                for suitably qualified candidates by the senate on the
-                recommendation of the school Board. A concurrent requirement
-                shall be satisfied if the student has either taken the course on
-                a previous occasion or registered for the course within the same
-                semester.
-              </li>
-              <li>
-                To earn a degree all compulsory courses must be taken and
-                passed.
-              </li>
-              <li>
-                All courses taught during each semester shall be examined at the
-                end of the semester, and candidates will be credited with the
-                number of course units assigned to the course for which they
-                have passed the examinations.
-              </li>{" "}
-              <li>
-                Students shall normally be required to register for a prescribed
-                number of units in each academic year, the number of which shall
-                be approved by Senate on the recommendation of the school Board.
-                Withdrawal from a course will only be permitted during the
-                change of registration period. Thereafter a student who
-                withdraws from a course except for reasons acceptable to the
-                Board will be deemed to have failed the course.
-              </li>{" "}
-            </ol>
-          </div>
-          <h3 className="text-md sm:text-xl md:text-xll font-[600] mb-2">
-            Admission Requirements
+          <h3 className="text-md sm:text-xl md:text-xll font-[600] mb-4 mt-6">
+            Admission Requirements for Medicine and Surgery, EBSU
           </h3>
           <div className="mb-4">
-            <ol className=" space-y-2 list-decimal list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
+            <h4 className="text-sm font-semibold text-green1 mb-3">1. UTME ENTRY REQUIREMENTS:</h4>
+            <ul className=" space-y-2 list-disc list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
               <li>
-                <span className="font-semibold text-gray-900 text-xs sm:text-base">
-                  UTME ENTRY REQUIREMENTS:
-                </span>{" "}
-                SC/GCE Level with credit in five (5) appropriate subjects
-                including Mathematics, English Language, Physics and Chemistry
-                obtained in not more than two sittings of the examination Board
-                (WAEC/NECO). In addition to the above, candidates should have an
-                acceptable pass in UTME of the programme.
-              </li>{" "}
-              <li>
-                <span className="font-semibold text-gray-900 text-xs sm:text-base">
-                  DIRECT ENTRY REQUIREMENTS:
-                </span>{" "}
-                <ol className="space-y-1 list-disc list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
-                  <li>
-                    Holders of OND (ND) certificates with a minimum of Upper
-                    Credit pass are eligible for admission in the year 2 course.
-                    Holders of HND with a minimum of Upper Credit pass are
-                    eligible for admission in year 3 depending on the
-                    appropriateness of their requisites academic preparation.
-                  </li>
-                  <li>
-                    In addition to fulfilling the above requirements, a holder
-                    of OND (ND) and/or HND must also have five SC/GCE ‘O’ Level
-                    Credit passes which must include English Language,
-                    Mathematics, Physics and Chemistry.
-                  </li>{" "}
-                  <li>
-                    Holders of A level passes in three papers (Chemistry,
-                    Physics, Mathematics or Further Mathematics) in not more
-                    than two sittings can be admitted into the second year
-                    directly but must also meet the ‘O’ level credit
-                    requirements.
-                  </li>
-                </ol>
-              </li>{" "}
-            </ol>
+                Candidates must possess a Senior School Certificate Examination (SSCE) or General Certificate of Education (GCE) with credit passes in five (5) subjects, including:
+                <ul className="list-disc list-inside ml-4 mt-1 space-y-1">
+                  <li>English Language (compulsory)</li>
+                  <li>Mathematics (compulsory)</li>
+                  <li>Chemistry (compulsory)</li>
+                  <li>Physics (compulsory)</li>
+                  <li>Biology or any other approved science subject</li>
+                </ul>
+              </li>
+              <li>These subjects must be obtained in not more than two sittings (WAEC, NECO, or equivalent).</li>
+              <li>Candidates must achieve a competitive score in the UTME with the minimum cutoff score as set by JAMB for the current admission year (typically minimum 200 for Medicine).</li>
+              <li>Candidates must meet the post-UTME screening score requirements set by Ebonyi State University.</li>
+            </ul>
           </div>
-          <h3 className="text-md sm:text-xl md:text-xll font-[600] mb-2">
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold text-green1 mb-3">2. DIRECT ENTRY REQUIREMENTS:</h4>
+            <ul className=" space-y-2 list-disc list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
+              <li>
+                <span className="font-semibold">A-Level/IJMB Holders:</span> Candidates with at least three passes in A-Level or IJMB examinations in Chemistry, Physics, and Biology (or Medicine and allied subjects) in not more than two sittings may be admitted into Year 2, provided they also meet the O-level requirements.
+              </li>
+              <li>
+                <span className="font-semibold">OND Holders:</span> Holders of Ordinary National Diploma (OND) in relevant health or science programmes with a minimum of Upper Credit pass may be considered for admission, subject to departmental requirements and meeting all O-level credit requirements.
+              </li>
+              <li>
+                All direct entry candidates must possess the compulsory SSCE/GCE credit passes as specified in UTME requirements.
+              </li>
+            </ul>
+          </div>
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold text-green1 mb-3">3. GENERAL REQUIREMENTS:</h4>
+            <ul className=" space-y-2 list-disc list-inside text-sm sm:text-xs text-gray-700 leading-7 mb-4">
+              <li>Age: Candidates should preferably be below 25 years at the time of admission.</li>
+              <li>Health: Candidates must be in good health and free from conditions that would prevent them from practicing medicine.</li>
+              <li>Character: Candidates must possess good moral character with no criminal record.</li>
+              <li>All admission is subject to the provision of verifiable credentials and JAMB approval.</li>
+            </ul>
+          </div>
+          <h3 className="text-md sm:text-xl md:text-xll font-[600] mb-4 mt-6">
             Duration of Programme
           </h3>
           <p className="text-sm sm:text-xs text-gray-700 leading-7">
-            Candidates admitted through UTME will spend a minimum of five
-            academic sessions. Direct entry candidates will, however, spend a
-            minimum of four or three academic sessions depending on their entry
-            certificate.
+            The Bachelor of Medicine, Bachelor of Surgery (MBBS) programme spans a minimum of six (6) academic years for UTME entrants. Direct entry candidates may complete the programme in four or five years depending on their entry level. Upon completion, graduates undertake a mandatory one-year internship programme before full medical registration and licensure.
           </p>
         </div>
       </div>

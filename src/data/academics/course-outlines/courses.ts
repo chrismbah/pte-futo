@@ -392,63 +392,33 @@ export const courses: LevelCoursesOutline = {
     First: {
       courses: [
         {
-          courseID: "PTE501",
-          course: "PTE 501",
+          courseID: "MED501",
+          course: "MED 501 - Internal Medicine I",
+          unit: 5,
+        },
+        {
+          courseID: "SUR501",
+          course: "SUR 501 - General Surgery I",
+          unit: 4,
+        },
+        {
+          courseID: "PED501",
+          course: "PED 501 - Paediatrics I",
+          unit: 4,
+        },
+        {
+          courseID: "OG501",
+          course: "O&G 501 - Obstetrics I",
+          unit: 4,
+        },
+        {
+          courseID: "PSY501",
+          course: "PSY 501 - Psychiatry I",
           unit: 3,
         },
         {
-          courseID: "PTE503",
-          course: "PTE 503",
-          unit: 2,
-        },
-        {
-          courseID: "PTE507",
-          course: "PTE 507",
-          unit: 3,
-        },
-        {
-          courseID: "PTE509",
-          course: "PTE 509",
-          unit: 3,
-        },
-        {
-          courseID: "PTE513",
-          course: "PTE 513",
-          unit: 1,
-        },
-        {
-          courseID: "PTE515",
-          course: "PTE 515",
-          unit: 3,
-        },
-        {
-          courseID: "PTE521",
-          course: "PTE 521 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE523",
-          course: "PTE 523 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE527",
-          course: "PTE 527 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE529",
-          course: "PTE 529 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE531",
-          course: "PTE 531 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE533",
-          course: "PTE 533 (Elective)",
+          courseID: "COM501",
+          course: "COM 501 - Community Medicine I",
           unit: 3,
         },
       ],
@@ -456,63 +426,118 @@ export const courses: LevelCoursesOutline = {
     Second: {
       courses: [
         {
-          courseID: "PTE502",
-          course: "PTE 502",
+          courseID: "MED502",
+          course: "MED 502 - Internal Medicine II",
+          unit: 5,
+        },
+        {
+          courseID: "SUR502",
+          course: "SUR 502 - General Surgery II",
+          unit: 4,
+        },
+        {
+          courseID: "PED502",
+          course: "PED 502 - Paediatrics II",
+          unit: 4,
+        },
+        {
+          courseID: "OG502",
+          course: "O&G 502 - Gynaecology I",
+          unit: 4,
+        },
+        {
+          courseID: "PSY502",
+          course: "PSY 502 - Psychiatry II",
           unit: 3,
         },
         {
-          courseID: "PTE504",
-          course: "PTE 504",
+          courseID: "COM502",
+          course: "COM 502 - Community Medicine II",
+          unit: 3,
+        },
+      ],
+    },
+  },
+  "600": {
+    First: {
+      courses: [
+        {
+          courseID: "MED601",
+          course: "MED 601 - Internal Medicine III",
+          unit: 5,
+        },
+        {
+          courseID: "SUR601",
+          course: "SUR 601 - Cardiothoracic Surgery",
+          unit: 4,
+        },
+        {
+          courseID: "SUR603",
+          course: "SUR 603 - Neurosurgery",
           unit: 3,
         },
         {
-          courseID: "PTE506",
-          course: "PTE 506",
+          courseID: "PED601",
+          course: "PED 601 - Paediatrics III",
+          unit: 4,
+        },
+        {
+          courseID: "OG601",
+          course: "O&G 601 - Obstetrics II",
+          unit: 4,
+        },
+        {
+          courseID: "OPH601",
+          course: "OPH 601 - Ophthalmology",
           unit: 3,
         },
         {
-          courseID: "PTE512",
-          course: "PTE 512",
-          unit: 2,
+          courseID: "ENT601",
+          course: "ENT 601 - Otorhinolaryngology",
+          unit: 3,
+        },
+      ],
+    },
+    Second: {
+      courses: [
+        {
+          courseID: "MED602",
+          course: "MED 602 - Internal Medicine IV",
+          unit: 5,
         },
         {
-          courseID: "PTE516",
-          course: "PTE 516",
+          courseID: "SUR602",
+          course: "SUR 602 - Plastic Surgery",
           unit: 3,
         },
         {
-          courseID: "PTE534",
-          course: "PTE 534",
-          unit: 1,
-        },
-        {
-          courseID: "PTE522",
-          course: "PTE 522 (Elective)",
+          courseID: "SUR604",
+          course: "SUR 604 - Paediatric Surgery",
           unit: 3,
         },
         {
-          courseID: "PTE524",
-          course: "PTE 524 (Elective)",
+          courseID: "PED602",
+          course: "PED 602 - Paediatrics IV",
+          unit: 4,
+        },
+        {
+          courseID: "OG602",
+          course: "O&G 602 - Gynaecology II",
+          unit: 4,
+        },
+        {
+          courseID: "ANA601",
+          course: "ANA 601 - Anaesthesiology",
           unit: 3,
         },
         {
-          courseID: "PTE526",
-          course: "PTE 526 (Elective)",
+          courseID: "RAD601",
+          course: "RAD 601 - Radiology",
           unit: 3,
         },
         {
-          courseID: "PTE528",
-          course: "PTE 528 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE530",
-          course: "PTE 530 (Elective)",
-          unit: 3,
-        },
-        {
-          courseID: "PTE532",
-          course: "PTE 532 (Elective)",
+          courseID: "FOR601",
+          course: "FOR 601 - Forensic Medicine",
           unit: 3,
         },
       ],

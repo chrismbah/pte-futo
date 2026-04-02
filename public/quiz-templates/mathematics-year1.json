@@ -1,0 +1,309 @@
+{
+  "title": "Mathematics - Year 1 Fundamentals",
+  "description": "Introductory mathematics covering algebra, calculus basics, and mathematical reasoning for Year 1 university students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is the derivative of f(x) = x³?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Using the power rule, d/dx(xⁿ) = nxⁿ⁻¹. So d/dx(x³) = 3x².",
+      "answers": [
+        { "answer_text": "3x²", "is_correct": true },
+        { "answer_text": "x²", "is_correct": false },
+        { "answer_text": "3x³", "is_correct": false },
+        { "answer_text": "x⁴/4", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Solve for x: 2x + 5 = 15",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Subtract 5 from both sides: 2x = 10. Divide by 2: x = 5.",
+      "answers": [
+        { "answer_text": "x = 5", "is_correct": true },
+        { "answer_text": "x = 10", "is_correct": false },
+        { "answer_text": "x = 7.5", "is_correct": false },
+        { "answer_text": "x = 20", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the integral of 2x dx?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The integral of 2x is x² + C (using the power rule for integration).",
+      "answers": [
+        { "answer_text": "x² + C", "is_correct": true },
+        { "answer_text": "2x² + C", "is_correct": false },
+        { "answer_text": "x + C", "is_correct": false },
+        { "answer_text": "2 + C", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "If log₁₀(x) = 2, what is x?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "log₁₀(x) = 2 means 10² = x, so x = 100.",
+      "answers": [
+        { "answer_text": "100", "is_correct": true },
+        { "answer_text": "20", "is_correct": false },
+        { "answer_text": "10", "is_correct": false },
+        { "answer_text": "1000", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the quadratic formula?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The quadratic formula x = (-b ± √(b²-4ac)) / 2a solves ax² + bx + c = 0.",
+      "answers": [
+        { "answer_text": "x = (-b ± √(b²-4ac)) / 2a", "is_correct": true },
+        { "answer_text": "x = (-b ± √(b²+4ac)) / 2a", "is_correct": false },
+        { "answer_text": "x = (b ± √(b²-4ac)) / 2a", "is_correct": false },
+        { "answer_text": "x = (-b ± √(b²-4ac)) / a", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is sin(90°)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "sin(90°) = 1. This is a fundamental trigonometric value.",
+      "answers": [
+        { "answer_text": "1", "is_correct": true },
+        { "answer_text": "0", "is_correct": false },
+        { "answer_text": "-1", "is_correct": false },
+        { "answer_text": "undefined", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the limit of (sin x)/x as x approaches 0?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "This is a fundamental limit in calculus: lim(x→0) sin(x)/x = 1.",
+      "answers": [
+        { "answer_text": "1", "is_correct": true },
+        { "answer_text": "0", "is_correct": false },
+        { "answer_text": "∞", "is_correct": false },
+        { "answer_text": "Does not exist", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 5! (5 factorial)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "answers": [
+        { "answer_text": "120", "is_correct": true },
+        { "answer_text": "25", "is_correct": false },
+        { "answer_text": "60", "is_correct": false },
+        { "answer_text": "720", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the determinant of a 2×2 matrix [[a, b], [c, d]]?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The determinant of a 2×2 matrix is calculated as ad - bc.",
+      "answers": [
+        { "answer_text": "ad - bc", "is_correct": true },
+        { "answer_text": "ab - cd", "is_correct": false },
+        { "answer_text": "ad + bc", "is_correct": false },
+        { "answer_text": "ac - bd", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the sum of the first n natural numbers?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The sum formula is n(n+1)/2, derived by Gauss.",
+      "answers": [
+        { "answer_text": "n(n+1)/2", "is_correct": true },
+        { "answer_text": "n²/2", "is_correct": false },
+        { "answer_text": "n(n-1)/2", "is_correct": false },
+        { "answer_text": "2n+1", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "If f(x) = eˣ, what is f'(x)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The derivative of eˣ is eˣ itself - a unique property of the exponential function.",
+      "answers": [
+        { "answer_text": "eˣ", "is_correct": true },
+        { "answer_text": "xeˣ⁻¹", "is_correct": false },
+        { "answer_text": "1/eˣ", "is_correct": false },
+        { "answer_text": "ln(x)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the value of cos(0°)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "cos(0°) = 1. This is a basic trigonometric identity.",
+      "answers": [
+        { "answer_text": "1", "is_correct": true },
+        { "answer_text": "0", "is_correct": false },
+        { "answer_text": "-1", "is_correct": false },
+        { "answer_text": "undefined", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the product rule for differentiation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The product rule states: d/dx[f(x)g(x)] = f'(x)g(x) + f(x)g'(x).",
+      "answers": [
+        { "answer_text": "(fg)' = f'g + fg'", "is_correct": true },
+        { "answer_text": "(fg)' = f'g'", "is_correct": false },
+        { "answer_text": "(fg)' = f'g - fg'", "is_correct": false },
+        { "answer_text": "(fg)' = f'/g + g'/f", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is √144?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "√144 = 12 because 12 × 12 = 144.",
+      "answers": [
+        { "answer_text": "12", "is_correct": true },
+        { "answer_text": "14", "is_correct": false },
+        { "answer_text": "11", "is_correct": false },
+        { "answer_text": "13", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the slope-intercept form of a linear equation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The slope-intercept form is y = mx + b, where m is slope and b is y-intercept.",
+      "answers": [
+        { "answer_text": "y = mx + b", "is_correct": true },
+        { "answer_text": "ax + by = c", "is_correct": false },
+        { "answer_text": "y - y₁ = m(x - x₁)", "is_correct": false },
+        { "answer_text": "x/a + y/b = 1", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the chain rule formula?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The chain rule: d/dx[f(g(x))] = f'(g(x)) × g'(x).",
+      "answers": [
+        { "answer_text": "d/dx[f(g(x))] = f'(g(x)) × g'(x)", "is_correct": true },
+        { "answer_text": "d/dx[f(g(x))] = f'(x) × g'(x)", "is_correct": false },
+        { "answer_text": "d/dx[f(g(x))] = f(g'(x))", "is_correct": false },
+        { "answer_text": "d/dx[f(g(x))] = f'(x) + g'(x)", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Simplify: (x² - 9) / (x - 3)",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "x² - 9 = (x+3)(x-3). Dividing by (x-3) gives x + 3 (for x ≠ 3).",
+      "answers": [
+        { "answer_text": "x + 3", "is_correct": true },
+        { "answer_text": "x - 3", "is_correct": false },
+        { "answer_text": "x² - 3", "is_correct": false },
+        { "answer_text": "x + 9", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the period of sin(x)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The sine function completes one full cycle every 2π radians (360°).",
+      "answers": [
+        { "answer_text": "2π", "is_correct": true },
+        { "answer_text": "π", "is_correct": false },
+        { "answer_text": "π/2", "is_correct": false },
+        { "answer_text": "4π", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "If A = {1, 2, 3} and B = {2, 3, 4}, what is A ∩ B?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A ∩ B (intersection) contains elements in both sets: {2, 3}.",
+      "answers": [
+        { "answer_text": "{2, 3}", "is_correct": true },
+        { "answer_text": "{1, 2, 3, 4}", "is_correct": false },
+        { "answer_text": "{1, 4}", "is_correct": false },
+        { "answer_text": "{1}", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the inverse function of f(x) = 2x + 3?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "To find inverse: y = 2x + 3, solve for x: x = (y-3)/2. So f⁻¹(x) = (x-3)/2.",
+      "answers": [
+        { "answer_text": "f⁻¹(x) = (x-3)/2", "is_correct": true },
+        { "answer_text": "f⁻¹(x) = (x+3)/2", "is_correct": false },
+        { "answer_text": "f⁻¹(x) = 2x - 3", "is_correct": false },
+        { "answer_text": "f⁻¹(x) = x/2 + 3", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the integral of cos(x) dx?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The integral of cos(x) is sin(x) + C.",
+      "answers": [
+        { "answer_text": "sin(x) + C", "is_correct": true },
+        { "answer_text": "-sin(x) + C", "is_correct": false },
+        { "answer_text": "cos(x) + C", "is_correct": false },
+        { "answer_text": "-cos(x) + C", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the Pythagorean identity in trigonometry?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "sin²θ + cos²θ = 1 is the fundamental Pythagorean identity.",
+      "answers": [
+        { "answer_text": "sin²θ + cos²θ = 1", "is_correct": true },
+        { "answer_text": "sin²θ - cos²θ = 1", "is_correct": false },
+        { "answer_text": "sinθ + cosθ = 1", "is_correct": false },
+        { "answer_text": "tan²θ + 1 = sin²θ", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is ln(e)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "ln(e) = 1 because e¹ = e. The natural log of e is always 1.",
+      "answers": [
+        { "answer_text": "1", "is_correct": true },
+        { "answer_text": "e", "is_correct": false },
+        { "answer_text": "0", "is_correct": false },
+        { "answer_text": "2.718", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the distance formula between two points (x₁, y₁) and (x₂, y₂)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Distance = √[(x₂-x₁)² + (y₂-y₁)²], derived from the Pythagorean theorem.",
+      "answers": [
+        { "answer_text": "√[(x₂-x₁)² + (y₂-y₁)²]", "is_correct": true },
+        { "answer_text": "(x₂-x₁) + (y₂-y₁)", "is_correct": false },
+        { "answer_text": "√[(x₂+x₁)² + (y₂+y₁)²]", "is_correct": false },
+        { "answer_text": "|x₂-x₁| + |y₂-y₁|", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is 2³ × 2⁴?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "When multiplying powers with the same base, add exponents: 2³ × 2⁴ = 2⁷ = 128.",
+      "answers": [
+        { "answer_text": "128", "is_correct": true },
+        { "answer_text": "64", "is_correct": false },
+        { "answer_text": "256", "is_correct": false },
+        { "answer_text": "4096", "is_correct": false }
+      ]
+    }
+  ]
+}

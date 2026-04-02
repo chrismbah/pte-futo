@@ -38,30 +38,57 @@ export default function Services() {
 
           <div className="grid items-center sm:grid-cols-2 mmd:grid-cols-3 gap-5">
             {services.map(({ link, desc, icon, color, title }, index) => (
-              <Link to={link} key={index} className="w-full">
-                <motion.div
-                  variants={fadeInVariants1}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{
-                    once: true,
-                  }}
-                  custom={index}
-                  className="bg-white rounded-lg shadow-4 hover:shadow-md transition-shadow duration-250 ease-in-out p-12 h-[270px] sm:h-[300px] flex flex-col justify-center items-center"
-                >
-                  <div
-                    className={`${color === "dark-green" ? "bg-green1" : "bg-green5"} bg-green1 rounded-full p-3 mb-2`}
+              <div key={index} className="w-full">
+                {link ? (
+                  <Link to={link} className="w-full">
+                    <motion.div
+                      variants={fadeInVariants1}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{
+                        once: true,
+                      }}
+                      custom={index}
+                      className="bg-white rounded-lg shadow-4 hover:shadow-md transition-shadow duration-250 ease-in-out p-12 h-[270px] sm:h-[300px] flex flex-col justify-center items-center"
+                    >
+                      <div
+                        className={`${color === "dark-green" ? "bg-green1" : "bg-green5"} bg-green1 rounded-full p-3 mb-2`}
+                      >
+                        <img src={icon} alt={title} className="w-[25px]" />
+                      </div>
+                      <h3 className="font-semibold text-gray-800 mb-2 text-center text-base sm:text-md">
+                        {title}
+                      </h3>
+                      <p className="text-gray-700 text-xss ss:text-ss sm:text-sm text-center font-medium">
+                        {desc}
+                      </p>
+                    </motion.div>
+                  </Link>
+                ) : (
+                  <motion.div
+                    variants={fadeInVariants1}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
+                    custom={index}
+                    className="bg-white rounded-lg shadow-4 hover:shadow-md transition-shadow duration-250 ease-in-out p-12 h-[270px] sm:h-[300px] flex flex-col justify-center items-center"
                   >
-                    <img src={icon} alt={title} className="w-[25px]" />
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-2 text-center text-base sm:text-md">
-                    {title}
-                  </h3>
-                  <p className="text-gray-700 text-xss ss:text-ss sm:text-sm text-center font-medium">
-                    {desc}
-                  </p>
-                </motion.div>
-              </Link>
+                    <div
+                      className={`${color === "dark-green" ? "bg-green1" : "bg-green5"} bg-green1 rounded-full p-3 mb-2`}
+                    >
+                      <img src={icon} alt={title} className="w-[25px]" />
+                    </div>
+                    <h3 className="font-semibold text-gray-800 mb-2 text-center text-base sm:text-md">
+                      {title}
+                    </h3>
+                    <p className="text-gray-700 text-xss ss:text-ss sm:text-sm text-center font-medium">
+                      {desc}
+                    </p>
+                  </motion.div>
+                )}
+              </div>
             ))}
           </div>
         </div>

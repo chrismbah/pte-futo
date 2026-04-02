@@ -24,4 +24,14 @@ dist-ssr
 *.sw?
 
 # Environmental Variables
-*.env
+.env
+.env.*
+
+# Contentlayer
+.contentlayer
+
+# Replit-specific
+.replit
+replit.nix
+.cache
+.local

@@ -1,14 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useModalContext } from "../../context/Modal";
 import { CancelIcon } from "../icons/general/CancelIcon";
 import { useGetUserInfo } from "../../hooks/auth/useGetUserInfo";
 import Lottie from "lottie-react";
 import { Spinner } from "../../components/loaders/Spinner";
 import avatar from "../../json/animation/avatar1.json";
-import { useUploadProfileImage } from "../../hooks/user-profile/useUploadProfileImage";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { editProfileSchema } from "../../validation";
@@ -18,11 +16,56 @@ import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
 import { motion } from "framer-motion";
 import { scaleInVariants1 } from "../../animation/variants";
+import { supabase, STORAGE_BUCKETS, getPublicUrl } from "../../config/supabase";
+import { CameraIcon } from "../icons/general/CameraIcon";
 
 export const EditProfileModal = () => {
   const { openEditProfileModal, setOpenEditProfileModal } = useModalContext();
-  const { studentDetails, userID } = useGetUserInfo();
+  const { userID, studentDetails } = useGetUserInfo();
   const [editingProfile, setEditingProfile] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Handle file selection
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = e.target.files && e.target.files[0];
+    if (selectedFile && selectedFile.type.startsWith("image/")) {
+      setImageFile(selectedFile);
+      // Create local preview URL
+      const localPreviewURL = URL.createObjectURL(selectedFile);
+      setImagePreview(localPreviewURL);
+    } else {
+      notifyUser("error", "Please choose a valid image file (PNG, JPG or WEBP).");
+      e.target.value = "";
+    }
+  };
+
+  // Upload image to Supabase Storage
+  const uploadProfileImage = async (): Promise<string | null> => {
+    if (!imageFile || !userID) return null;
+    
+    try {
+      const fileExt = imageFile.name.split('.').pop() || 'jpg';
+      const fileName = `${userID}/profile-${Date.now()}.${fileExt}`;
+
+      const { data, error } = await supabase.storage
+        .from(STORAGE_BUCKETS.PROFILE_PICTURES)
+        .upload(fileName, imageFile, {
+          cacheControl: '3600',
+          upsert: true,
+        });
+
+      if (error) {
+        throw new Error(`Failed to upload image: ${error.message}`);
+      }
+
+      return getPublicUrl(STORAGE_BUCKETS.PROFILE_PICTURES, data.path);
+    } catch (error: any) {
+      console.error("Supabase upload error:", error);
+      throw error;
+    }
+  };
   useEffect(() => {
     if (openEditProfileModal) {
       document.body.style.overflow = "hidden";
@@ -30,16 +73,6 @@ export const EditProfileModal = () => {
       document.body.style.overflow = "visible";
     }
   }, [openEditProfileModal]);
-
-  const {
-    imageFile,
-    imageURL,
-    uploadProfileImage,
-    handleFileChange,
-    updateUserProfileLink,
-    setImageURL,
-    setImageFile,
-  } = useUploadProfileImage();
 
   const {
     register,
@@ -55,21 +88,12 @@ export const EditProfileModal = () => {
       level: "",
     },
   });
-  useEffect(() => {
-    const defaults = {
-      firstName: studentDetails?.firstName,
-      lastName: studentDetails?.lastName,
-      level: studentDetails?.level,
-      regNo: studentDetails?.regNo,
-    };
-    reset(defaults);
-  }, [reset, openEditProfileModal]);
 
   const closeEditProfileModal = () => {
     setOpenEditProfileModal(false);
     reset();
-    setImageURL(null);
     setImageFile(null);
+    setImagePreview(null);
   };
 
   const editProfile = async (data: IEditProfileForm) => {
@@ -79,19 +103,30 @@ export const EditProfileModal = () => {
     if (userID) {
       try {
         const userInfoRef = doc(db, "userInfo", userID);
-        await updateDoc(userInfoRef, {
+        
+        // Prepare update data
+        const updateData: any = {
           firstName,
           lastName,
           regNo,
           level,
-        });
-        await updateUserProfileLink();
+        };
+
+        // Upload profile image if one was selected
+        if (imageFile) {
+          const imageUrl = await uploadProfileImage();
+          if (imageUrl) {
+            updateData.profileImageURL = imageUrl;
+          }
+        }
+
+        await updateDoc(userInfoRef, updateData);
         setEditingProfile(false);
         setOpenEditProfileModal(false);
-        setImageURL(null);
-        setImageFile(null);
         reset();
-        notifyUser("success", "User profile updated successfully...");
+        setImageFile(null);
+        setImagePreview(null);
+        notifyUser("success", "User profile updated successfully!");
       } catch (err: any) {
         console.log(err);
         setEditingProfile(false);
@@ -99,45 +134,6 @@ export const EditProfileModal = () => {
       }
     } else {
       console.log("error");
-    }
-  };
-
-  const renderProfileImage = () => {
-    if (studentDetails) {
-      if (studentDetails.profileImageURL.length > 0 || imageURL) {
-        return (
-          <div>
-            <div
-              className="relative w-[80px] h-[80px] xss:w-[90px] xss:h-[90px] sss:w-[120px] bg-gray-100
-                sss:h-[120px] sm:h-[140px] sm:w-[140px] rounded-full"
-            >
-              <img
-                src={imageURL ? imageURL : studentDetails.profileImageURL}
-                alt="Profile"
-                className="w-full h-full rounded-full object-cover"
-              />
-            </div>
-          </div>
-        );
-      } else {
-        return (
-          <Lottie
-            animationData={avatar}
-            loop={false}
-            className="w-[120px] xss:w-[150px] sss:w-[180px]
-              sm:w-[200px]"
-          />
-        );
-      }
-    } else {
-      return (
-        <Lottie
-          animationData={avatar}
-          loop={false}
-          className="w-[120px] xss:w-[150px] sss:w-[180px]
-            sm:w-[200px]"
-        />
-      );
     }
   };
   return (
@@ -166,42 +162,52 @@ export const EditProfileModal = () => {
           </div>
 
           <div>
-            <div className="flex flex-col sss:flex-row items-center gap-3 w-full mmd:w-fit py-4 px-3 ss:px-5 sss:px-7 ">
-              {renderProfileImage()}
-              <div className="flex items-center justify-between flex-col w-full ">
-                <div className="flex items-center flex-wrap gap-1 ss:gap-1 w-full  justify-center sss:justify-start">
-                  <div className="flex items-center justify-start">
-                    <div className="">
-                      <input
-                        type="file"
-                        id="profile-input"
-                        accept="image/*"
-                        onChange={(e) => handleFileChange(e)}
-                        hidden
-                      />
-                      <label
-                        htmlFor="profile-input"
-                        className="block text-slate-500 p-1.5 xss:py-2 xss:px-4
-                          border border-gray-700 text-sss xss:text-xss sm:text-sm font-medium bg-gray-700
-                        text-white hover:bg-gray-700/80 transition hover:border-gray-700/80 cursor-pointer rounded-l-md xss:rounded-l-lg"
-                      >
-                        Choose Image
-                      </label>
-                    </div>
-                    <label className="text-sss xss:text-xss sm:text-sm text-slate-500 font-medium p-1.5 xss:py-2 xss:px-4 border border-gray-400 rounded-r-md xss:rounded-r-lg">
-                      {imageFile ? imageFile.name : "No file chosen"}
-                    </label>
-                  </div>
-                  <div className="">
-                    <button
-                      onClick={uploadProfileImage}
-                      className="min-w-fit  flex items-center justify-center rounded-md xss:rounded-lg bg-green1
-                       font-semibold text-white border-2 border-transparent hover:bg-green1/90 transition duration-200 ease-in-out p-1.5 xss:py-2 xss:px-4 text-sss xss:text-xss sm:text-sm"
-                    >
-                      <span>Upload</span>
-                    </button>
-                  </div>
+            <div className="flex items-center gap-3 w-full py-4 px-3 ss:px-5 sss:px-7">
+              {/* Profile Image Upload Section */}
+              <div className="relative">
+                <div className="w-[80px] h-[80px] xss:w-[100px] xss:h-[100px] sm:w-[120px] sm:h-[120px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                  {imagePreview ? (
+                    <img 
+                      src={imagePreview} 
+                      alt="Profile preview" 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : studentDetails?.profileImageURL ? (
+                    <img 
+                      src={studentDetails.profileImageURL} 
+                      alt="Current profile" 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <Lottie
+                      animationData={avatar}
+                      loop={false}
+                      className="w-full h-full"
+                    />
+                  )}
                 </div>
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="absolute bottom-0 right-0 bg-green1 rounded-full p-1.5 sm:p-2 hover:bg-green-600 transition-colors shadow-md"
+                >
+                  <CameraIcon className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                </button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm sm:text-base font-semibold text-gray-700">
+                  Update your profile
+                </p>
+                <p className="text-xss ss:text-xs text-gray-500">
+                  Click the camera icon to change photo
+                </p>
               </div>
             </div>
             <div className="px-3 ss:px-5 sss:px-7 mb-4 sm:mb-7">
@@ -217,7 +223,7 @@ export const EditProfileModal = () => {
                     <input
                       type="text"
                       id=""
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5 "
+                      className="bg-transparent border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5"
                       placeholder="eg. Chris"
                       {...register("firstName")}
                     />
@@ -237,7 +243,7 @@ export const EditProfileModal = () => {
                     <input
                       type="text"
                       id=""
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5 "
+                      className="bg-transparent border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5"
                       placeholder="eg. Mbah"
                       {...register("lastName")}
                     />
@@ -257,10 +263,10 @@ export const EditProfileModal = () => {
                       Matric No.
                     </label>
                     <input
-                      type="number"
+                      type="text"
                       id=""
-                      placeholder="eg. 20191129201"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="eg. EBSU/2019/24567"
+                      className="bg-transparent border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5"
                       {...register("regNo")}
                     />
                   </div>
@@ -273,7 +279,7 @@ export const EditProfileModal = () => {
                     </label>
                     <select
                       id="underline_select"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-transparent border border-gray-300 text-gray-900 text-xss ss:text-ss sm:text-sm rounded-lg focus:ring-green1 focus:border-green1 block w-full p-1.5 sm:p-2.5"
                       {...register("level")}
                     >
                       <option selected disabled>
@@ -285,6 +291,7 @@ export const EditProfileModal = () => {
                       <option value="300L">300L</option>
                       <option value="400L">400L</option>
                       <option value="500L">500L</option>
+                      <option value="600L">600L (Medicine)</option>
                       <option value="Visitor">Visitor</option>
                     </select>
                     {errors.level && (

@@ -17,11 +17,16 @@ export const courseOutlineLevels = [
   {
     level: "400",
     icon: "icons/course-outline/levels/book4.png",
-    title: "400 Level",
+    title: "400 Level (Clinical)",
   },
   {
     level: "500",
     icon: "icons/course-outline/levels/book5.png",
-    title: "500 Level",
+    title: "500 Level (Clinical)",
+  },
+  {
+    level: "600",
+    icon: "icons/course-outline/levels/book5.png",
+    title: "600 Level (Clinical)",
   },
 ];

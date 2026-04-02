@@ -1,11 +1,17 @@
 import { FC } from "react";
-import { CourseCard } from "../../../models/academics/learning-resources";
 import file from "../../../assets/svg/icons/file.svg";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from "../../../hooks/misc/storage/useLocalStorage";
 
-export const CoursesCard: FC<CourseCard> = ({
+interface CoursesCardProps {
+  id: string;
+  courseCode: string;
+  courseTitle: string;
+  tip?: string;
+}
+
+export const CoursesCard: FC<CoursesCardProps> = ({
   id,
   courseCode,
   courseTitle,
@@ -16,7 +22,9 @@ export const CoursesCard: FC<CourseCard> = ({
   const { setDataToStorage } = useLocalStorage();
 
   const checkCourseResources = () => {
-    setDataToStorage("studyTip", tip);
+    if (tip) {
+      setDataToStorage("studyTip", tip);
+    }
     navigate(`/learning-resources/${level}/${id}/${courseTitle}`);
   };
 

@@ -5,6 +5,7 @@ export const classReps = [
     regNo: 20221311123,
     title: "100 Level Course Rep.",
     work: "Student",
+    phone: "",
   },
   {
     img: "/img/class-reps/CR_200(3).png",
@@ -12,6 +13,7 @@ export const classReps = [
     regNo: 20211285473,
     title: "200 Level Course Rep.",
     work: "Student, Influencer, CEO",
+    phone: "",
   },
   {
     img: "/img/class-reps/CR_300(2).jpg",
@@ -19,6 +21,7 @@ export const classReps = [
     regNo: 20201235823,
     title: "300 Level Course Rep.",
     work: "Student",
+    phone: "",
   },
   {
     img: "/img/class-reps/CR_400.jpg",
@@ -26,6 +29,7 @@ export const classReps = [
     regNo: 20191152393,
     title: "400 Level Course Rep.",
     work: "Student, Beauty Model",
+    phone: "",
   },
   {
     img: "/img/class-reps/CR_500.jpg",
@@ -33,5 +37,30 @@ export const classReps = [
     regNo: 20181117073,
     title: "500 Level Course Rep.",
     work: "Student, Event Planner",
+    phone: "",
+  },
+  {
+    img: "/img/class-reps/CR_600.jpg",
+    name: "Name Here",
+    regNo: 0,
+    title: "600 Level Course Rep.",
+    work: "Student",
+    phone: "",
+  },
+  {
+    img: "/img/class-reps/CR_700.jpg",
+    name: "Name Here",
+    regNo: 0,
+    title: "700 Level Course Rep.",
+    work: "Student",
+    phone: "",
+  },
+  {
+    img: "/img/class-reps/CR_800.jpg",
+    name: "Name Here",
+    regNo: 0,
+    title: "800 Level Course Rep.",
+    work: "Student",
+    phone: "",
   },
 ];

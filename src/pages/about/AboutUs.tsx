@@ -1,312 +1,137 @@
 import Footer from "../../components/footer/Footer";
+import { InstagramIcon } from "../../components/icons/socials/InstagramIcon";
+import { XIcon } from "../../components/icons/socials/XIcon";
+import { YouTubeIcon } from "../../components/icons/socials/YouTubeIcon";
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/ebsumsaofficial?utm_source=qr&igsh=MW5mMWlrY3g4c3lxaQ==",
+    icon: InstagramIcon,
+    accent: "#E1306C",
+    bg: "hover:border-[#E1306C]",
+    iconBg: "bg-[#E1306C]",
+    handle: "@ebsumsaofficial",
+    cta: "Follow on Instagram",
+  },
+  {
+    label: "X (Twitter)",
+    href: "https://x.com/Ebsumsaofficial",
+    icon: XIcon,
+    accent: "#000000",
+    bg: "hover:border-black",
+    iconBg: "bg-black",
+    handle: "@Ebsumsaofficial",
+    cta: "Follow on X",
+  },
+  {
+    label: "YouTube",
+    href: "https://youtube.com/@ebsumsatv?si=qWJTfD2Z4L61wrBo",
+    icon: YouTubeIcon,
+    accent: "#FF0000",
+    bg: "hover:border-[#FF0000]",
+    iconBg: "bg-[#FF0000]",
+    handle: "@ebsumsatv",
+    cta: "Watch on YouTube",
+  },
+];
 
 export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-[1280px] w-full mx-auto flex items-center justify-center px-2">
-        <div className="px-2 sm:px-14 sm:py-10 py-6 my-16 ss:mt-20 sm:my-24 bg-white shadow rounded-lg">
+      <div className="max-w-[1280px] w-full mx-auto flex items-center justify-center px-4">
+        <div className="px-4 sm:px-14 sm:py-10 py-6 my-16 ss:mt-20 sm:my-24 bg-white shadow rounded-lg w-full">
+          {/* About Intro */}
           <h2 className="mb-4">
             <div className="bar-style" />
-            History of Department of Polymer and Textile Engineering
+            About EBSUMSA
           </h2>
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-5">
-            Federal University of Technology, Owerri was one of the first three
-            Universities of Technology established by the Federal Government in
-            1980. Academic activities at FUTO started in 1981/1982 academic
-            session at a temporary campus at Lake Nwaebere Owerri with the first
-            school of Earth, Mineral and Natural Sciences (SEMNS) which
-            comprised of Physical and Chemical Sciences Programme Areas. Other
-            schools followed later, viz, SEET, SAAT, SMAT, SOSC and SOHT.
-            Polymer and Fibre Sciences and Technology Programme was one of the
-            programmes in SEMNS with Dr S. C. O Ugbolue as the foundation
-            programme coordinator for one session before he became Director,
-            Chemical Sciences Programme Area while Dr M. E. Enyiegbulam took
-            over as the second programme coordinator.
+          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-8">
+            The Ebonyi State University Medical Students Association (EBSUMSA) is the official representative body for all medical students at Ebonyi State University, Abakaliki. Guided by our motto, <span className="font-semibold text-gray-800">"Pro Deo et Humanitate"</span> (For God and Humanity), we are committed to transforming public health and making a meaningful impact in our immediate community and beyond.
           </p>
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-5">
-            The school changed its name from SNAS (School of Natural and Applied
-            Sciences) to the present name: School of Sciences (SOSC). The name
-            of the programme also changed from the initial Polymer and Fibre
-            Science and Technology to Polymer and Textile Science and Technology
-            (while in SNAS and SOSC) respectively to Polymer and Textile
-            Engineering Department as it was transferred to School of
-            Engineering and Engineering Technology (SEET) in 1991/92. This
-            transfer involved a lot of modifications of the course titles and
-            course contents so as to maintain its position as the only
-            department in Nigerian Universities, and even in Africa, awarding B.
-            Eng. in Polymer and Textile Engineering. From a handful of
-            foundation students, the population has exceeded 1000 by 2005.
-          </p>{" "}
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-5">
-            The number of lecturers and technologists has also increased
-            impressively. The department interacts very well with polymer-based
-            industries. Its founding staff played a significant role in the
-            actualization and establishment of Polymer Institute of Nigeria
-            (PIN). Currently, there are two Fellows of PIN, and a National Vice-
-            President (Finance) from the department. The students formed APOTES
-            (Association of Polymer and Textile Engineering students). The
-            Association organizes industrial visits and social gatherings from
-            time to time. Academic and research activities have gained
-            recognition in NUC organized exhibitions. In the first-ever
-            exhibition, Prof. M. E. Enyiegbulam received Outstanding Award for
-            Outstanding Performance in Polymer Technology. He again in 2005
-            received another recognition for outstanding performance in Polymer
-            Technology in the second NURESDEF 2005. The department gained full
-            accreditation in the 2005 NUC accreditation exercise. In fact, it
-            scored the highest point at the University.
-          </p>
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-5">
-            The Department of Polymer and Textile Engineering is concerned with
-            the Science, Technology and Engineering of materials formed from
-            large molecules. The programme is thus linked with two primary
-            industries namely, textile and polymer/plastic processing
-            industries. Textile industries convert fibres into yarns and fabrics
-            which are used for curtains, carpets fabrics and other furnishings
-            in our homes and in a lot of industrial applications.
-          </p>
-          <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-10">
-            Polymer-based industries produce such items as plastics, tyres,
-            varnishes, resins, elastomers, printing inks, foams etc. These
-            industries practically deal with the wide and ever-expanding range
-            of polymers and man-made fibres firmly based on science and
-            engineering principles. The department is planning to split into
-            Textile Engineering and Polymer Engineering Departments in future
-          </p>
-          <h2 className="">
-            <div className="bar-style" />
-            Head Of Programme
-          </h2>
-          <p className="text-gray-700 font-[500] text-ss ss:text-sm xlg:text-xs -mt-1 mb-5">
-            Timeline of Headship of the Programme till date
-          </p>
-          <div className="w-full flex justify-start flex-wrap lg:flex-nowrap ">
-            <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
-              <ol className="relative border-s border-gray-200 dark:border-gray-700">
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1980-1982
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr S.C.O. Ugbolue
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Textile Sci & Tech
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Programme Coordinator
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1982-1986
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr M.E. Enyiegbulam
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci. & Tech
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Programme Coordinator
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1986-1990
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr M.E. Enyiegbulam
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci. & Tech.
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1990-1994
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr J.O. Ukponmwan
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Textile Tech
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1994-1998
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr A.E. Iheonye
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Textile Sci & Tech
-                  </p>
-                  <p className=" text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-              </ol>
+
+          {/* Vision & Mission Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {/* Vision */}
+            <div className="rounded-2xl border border-green-100 bg-green-50 p-5 flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h4 className="text-sm font-bold text-green-800">Our Vision</h4>
+              </div>
+              <p className="text-xs text-green-900 leading-6">
+                To position medical students of EBSU as leaders on the global healthcare landscape through excellence, innovation, and compassion.
+              </p>
             </div>
-            <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
-              <ol className="relative border-s border-gray-200">
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    1998-2002
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr O. Ogbobe
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Tech
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    2002-2005
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr C.B.C. Ohanuzue
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Snr. Lecturer</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Chemistry
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    2005-2007
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Prof. M.E. Enyiegbulam
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Professor</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci & Tech
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">HOD</p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    2008- JUNE 2012
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Engr. Dr I.C. Madufor
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Engineering
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    JULY 2012 – JUNE 2014
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Prof. I. O. Igwe
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Professor</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci. & Tech.
-                  </p>
-                  <p className=" text-xs font-medium text-gray-900 ">HOD</p>
-                </li>
-              </ol>
+
+            {/* Mission */}
+            <div className="rounded-2xl border border-amber-100 bg-amber-50 p-5 flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h4 className="text-sm font-bold text-amber-800">Our Mission</h4>
+              </div>
+              <p className="text-xs text-amber-900 leading-6">
+                To advance medical education by fostering clinical excellence, promoting cutting-edge research, driving public health outreach, and connecting students with professional development opportunities.
+              </p>
             </div>
-            <div className="sm:mr-20 md:mr-36 w-full xsm:w-fit">
-              <ol className="relative border-s border-gray-200 dark:border-gray-700">
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    JULY 2014 – JUNE 2016
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Engr. Dr M. U. Obidiegwu
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Senior Lecturer</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Engineering
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    JULY 2016 - JUNE 2018
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Engr. Prof. I.C. Madufor
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Professor</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Engineering
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">HOD</p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    JULY 2018 - JUNE 2019
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Dr G. N. Onyeagoro
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Reader</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci. & Engineering
-                  </p>
-                  <p className="mb-4 text-xs font-medium text-gray-900 ">
-                    Ag. HOD
-                  </p>
-                </li>
-                <li className="mb-5 ms-4">
-                  <div className="absolute w-3 h-3 bg-green1/70 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-ss font-normal leading-none text-green1 dark:text-gray-500">
-                    JULY 2019 - TILL DATE
-                  </time>
-                  <h3 className="text-base sm:text-md md:text-lg font-semibold text-gray-900 dark:text-white">
-                    Prof. G. N. Onyeagoro
-                  </h3>
-                  <p className="text-ss text-gray-500 ">Professor</p>
-                  <p className=" text-sm font-normal text-gray-500 ">
-                    Polymer Sci. & Engineering
-                  </p>
-                  <p className=" text-xs font-medium text-gray-900 ">HOD</p>
-                </li>
-              </ol>
+          </div>
+
+          {/* What We Do */}
+          <div className="mb-8">
+            <h4 className="text-sm font-bold text-gray-800 mb-3 flex items-center gap-2">
+              <div className="w-1 h-4 rounded-full bg-green-600" />
+              What We Do
+            </h4>
+            <p className="text-sm sm:text-xs text-gray-700 leading-7">
+              EBSUMSA serves as a vital bridge between students, faculty, and the wider healthcare community. We organize clinical skills workshops, research forums, public health outreaches, and peer-support programs. Through strategic partnerships with healthcare investors and institutions, we promote ethical practice, leadership, and access to internships and collaborative projects that prepare our members for global impact.
+            </p>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="border-t border-gray-100 pt-8">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">
+              Connect with us
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className={`group flex items-center gap-4 p-4 rounded-xl border-2 border-gray-100 bg-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 ${social.bg}`}
+                  >
+                    <div className={`flex items-center justify-center w-11 h-11 rounded-xl ${social.iconBg} flex-shrink-0`}>
+                      <Icon className="w-5 h-5 fill-white" />
+                    </div>
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-xs font-bold text-gray-900 truncate">{social.label}</span>
+                      <span className="text-xs text-gray-500 truncate">{social.handle}</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4 text-gray-300 group-hover:text-gray-500 transition-colors ml-auto flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -315,3 +140,4 @@ export default function AboutUs() {
     </div>
   );
 }
+

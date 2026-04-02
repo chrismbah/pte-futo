@@ -1,0 +1,309 @@
+{
+  "title": "Pathology - Intermediate Fundamentals",
+  "description": "Pathology fundamentals covering cellular injury, inflammation, neoplasia, and disease mechanisms for medical students.",
+  "duration_minutes": 50,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is pathology?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Pathology is the study of disease, including causes (etiology), mechanisms (pathogenesis), and effects on the body.",
+      "answers": [
+        { "answer_text": "The study of disease, its causes, mechanisms, and effects", "is_correct": true },
+        { "answer_text": "The study of normal body functions", "is_correct": false },
+        { "answer_text": "The study of drug effects", "is_correct": false },
+        { "answer_text": "The study of genetics only", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is necrosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Necrosis is pathological cell death caused by external factors (ischemia, toxins, infection), triggering inflammation.",
+      "answers": [
+        { "answer_text": "Pathological cell death due to injury, causing inflammation", "is_correct": true },
+        { "answer_text": "Programmed cell death", "is_correct": false },
+        { "answer_text": "Cell division", "is_correct": false },
+        { "answer_text": "Cell growth", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is apoptosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Apoptosis is programmed cell death - orderly, controlled, no inflammation. Important in development and homeostasis.",
+      "answers": [
+        { "answer_text": "Programmed cell death without inflammation", "is_correct": true },
+        { "answer_text": "Cell death from injury", "is_correct": false },
+        { "answer_text": "Cell multiplication", "is_correct": false },
+        { "answer_text": "Cell enlargement", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What are the cardinal signs of inflammation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The five cardinal signs are: Rubor (redness), Calor (heat), Tumor (swelling), Dolor (pain), Functio laesa (loss of function).",
+      "answers": [
+        { "answer_text": "Redness, heat, swelling, pain, loss of function", "is_correct": true },
+        { "answer_text": "Fever, cough, fatigue, weight loss", "is_correct": false },
+        { "answer_text": "Bleeding, bruising, infection", "is_correct": false },
+        { "answer_text": "Itching, rash, hives", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between acute and chronic inflammation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Acute: rapid onset, neutrophils, short duration. Chronic: prolonged, lymphocytes/macrophages, tissue destruction and repair.",
+      "answers": [
+        { "answer_text": "Acute is rapid with neutrophils; chronic is prolonged with lymphocytes/macrophages", "is_correct": true },
+        { "answer_text": "Acute lasts years; chronic is brief", "is_correct": false },
+        { "answer_text": "They are the same process", "is_correct": false },
+        { "answer_text": "Acute only affects skin; chronic affects organs", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is hypertrophy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hypertrophy is an increase in cell SIZE (not number) due to increased workload or hormonal stimulation.",
+      "answers": [
+        { "answer_text": "Increase in cell size", "is_correct": true },
+        { "answer_text": "Increase in cell number", "is_correct": false },
+        { "answer_text": "Decrease in cell size", "is_correct": false },
+        { "answer_text": "Change in cell type", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is hyperplasia?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hyperplasia is an increase in cell NUMBER, often in response to hormones or growth factors.",
+      "answers": [
+        { "answer_text": "Increase in cell number", "is_correct": true },
+        { "answer_text": "Increase in cell size", "is_correct": false },
+        { "answer_text": "Decrease in cell number", "is_correct": false },
+        { "answer_text": "Cell death", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is atrophy?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Atrophy is a decrease in cell size or number, often due to disuse, denervation, or decreased blood supply.",
+      "answers": [
+        { "answer_text": "Decrease in cell size or number", "is_correct": true },
+        { "answer_text": "Increase in cell size", "is_correct": false },
+        { "answer_text": "Change in cell type", "is_correct": false },
+        { "answer_text": "Cell death", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is metaplasia?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Metaplasia is reversible replacement of one mature cell type with another (e.g., respiratory epithelium to squamous in smokers).",
+      "answers": [
+        { "answer_text": "Reversible change of one cell type to another", "is_correct": true },
+        { "answer_text": "Cell death", "is_correct": false },
+        { "answer_text": "Increase in cell number", "is_correct": false },
+        { "answer_text": "Cancer development", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is dysplasia?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Dysplasia is disordered cell growth with abnormal size, shape, and organization - a precancerous change.",
+      "answers": [
+        { "answer_text": "Disordered, abnormal cell growth (precancerous)", "is_correct": true },
+        { "answer_text": "Normal cell growth", "is_correct": false },
+        { "answer_text": "Cell death", "is_correct": false },
+        { "answer_text": "Decreased cell size", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between benign and malignant tumors?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Benign: well-differentiated, localized, no metastasis. Malignant: poorly differentiated, invasive, can metastasize.",
+      "answers": [
+        { "answer_text": "Benign is localized and doesn't spread; malignant invades and metastasizes", "is_correct": true },
+        { "answer_text": "Benign is always fatal; malignant is not", "is_correct": false },
+        { "answer_text": "They are the same", "is_correct": false },
+        { "answer_text": "Benign spreads faster than malignant", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is coagulative necrosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Coagulative necrosis preserves cell outlines (denatured proteins); typical of ischemic injury (except brain).",
+      "answers": [
+        { "answer_text": "Necrosis that preserves cell structure, typical of ischemia", "is_correct": true },
+        { "answer_text": "Necrosis that liquefies tissue", "is_correct": false },
+        { "answer_text": "Necrosis seen only in the brain", "is_correct": false },
+        { "answer_text": "Necrosis caused by tuberculosis", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is liquefactive necrosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Liquefactive necrosis involves enzymatic digestion of tissue, forming liquid; seen in brain infarcts and bacterial infections.",
+      "answers": [
+        { "answer_text": "Necrosis with enzymatic digestion creating liquid; seen in brain and abscesses", "is_correct": true },
+        { "answer_text": "Necrosis that preserves cell outlines", "is_correct": false },
+        { "answer_text": "Necrosis in fat tissue", "is_correct": false },
+        { "answer_text": "Necrosis from tuberculosis", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is caseous necrosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Caseous necrosis has a cheese-like appearance; characteristic of tuberculosis and some fungal infections.",
+      "answers": [
+        { "answer_text": "Cheese-like necrosis, characteristic of tuberculosis", "is_correct": true },
+        { "answer_text": "Necrosis in the brain", "is_correct": false },
+        { "answer_text": "Necrosis from ischemia", "is_correct": false },
+        { "answer_text": "Necrosis in fat tissue", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an embolus?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An embolus is any intravascular material (thrombus, fat, air, tumor) that travels and lodges in a vessel.",
+      "answers": [
+        { "answer_text": "Intravascular material that travels and blocks a vessel downstream", "is_correct": true },
+        { "answer_text": "A blood clot that stays in place", "is_correct": false },
+        { "answer_text": "An infected wound", "is_correct": false },
+        { "answer_text": "A type of tumor", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a thrombus?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A thrombus is a blood clot that forms in a vessel or heart chamber and remains attached to the vessel wall.",
+      "answers": [
+        { "answer_text": "A blood clot that forms and remains attached in a blood vessel", "is_correct": true },
+        { "answer_text": "A traveling blood clot", "is_correct": false },
+        { "answer_text": "A tumor in blood vessels", "is_correct": false },
+        { "answer_text": "An air bubble in blood", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Virchow's triad?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Virchow's triad: Endothelial injury, Stasis/turbulence, Hypercoagulability - factors predisposing to thrombosis.",
+      "answers": [
+        { "answer_text": "Endothelial injury, blood stasis, hypercoagulability", "is_correct": true },
+        { "answer_text": "Fever, rash, joint pain", "is_correct": false },
+        { "answer_text": "Red, hot, swollen", "is_correct": false },
+        { "answer_text": "Infection, inflammation, immunity", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is edema?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Edema is abnormal accumulation of fluid in interstitial spaces or body cavities.",
+      "answers": [
+        { "answer_text": "Abnormal fluid accumulation in tissues", "is_correct": true },
+        { "answer_text": "Excessive bleeding", "is_correct": false },
+        { "answer_text": "Tissue death", "is_correct": false },
+        { "answer_text": "Tumor growth", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the main cell type in acute inflammation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Neutrophils are the first cells to arrive at sites of acute inflammation (first responders).",
+      "answers": [
+        { "answer_text": "Neutrophils", "is_correct": true },
+        { "answer_text": "Lymphocytes", "is_correct": false },
+        { "answer_text": "Macrophages", "is_correct": false },
+        { "answer_text": "Eosinophils", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is granulomatous inflammation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Granulomatous inflammation features granulomas (aggregates of macrophages/epithelioid cells); seen in TB, sarcoidosis.",
+      "answers": [
+        { "answer_text": "Chronic inflammation with collections of activated macrophages (granulomas)", "is_correct": true },
+        { "answer_text": "Acute inflammation with pus", "is_correct": false },
+        { "answer_text": "Inflammation with excessive bleeding", "is_correct": false },
+        { "answer_text": "Allergic inflammation", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the hallmark of type I hypersensitivity?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Type I hypersensitivity is IgE-mediated with mast cell degranulation; includes anaphylaxis, allergies, asthma.",
+      "answers": [
+        { "answer_text": "IgE-mediated mast cell degranulation", "is_correct": true },
+        { "answer_text": "Antibody-mediated cell destruction", "is_correct": false },
+        { "answer_text": "Immune complex deposition", "is_correct": false },
+        { "answer_text": "T-cell mediated delayed response", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an infarct?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An infarct is an area of ischemic necrosis caused by occlusion of arterial supply or venous drainage.",
+      "answers": [
+        { "answer_text": "Area of tissue death due to ischemia (blocked blood supply)", "is_correct": true },
+        { "answer_text": "A type of tumor", "is_correct": false },
+        { "answer_text": "An infection", "is_correct": false },
+        { "answer_text": "A blood clot", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What are tumor suppressor genes?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Tumor suppressor genes (e.g., p53, Rb) normally inhibit cell proliferation; their loss contributes to cancer.",
+      "answers": [
+        { "answer_text": "Genes that normally inhibit cell growth; loss contributes to cancer", "is_correct": true },
+        { "answer_text": "Genes that promote tumor growth", "is_correct": false },
+        { "answer_text": "Genes that cause inflammation", "is_correct": false },
+        { "answer_text": "Genes that produce antibodies", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What are oncogenes?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Oncogenes are mutated/overexpressed genes that promote cell proliferation and contribute to cancer development.",
+      "answers": [
+        { "answer_text": "Genes that promote cell growth and can cause cancer when activated", "is_correct": true },
+        { "answer_text": "Genes that suppress tumors", "is_correct": false },
+        { "answer_text": "Genes that cause cell death", "is_correct": false },
+        { "answer_text": "Normal genes without mutations", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the function of p53?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "p53 is the 'guardian of the genome' - it arrests cell cycle and triggers apoptosis in damaged cells. Most commonly mutated gene in cancer.",
+      "answers": [
+        { "answer_text": "Arrests cell cycle and induces apoptosis in damaged cells", "is_correct": true },
+        { "answer_text": "Promotes cell division", "is_correct": false },
+        { "answer_text": "Transports oxygen", "is_correct": false },
+        { "answer_text": "Produces antibodies", "is_correct": false }
+      ]
+    }
+  ]
+}

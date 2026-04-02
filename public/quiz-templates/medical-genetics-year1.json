@@ -1,0 +1,309 @@
+{
+  "title": "Medical Genetics - Year 1 Fundamentals",
+  "description": "Introductory medical genetics covering inheritance patterns, chromosomal disorders, molecular genetics, and genetic diseases for Year 1 medical students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is the normal human chromosome number?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Humans have 46 chromosomes (23 pairs): 22 pairs of autosomes and 1 pair of sex chromosomes.",
+      "answers": [
+        { "answer_text": "46", "is_correct": true },
+        { "answer_text": "23", "is_correct": false },
+        { "answer_text": "44", "is_correct": false },
+        { "answer_text": "48", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Down syndrome caused by?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Down syndrome is caused by trisomy 21 - having three copies of chromosome 21 instead of two.",
+      "answers": [
+        { "answer_text": "Trisomy 21 (extra copy of chromosome 21)", "is_correct": true },
+        { "answer_text": "Monosomy 21", "is_correct": false },
+        { "answer_text": "Trisomy 18", "is_correct": false },
+        { "answer_text": "Deletion of chromosome 21", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What inheritance pattern is shown when both parents must be carriers for a child to be affected?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Autosomal recessive inheritance requires two copies of the mutant allele (one from each carrier parent).",
+      "answers": [
+        { "answer_text": "Autosomal recessive", "is_correct": true },
+        { "answer_text": "Autosomal dominant", "is_correct": false },
+        { "answer_text": "X-linked dominant", "is_correct": false },
+        { "answer_text": "Mitochondrial", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a karyotype?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A karyotype is an organized image of chromosomes arranged by size and shape, used to detect abnormalities.",
+      "answers": [
+        { "answer_text": "An organized display of chromosomes from a cell", "is_correct": true },
+        { "answer_text": "A type of genetic mutation", "is_correct": false },
+        { "answer_text": "A blood test for genes", "is_correct": false },
+        { "answer_text": "A DNA sequencing technique", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Sickle cell disease is an example of which type of inheritance?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Sickle cell disease is autosomal recessive - you need two copies of the mutant HBB gene to be affected.",
+      "answers": [
+        { "answer_text": "Autosomal recessive", "is_correct": true },
+        { "answer_text": "Autosomal dominant", "is_correct": false },
+        { "answer_text": "X-linked recessive", "is_correct": false },
+        { "answer_text": "Mitochondrial", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a point mutation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A point mutation is a change in a single nucleotide base in the DNA sequence.",
+      "answers": [
+        { "answer_text": "A change in a single nucleotide base", "is_correct": true },
+        { "answer_text": "Deletion of an entire chromosome", "is_correct": false },
+        { "answer_text": "Insertion of multiple bases", "is_correct": false },
+        { "answer_text": "Duplication of a gene", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Huntington's disease inheritance pattern?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Huntington's disease is autosomal dominant - only one copy of the mutant gene causes the disease.",
+      "answers": [
+        { "answer_text": "Autosomal dominant", "is_correct": true },
+        { "answer_text": "Autosomal recessive", "is_correct": false },
+        { "answer_text": "X-linked recessive", "is_correct": false },
+        { "answer_text": "X-linked dominant", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the sex chromosome constitution of a male?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Males have XY sex chromosomes; females have XX.",
+      "answers": [
+        { "answer_text": "XY", "is_correct": true },
+        { "answer_text": "XX", "is_correct": false },
+        { "answer_text": "XXY", "is_correct": false },
+        { "answer_text": "XO", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What causes Turner syndrome?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Turner syndrome is caused by monosomy X (45,X) - having only one X chromosome in females.",
+      "answers": [
+        { "answer_text": "Monosomy X (45,X)", "is_correct": true },
+        { "answer_text": "Trisomy X", "is_correct": false },
+        { "answer_text": "XYY syndrome", "is_correct": false },
+        { "answer_text": "Trisomy 21", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a carrier in genetics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A carrier has one copy of a recessive disease allele but doesn't show symptoms (heterozygous).",
+      "answers": [
+        { "answer_text": "A person with one copy of a recessive allele who doesn't show symptoms", "is_correct": true },
+        { "answer_text": "A person affected by a genetic disease", "is_correct": false },
+        { "answer_text": "A person with two dominant alleles", "is_correct": false },
+        { "answer_text": "A person without any genetic mutations", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Hemophilia A is an example of which inheritance pattern?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hemophilia A is X-linked recessive - the gene is on the X chromosome, so males are more commonly affected.",
+      "answers": [
+        { "answer_text": "X-linked recessive", "is_correct": true },
+        { "answer_text": "Autosomal recessive", "is_correct": false },
+        { "answer_text": "Autosomal dominant", "is_correct": false },
+        { "answer_text": "Y-linked", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a frameshift mutation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A frameshift mutation occurs when insertions or deletions (not multiples of 3) shift the reading frame.",
+      "answers": [
+        { "answer_text": "An insertion or deletion that shifts the reading frame", "is_correct": true },
+        { "answer_text": "A substitution of one base for another", "is_correct": false },
+        { "answer_text": "A mutation that has no effect", "is_correct": false },
+        { "answer_text": "A chromosomal translocation", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Klinefelter syndrome?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Klinefelter syndrome is 47,XXY - males with an extra X chromosome, causing infertility and other features.",
+      "answers": [
+        { "answer_text": "A condition where males have an extra X chromosome (47,XXY)", "is_correct": true },
+        { "answer_text": "A condition where females have an extra X chromosome", "is_correct": false },
+        { "answer_text": "A condition caused by trisomy 21", "is_correct": false },
+        { "answer_text": "A condition with only one X chromosome", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a pedigree chart used for?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A pedigree chart shows inheritance patterns of traits/diseases across multiple generations of a family.",
+      "answers": [
+        { "answer_text": "To track inheritance patterns in a family", "is_correct": true },
+        { "answer_text": "To sequence DNA", "is_correct": false },
+        { "answer_text": "To measure blood pressure", "is_correct": false },
+        { "answer_text": "To diagnose cancer", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is mitochondrial inheritance?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Mitochondrial DNA is inherited only from the mother (maternal inheritance) because sperm mitochondria are destroyed.",
+      "answers": [
+        { "answer_text": "Inheritance only from the mother", "is_correct": true },
+        { "answer_text": "Inheritance only from the father", "is_correct": false },
+        { "answer_text": "Equal inheritance from both parents", "is_correct": false },
+        { "answer_text": "Inheritance through the X chromosome", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is genetic penetrance?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Penetrance is the proportion of individuals with a mutation who actually express the phenotype.",
+      "answers": [
+        { "answer_text": "The proportion of people with a mutation who show the phenotype", "is_correct": true },
+        { "answer_text": "How severe a genetic disease is", "is_correct": false },
+        { "answer_text": "How common a mutation is", "is_correct": false },
+        { "answer_text": "The number of genes involved", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What causes cystic fibrosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Cystic fibrosis is caused by mutations in the CFTR gene, most commonly the ΔF508 deletion.",
+      "answers": [
+        { "answer_text": "Mutations in the CFTR gene", "is_correct": true },
+        { "answer_text": "Mutations in the hemoglobin gene", "is_correct": false },
+        { "answer_text": "Trisomy 21", "is_correct": false },
+        { "answer_text": "X chromosome abnormality", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a nonsense mutation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A nonsense mutation creates a premature stop codon, resulting in a truncated (shortened) protein.",
+      "answers": [
+        { "answer_text": "A mutation that creates a premature stop codon", "is_correct": true },
+        { "answer_text": "A mutation that changes one amino acid to another", "is_correct": false },
+        { "answer_text": "A silent mutation with no effect", "is_correct": false },
+        { "answer_text": "A mutation that adds extra codons", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Edwards syndrome?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Edwards syndrome is trisomy 18 - three copies of chromosome 18, causing severe developmental abnormalities.",
+      "answers": [
+        { "answer_text": "Trisomy 18", "is_correct": true },
+        { "answer_text": "Trisomy 21", "is_correct": false },
+        { "answer_text": "Trisomy 13", "is_correct": false },
+        { "answer_text": "Monosomy X", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is genetic expressivity?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Expressivity refers to the degree or severity of phenotype expression in individuals with the same genotype.",
+      "answers": [
+        { "answer_text": "The degree of phenotype variation among individuals with the same genotype", "is_correct": true },
+        { "answer_text": "Whether a gene is expressed at all", "is_correct": false },
+        { "answer_text": "The number of chromosomes", "is_correct": false },
+        { "answer_text": "How genes are inherited", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a chromosomal translocation?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A translocation is when part of one chromosome breaks off and attaches to another chromosome.",
+      "answers": [
+        { "answer_text": "When parts of chromosomes break off and attach to different chromosomes", "is_correct": true },
+        { "answer_text": "When a chromosome is deleted", "is_correct": false },
+        { "answer_text": "When a gene is duplicated", "is_correct": false },
+        { "answer_text": "When DNA is replicated", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is Patau syndrome?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Patau syndrome is trisomy 13, causing severe intellectual disability and physical abnormalities.",
+      "answers": [
+        { "answer_text": "Trisomy 13", "is_correct": true },
+        { "answer_text": "Trisomy 18", "is_correct": false },
+        { "answer_text": "Trisomy 21", "is_correct": false },
+        { "answer_text": "45,X", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is anticipation in genetics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Anticipation is when a genetic disorder appears earlier or more severe in successive generations (e.g., trinucleotide repeat disorders).",
+      "answers": [
+        { "answer_text": "Disease appearing earlier or more severe in successive generations", "is_correct": true },
+        { "answer_text": "Disease skipping generations", "is_correct": false },
+        { "answer_text": "Disease becoming milder over time", "is_correct": false },
+        { "answer_text": "Expecting to develop a disease", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the purpose of amniocentesis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Amniocentesis samples amniotic fluid to test fetal cells for chromosomal abnormalities and genetic disorders.",
+      "answers": [
+        { "answer_text": "To test fetal cells for chromosomal abnormalities", "is_correct": true },
+        { "answer_text": "To induce labor", "is_correct": false },
+        { "answer_text": "To determine the mother's blood type", "is_correct": false },
+        { "answer_text": "To treat genetic disorders", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What percentage of children are affected when both parents are carriers of an autosomal recessive condition?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "If both parents are carriers (Aa × Aa), 25% of children will be affected (aa), 50% carriers, 25% unaffected.",
+      "answers": [
+        { "answer_text": "25%", "is_correct": true },
+        { "answer_text": "50%", "is_correct": false },
+        { "answer_text": "75%", "is_correct": false },
+        { "answer_text": "100%", "is_correct": false }
+      ]
+    }
+  ]
+}

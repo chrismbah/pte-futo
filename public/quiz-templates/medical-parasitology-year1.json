@@ -1,0 +1,309 @@
+{
+  "title": "Medical Parasitology - Year 1 Fundamentals",
+  "description": "Introductory medical parasitology covering protozoa, helminths, arthropod vectors, and parasitic diseases for Year 1 medical students.",
+  "duration_minutes": 45,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What is a parasite?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A parasite is an organism that lives on or in a host, deriving nutrients at the host's expense.",
+      "answers": [
+        { "answer_text": "An organism that lives on/in another organism and benefits at its expense", "is_correct": true },
+        { "answer_text": "Any bacteria that causes disease", "is_correct": false },
+        { "answer_text": "A virus that infects cells", "is_correct": false },
+        { "answer_text": "A beneficial organism in the gut", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite causes malaria?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Plasmodium species (P. falciparum, P. vivax, P. ovale, P. malariae, P. knowlesi) cause malaria.",
+      "answers": [
+        { "answer_text": "Plasmodium species", "is_correct": true },
+        { "answer_text": "Trypanosoma species", "is_correct": false },
+        { "answer_text": "Leishmania species", "is_correct": false },
+        { "answer_text": "Entamoeba histolytica", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the vector for malaria transmission?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Female Anopheles mosquitoes transmit Plasmodium parasites through their bite.",
+      "answers": [
+        { "answer_text": "Female Anopheles mosquito", "is_correct": true },
+        { "answer_text": "Aedes mosquito", "is_correct": false },
+        { "answer_text": "Tsetse fly", "is_correct": false },
+        { "answer_text": "Sandfly", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between a definitive host and an intermediate host?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Definitive host harbors the adult/sexual stage; intermediate host harbors the larval/asexual stage.",
+      "answers": [
+        { "answer_text": "Definitive host has adult/sexual stage; intermediate has larval/asexual stage", "is_correct": true },
+        { "answer_text": "Definitive host is always human", "is_correct": false },
+        { "answer_text": "Intermediate host is where the parasite reproduces", "is_correct": false },
+        { "answer_text": "There is no difference", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which protozoan causes amoebic dysentery?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Entamoeba histolytica causes amoebic dysentery (bloody diarrhea) and liver abscesses.",
+      "answers": [
+        { "answer_text": "Entamoeba histolytica", "is_correct": true },
+        { "answer_text": "Giardia lamblia", "is_correct": false },
+        { "answer_text": "Cryptosporidium parvum", "is_correct": false },
+        { "answer_text": "Balantidium coli", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the infective form of Entamoeba histolytica?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "The mature cyst is the infective form, transmitted via the fecal-oral route in contaminated food/water.",
+      "answers": [
+        { "answer_text": "Mature cyst", "is_correct": true },
+        { "answer_text": "Trophozoite", "is_correct": false },
+        { "answer_text": "Sporozoite", "is_correct": false },
+        { "answer_text": "Merozoite", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite causes sleeping sickness?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Trypanosoma brucei (T.b. gambiense and T.b. rhodesiense) causes African sleeping sickness.",
+      "answers": [
+        { "answer_text": "Trypanosoma brucei", "is_correct": true },
+        { "answer_text": "Trypanosoma cruzi", "is_correct": false },
+        { "answer_text": "Leishmania donovani", "is_correct": false },
+        { "answer_text": "Plasmodium falciparum", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of organism is Ascaris lumbricoides?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ascaris lumbricoides is a roundworm (nematode) - the most common human intestinal helminth.",
+      "answers": [
+        { "answer_text": "Roundworm (nematode)", "is_correct": true },
+        { "answer_text": "Tapeworm (cestode)", "is_correct": false },
+        { "answer_text": "Fluke (trematode)", "is_correct": false },
+        { "answer_text": "Protozoan", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite causes giardiasis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Giardia lamblia (G. intestinalis) causes giardiasis - a common cause of traveler's diarrhea.",
+      "answers": [
+        { "answer_text": "Giardia lamblia", "is_correct": true },
+        { "answer_text": "Entamoeba histolytica", "is_correct": false },
+        { "answer_text": "Cryptosporidium parvum", "is_correct": false },
+        { "answer_text": "Trichomonas vaginalis", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the vector for Chagas disease?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Triatomine bugs (kissing bugs/reduviid bugs) transmit Trypanosoma cruzi, which causes Chagas disease.",
+      "answers": [
+        { "answer_text": "Triatomine (kissing) bug", "is_correct": true },
+        { "answer_text": "Tsetse fly", "is_correct": false },
+        { "answer_text": "Sandfly", "is_correct": false },
+        { "answer_text": "Mosquito", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of parasite is Taenia solium?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Taenia solium is a tapeworm (cestode) - the pork tapeworm that can cause cysticercosis.",
+      "answers": [
+        { "answer_text": "Tapeworm (cestode)", "is_correct": true },
+        { "answer_text": "Roundworm (nematode)", "is_correct": false },
+        { "answer_text": "Fluke (trematode)", "is_correct": false },
+        { "answer_text": "Protozoan", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which Plasmodium species causes the most severe form of malaria?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "P. falciparum causes the most severe malaria, including cerebral malaria, and is responsible for most deaths.",
+      "answers": [
+        { "answer_text": "Plasmodium falciparum", "is_correct": true },
+        { "answer_text": "Plasmodium vivax", "is_correct": false },
+        { "answer_text": "Plasmodium malariae", "is_correct": false },
+        { "answer_text": "Plasmodium ovale", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What causes schistosomiasis (bilharzia)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Schistosoma species (blood flukes) cause schistosomiasis. Cercariae penetrate skin in contaminated water.",
+      "answers": [
+        { "answer_text": "Schistosoma species (blood flukes)", "is_correct": true },
+        { "answer_text": "Fasciola hepatica", "is_correct": false },
+        { "answer_text": "Paragonimus westermani", "is_correct": false },
+        { "answer_text": "Clonorchis sinensis", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the intermediate host for Schistosoma?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Freshwater snails are the intermediate host where Schistosoma develops into cercariae.",
+      "answers": [
+        { "answer_text": "Freshwater snail", "is_correct": true },
+        { "answer_text": "Fish", "is_correct": false },
+        { "answer_text": "Pig", "is_correct": false },
+        { "answer_text": "Mosquito", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite causes leishmaniasis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Leishmania species cause leishmaniasis (cutaneous, mucocutaneous, or visceral forms).",
+      "answers": [
+        { "answer_text": "Leishmania species", "is_correct": true },
+        { "answer_text": "Trypanosoma species", "is_correct": false },
+        { "answer_text": "Plasmodium species", "is_correct": false },
+        { "answer_text": "Toxoplasma gondii", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the vector for leishmaniasis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Sandflies (Phlebotomus and Lutzomyia species) transmit Leishmania parasites.",
+      "answers": [
+        { "answer_text": "Sandfly", "is_correct": true },
+        { "answer_text": "Mosquito", "is_correct": false },
+        { "answer_text": "Tsetse fly", "is_correct": false },
+        { "answer_text": "Blackfly", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite can cause neurocysticercosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Taenia solium larvae (cysticerci) can migrate to the brain, causing neurocysticercosis - a major cause of seizures.",
+      "answers": [
+        { "answer_text": "Taenia solium (pork tapeworm)", "is_correct": true },
+        { "answer_text": "Taenia saginata (beef tapeworm)", "is_correct": false },
+        { "answer_text": "Echinococcus granulosus", "is_correct": false },
+        { "answer_text": "Ascaris lumbricoides", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What parasite causes toxoplasmosis?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Toxoplasma gondii causes toxoplasmosis. Cats are the definitive host; humans are intermediate hosts.",
+      "answers": [
+        { "answer_text": "Toxoplasma gondii", "is_correct": true },
+        { "answer_text": "Plasmodium falciparum", "is_correct": false },
+        { "answer_text": "Cryptosporidium parvum", "is_correct": false },
+        { "answer_text": "Giardia lamblia", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the definitive host for Toxoplasma gondii?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Cats (felids) are the definitive host where T. gondii undergoes sexual reproduction.",
+      "answers": [
+        { "answer_text": "Cat", "is_correct": true },
+        { "answer_text": "Dog", "is_correct": false },
+        { "answer_text": "Human", "is_correct": false },
+        { "answer_text": "Pig", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which hookworm species infects humans?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ancylostoma duodenale and Necator americanus are the two main human hookworm species.",
+      "answers": [
+        { "answer_text": "Ancylostoma duodenale and Necator americanus", "is_correct": true },
+        { "answer_text": "Ascaris lumbricoides", "is_correct": false },
+        { "answer_text": "Strongyloides stercoralis", "is_correct": false },
+        { "answer_text": "Trichuris trichiura", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "How do hookworms typically infect humans?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Hookworm larvae in soil penetrate bare skin (usually feet), then migrate to the intestines.",
+      "answers": [
+        { "answer_text": "Larvae penetrate through the skin", "is_correct": true },
+        { "answer_text": "Ingestion of eggs", "is_correct": false },
+        { "answer_text": "Mosquito bite", "is_correct": false },
+        { "answer_text": "Inhalation", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is elephantiasis caused by?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Lymphatic filariasis (elephantiasis) is caused by Wuchereria bancrofti and Brugia species (filarial worms).",
+      "answers": [
+        { "answer_text": "Wuchereria bancrofti (filarial worms)", "is_correct": true },
+        { "answer_text": "Ascaris lumbricoides", "is_correct": false },
+        { "answer_text": "Schistosoma species", "is_correct": false },
+        { "answer_text": "Trypanosoma brucei", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which parasite causes river blindness?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Onchocerca volvulus causes onchocerciasis (river blindness), transmitted by blackflies.",
+      "answers": [
+        { "answer_text": "Onchocerca volvulus", "is_correct": true },
+        { "answer_text": "Loa loa", "is_correct": false },
+        { "answer_text": "Wuchereria bancrofti", "is_correct": false },
+        { "answer_text": "Toxoplasma gondii", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the diagnostic stage of Plasmodium seen in blood smears?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Ring-form trophozoites and later stages (schizonts, gametocytes) are seen in blood smears for malaria diagnosis.",
+      "answers": [
+        { "answer_text": "Ring-form trophozoites (and other blood stages)", "is_correct": true },
+        { "answer_text": "Cysts", "is_correct": false },
+        { "answer_text": "Eggs", "is_correct": false },
+        { "answer_text": "Adult worms", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the main drug used to treat malaria caused by P. falciparum?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Artemisinin-based combination therapies (ACTs) are the first-line treatment for P. falciparum malaria.",
+      "answers": [
+        { "answer_text": "Artemisinin-based combination therapy (ACT)", "is_correct": true },
+        { "answer_text": "Metronidazole", "is_correct": false },
+        { "answer_text": "Albendazole", "is_correct": false },
+        { "answer_text": "Praziquantel", "is_correct": false }
+      ]
+    }
+  ]
+}

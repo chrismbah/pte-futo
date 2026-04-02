@@ -1,0 +1,309 @@
+{
+  "title": "Pharmacology - Intermediate Fundamentals",
+  "description": "Pharmacology fundamentals covering pharmacokinetics, pharmacodynamics, drug classes, and therapeutic principles for medical students.",
+  "duration_minutes": 50,
+  "pass_score": 60,
+  "is_published": true,
+  "questions": [
+    {
+      "question_text": "What are the four main processes of pharmacokinetics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "ADME: Absorption, Distribution, Metabolism, and Excretion describe how the body handles drugs.",
+      "answers": [
+        { "answer_text": "Absorption, Distribution, Metabolism, Excretion (ADME)", "is_correct": true },
+        { "answer_text": "Action, Delivery, Mechanism, Effect", "is_correct": false },
+        { "answer_text": "Absorption, Degradation, Movement, Elimination", "is_correct": false },
+        { "answer_text": "Administration, Dispersion, Modification, Exit", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the difference between pharmacokinetics and pharmacodynamics?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Pharmacokinetics = what the body does to the drug; Pharmacodynamics = what the drug does to the body.",
+      "answers": [
+        { "answer_text": "Pharmacokinetics: body's effect on drug; Pharmacodynamics: drug's effect on body", "is_correct": true },
+        { "answer_text": "They are the same thing", "is_correct": false },
+        { "answer_text": "Pharmacokinetics: drug's effect on body; Pharmacodynamics: body's effect on drug", "is_correct": false },
+        { "answer_text": "Pharmacokinetics is for oral drugs; pharmacodynamics is for IV drugs", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is bioavailability?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Bioavailability is the fraction of administered drug that reaches systemic circulation in active form.",
+      "answers": [
+        { "answer_text": "The fraction of drug reaching systemic circulation unchanged", "is_correct": true },
+        { "answer_text": "The total amount of drug administered", "is_correct": false },
+        { "answer_text": "How quickly a drug is metabolized", "is_correct": false },
+        { "answer_text": "The duration of drug action", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the first-pass effect?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "First-pass metabolism occurs when oral drugs are metabolized by the liver before reaching systemic circulation.",
+      "answers": [
+        { "answer_text": "Metabolism of a drug by the liver before reaching systemic circulation", "is_correct": true },
+        { "answer_text": "The first dose of a drug having a stronger effect", "is_correct": false },
+        { "answer_text": "Drug absorption in the stomach", "is_correct": false },
+        { "answer_text": "The initial distribution of a drug", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the half-life (t½) of a drug?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Half-life is the time required for the plasma concentration of a drug to decrease by 50%.",
+      "answers": [
+        { "answer_text": "Time for plasma drug concentration to decrease by 50%", "is_correct": true },
+        { "answer_text": "Time for half the drug to be absorbed", "is_correct": false },
+        { "answer_text": "Half the duration of drug effect", "is_correct": false },
+        { "answer_text": "Time for half the dose to be administered", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an agonist?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An agonist binds to a receptor and activates it, producing a biological response.",
+      "answers": [
+        { "answer_text": "A drug that binds to and activates a receptor", "is_correct": true },
+        { "answer_text": "A drug that blocks a receptor", "is_correct": false },
+        { "answer_text": "A drug that has no effect", "is_correct": false },
+        { "answer_text": "A drug that is inactive until metabolized", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an antagonist?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An antagonist binds to a receptor but does not activate it, blocking the action of agonists.",
+      "answers": [
+        { "answer_text": "A drug that binds to a receptor and blocks its activation", "is_correct": true },
+        { "answer_text": "A drug that activates receptors", "is_correct": false },
+        { "answer_text": "A drug that increases receptor sensitivity", "is_correct": false },
+        { "answer_text": "A drug metabolite", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which cytochrome P450 enzyme is most important for drug metabolism?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "CYP3A4 metabolizes approximately 50% of all drugs, making it the most clinically important CYP enzyme.",
+      "answers": [
+        { "answer_text": "CYP3A4", "is_correct": true },
+        { "answer_text": "CYP1A2", "is_correct": false },
+        { "answer_text": "CYP2C9", "is_correct": false },
+        { "answer_text": "CYP2E1", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the therapeutic index?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Therapeutic index = TD50/ED50 (toxic dose/effective dose). Higher TI = safer drug.",
+      "answers": [
+        { "answer_text": "The ratio of toxic dose to effective dose (TD50/ED50)", "is_correct": true },
+        { "answer_text": "The recommended dosing schedule", "is_correct": false },
+        { "answer_text": "The number of indications for a drug", "is_correct": false },
+        { "answer_text": "The cost-effectiveness ratio", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What class of drugs are beta-blockers?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Beta-blockers (e.g., propranolol, metoprolol) block β-adrenergic receptors, used for hypertension, angina, arrhythmias.",
+      "answers": [
+        { "answer_text": "Adrenergic receptor antagonists", "is_correct": true },
+        { "answer_text": "Cholinergic agonists", "is_correct": false },
+        { "answer_text": "Calcium channel blockers", "is_correct": false },
+        { "answer_text": "ACE inhibitors", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the mechanism of action of aspirin?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Aspirin irreversibly inhibits cyclooxygenase (COX), reducing prostaglandin and thromboxane synthesis.",
+      "answers": [
+        { "answer_text": "Irreversible inhibition of cyclooxygenase (COX)", "is_correct": true },
+        { "answer_text": "Blocking opioid receptors", "is_correct": false },
+        { "answer_text": "Inhibiting ACE", "is_correct": false },
+        { "answer_text": "Blocking calcium channels", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of drug is omeprazole?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Omeprazole is a proton pump inhibitor (PPI) that blocks H+/K+-ATPase to reduce gastric acid secretion.",
+      "answers": [
+        { "answer_text": "Proton pump inhibitor (PPI)", "is_correct": true },
+        { "answer_text": "H2 receptor blocker", "is_correct": false },
+        { "answer_text": "Antacid", "is_correct": false },
+        { "answer_text": "Prokinetic agent", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a prodrug?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A prodrug is inactive when administered and requires metabolic conversion to become active.",
+      "answers": [
+        { "answer_text": "An inactive drug that is converted to an active form in the body", "is_correct": true },
+        { "answer_text": "A drug that works immediately", "is_correct": false },
+        { "answer_text": "A drug given before another drug", "is_correct": false },
+        { "answer_text": "A professional-grade medication", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the mechanism of action of penicillin?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Penicillin inhibits bacterial cell wall synthesis by blocking transpeptidase (penicillin-binding proteins).",
+      "answers": [
+        { "answer_text": "Inhibition of bacterial cell wall synthesis", "is_correct": true },
+        { "answer_text": "Inhibition of protein synthesis", "is_correct": false },
+        { "answer_text": "Inhibition of DNA replication", "is_correct": false },
+        { "answer_text": "Disruption of cell membrane", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is drug tolerance?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Tolerance is decreased drug effect over time, requiring higher doses to achieve the same effect.",
+      "answers": [
+        { "answer_text": "Decreased response to a drug with repeated use", "is_correct": true },
+        { "answer_text": "Increased sensitivity to a drug", "is_correct": false },
+        { "answer_text": "An allergic reaction to a drug", "is_correct": false },
+        { "answer_text": "The ability to take any drug safely", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What class of drugs are ACE inhibitors?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "ACE inhibitors (e.g., lisinopril, enalapril) block angiotensin-converting enzyme, used for hypertension and heart failure.",
+      "answers": [
+        { "answer_text": "Antihypertensive drugs that block angiotensin-converting enzyme", "is_correct": true },
+        { "answer_text": "Antibiotics", "is_correct": false },
+        { "answer_text": "Anticoagulants", "is_correct": false },
+        { "answer_text": "Antipsychotics", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is a common side effect of ACE inhibitors?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Dry cough is a common side effect due to increased bradykinin levels. Angioedema is a rare but serious effect.",
+      "answers": [
+        { "answer_text": "Dry cough", "is_correct": true },
+        { "answer_text": "Weight gain", "is_correct": false },
+        { "answer_text": "Hair loss", "is_correct": false },
+        { "answer_text": "Increased appetite", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the mechanism of action of statins?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis.",
+      "answers": [
+        { "answer_text": "Inhibition of HMG-CoA reductase", "is_correct": true },
+        { "answer_text": "Blocking cholesterol absorption", "is_correct": false },
+        { "answer_text": "Increasing bile acid excretion", "is_correct": false },
+        { "answer_text": "Activating lipoprotein lipase", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the volume of distribution (Vd)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Vd is a theoretical volume that relates the amount of drug in the body to plasma concentration. High Vd = extensive tissue distribution.",
+      "answers": [
+        { "answer_text": "A measure of how extensively a drug distributes into tissues", "is_correct": true },
+        { "answer_text": "The actual volume of the body", "is_correct": false },
+        { "answer_text": "The volume of drug administered", "is_correct": false },
+        { "answer_text": "The volume of blood in the body", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which drug class is warfarin?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Warfarin is an oral anticoagulant that inhibits vitamin K epoxide reductase, reducing clotting factor synthesis.",
+      "answers": [
+        { "answer_text": "Oral anticoagulant (vitamin K antagonist)", "is_correct": true },
+        { "answer_text": "Antiplatelet drug", "is_correct": false },
+        { "answer_text": "Thrombolytic agent", "is_correct": false },
+        { "answer_text": "Direct thrombin inhibitor", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the mechanism of action of metformin?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Metformin decreases hepatic glucose production and increases insulin sensitivity (biguanide class).",
+      "answers": [
+        { "answer_text": "Decreases hepatic glucose production and increases insulin sensitivity", "is_correct": true },
+        { "answer_text": "Stimulates insulin release from pancreas", "is_correct": false },
+        { "answer_text": "Blocks glucose absorption in gut", "is_correct": false },
+        { "answer_text": "Replaces insulin", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is an adverse drug reaction (ADR)?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "An ADR is any harmful or unintended response to a medication used at normal doses.",
+      "answers": [
+        { "answer_text": "A harmful, unintended response to a drug at normal doses", "is_correct": true },
+        { "answer_text": "The expected therapeutic effect", "is_correct": false },
+        { "answer_text": "A drug interaction", "is_correct": false },
+        { "answer_text": "Drug resistance", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What type of drug-drug interaction occurs when grapefruit juice inhibits CYP3A4?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Grapefruit inhibits intestinal CYP3A4, increasing levels of drugs metabolized by this enzyme (pharmacokinetic interaction).",
+      "answers": [
+        { "answer_text": "Pharmacokinetic interaction (enzyme inhibition)", "is_correct": true },
+        { "answer_text": "Pharmacodynamic interaction", "is_correct": false },
+        { "answer_text": "Physical incompatibility", "is_correct": false },
+        { "answer_text": "Receptor antagonism", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the loading dose used for?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "A loading dose quickly achieves therapeutic drug levels, especially for drugs with long half-lives.",
+      "answers": [
+        { "answer_text": "To rapidly achieve therapeutic drug concentration", "is_correct": true },
+        { "answer_text": "To test for allergic reactions", "is_correct": false },
+        { "answer_text": "To maintain steady state", "is_correct": false },
+        { "answer_text": "To minimize side effects", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the mechanism of action of opioids like morphine?",
+      "question_type": "multiple_choice",
+      "points": 1,
+      "explanation": "Opioids bind to μ (mu), κ (kappa), and δ (delta) opioid receptors, producing analgesia and other effects.",
+      "answers": [
+        { "answer_text": "Activation of opioid receptors (mu, kappa, delta)", "is_correct": true },
+        { "answer_text": "Inhibition of COX enzymes", "is_correct": false },
+        { "answer_text": "Blocking sodium channels", "is_correct": false },
+        { "answer_text": "Inhibiting serotonin reuptake", "is_correct": false }
+      ]
+    }
+  ]
+}

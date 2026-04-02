@@ -7,7 +7,7 @@ export default function PhilosophyAndObjectives() {
           <h2 className="">
             {" "}
             <div className="bar-style" />
-            Department of Polymer and Textile Engineering, FUTO
+            Department of Medicine and Surgery, EBSU
           </h2>
           <h4 className="mb-4 font-semibold text-base sm:text-md ">
             Philosophy and Objectives
@@ -15,92 +15,53 @@ export default function PhilosophyAndObjectives() {
           <div className="mb-5">
             <h5 className="text-xs sm:text-base font-medium text-green1">Philosophy</h5>
             <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-5">
-              In pursuance of the overall philosophy of the Federal University
-              of Technology, Owerri, the Department of Polymer Engineering is
-              designed to produce undergraduates who will give a positive thrust
-              to the technological development of Nigeria in the area of Textile
-              Science and Engineering Technology. Additionally, they are groomed
-              in such a manner that they will be able to effectively function in
-              the society within the context of the needs and resources of the
-              society as well as emphasizing the need to be innovative in a
-              competitive world. The philosophy, therefore, has a strategy of
-              human resource development with broader goals of contributing to
-              the economic development and growth of the Nation.
+              The Department of Medicine and Surgery is committed to producing competent, ethical, and compassionate medical and surgical professionals who will serve as agents of change in healthcare delivery. Our philosophy is anchored on the principles of "Pro Deo et Humanitate" (For God and Humanity), recognizing that medical practitioners have a sacred responsibility to improve public health and transform lives. We believe in holistic medical education that combines rigorous scientific knowledge with clinical excellence, research innovation, and community engagement.
+            </p>
+            <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-4">
+              The Department houses two faculties — the <span className="font-semibold text-gray-800">Faculty of Clinical Sciences</span> and the <span className="font-semibold text-gray-800">Faculty of Basic Clinical Sciences</span> — as well as the <span className="font-semibold text-gray-800">Faculty of Basic Medical Sciences</span>, all working collaboratively to deliver a comprehensive and integrated medical curriculum. Together, these faculties ensure that students receive a strong foundation in the biomedical sciences alongside advanced clinical training, preparing them for the full spectrum of medical practice.
             </p>
             <p className="text-sm sm:text-xs text-gray-700 leading-7">
-              Finally, the strategy will ensure that the graduate is adequately
-              prepared to be socially acceptable and be in a true position to be
-              of service to society. The programme of study will be
-              student-centred and School (Faculty) based on inter-departmental
-              and inter-School inputs whenever necessary. The programme offered
-              in this Department for the Bachelor of Engineering Degree is
-              designed to give each student a thorough grounding in his specific
-              professional area while at the same time giving him the
-              flexibility of choice in tailoring his individual programme to fit
-              his personal career plans for immediate employment in industries,
-              self-employment or for post-graduate studies and research.
+              The Department emphasizes the development of culturally-sensitive, socially responsible physicians who understand the unique healthcare challenges of Nigeria and Africa, and are equipped to address these challenges with evidence-based practice. We foster an environment of continuous learning, critical thinking, and professional development, ensuring that our graduates are competitive on the global stage while remaining committed to addressing local health disparities and improving community wellbeing.
             </p>
           </div>
           <div className="mb-5">
             <h5 className="text-xs sm:text-base font-medium text-green1">Objectives</h5>
             <p className="text-sm sm:text-xs text-gray-700 leading-7 mb-2">
-              The principal objectives of the Polymer and Textile Engineering
-              Programme include the following:
+              The principal objectives of the Medicine and Surgery Programme include the following:
             </p>
             <ul className=" space-y-2 text-gray-700 text-sm sm:text-xs list-disc list-inside mb-4 leading-7">
               <li>
-                The training of engineers who are capable of meeting the changes
-                of the Nigerian Petrochemical industries, natural gas,
-                agro-based industries as well as those of the general Nigerian
-                Socio-economic sectors.
+                To provide comprehensive medical education grounded in basic sciences, clinical knowledge, and practical skills necessary for effective diagnosis, treatment, and prevention of diseases.
               </li>
               <li>
-                {" "}
-                The inculcation of the basic principles and skills underlying
-                the planning, designing, operating, managing or in fact
-                maintaining the respective industrial outfits in the oil and gas
-                industries, agro-based and solid mineral resources as well as
-                the environment.
+                To develop physicians who demonstrate exceptional clinical competence, ethical practice, and commitment to evidence-based medicine in all healthcare settings.
               </li>
               <li>
-                The stimulation and motivation of every student in the pursuit
-                of higher standards and achievements in the general technology
-                field either through experimental/industrial research or through
-                the pursuit of higher education qualifications and professional
-                excellence as well as consultancy.
+                To foster research mentality and innovation among medical professionals to advance medical knowledge and contribute to solving pressing health challenges in Nigeria and the African continent.
+              </li>
+              <li>
+                To instill values of professionalism, integrity, empathy, and social responsibility, ensuring graduates serve as role models in their communities and advocate for public health.
+              </li>
+              <li>
+                To prepare physicians capable of functioning in diverse healthcare environments, from rural clinics to tertiary institutions, with emphasis on addressing healthcare disparities.
+              </li>
+              <li>
+                To promote collaborative learning and interdisciplinary practice, preparing graduates for effective teamwork with other healthcare professionals.
               </li>
             </ul>
             <p className="text-gray-700 text-sm sm:text-xs mb-4 leading-7 ">
-              The graduate of this programme may expect fulfilling employment
-              opportunities in the following Nigerian industrial sectors:
+              Graduates of this programme are prepared for employment in the following healthcare sectors:
             </p>
             <ul className=" space-y-1 text-gray-700 text-sm sm:text-xs list-disc list-inside mb-4 leading-7">
-              <li>Petrochemical/Refineries</li>
-              <li>
-                Petroleum and natural gas industries involved in exploration,
-                drilling, production, servicing, transporting, promotion and
-                marketing.
-              </li>
-              <li>Engineering Consultancy,</li>
-              <li>Design and construction companies.</li>
-              <li>
-                Works in Insurance companies and financial institutions eg
-                banks.
-              </li>
-              <li>
-                Engaged in solving environmental problems such as offshore oil
-                spills, corrosion in pipelines, tankers etc.
-              </li>
-              <li>
-                Lecture in academic institutions with polymer and Textile,
-                chemical, petroleum and materials engineering departments.
-              </li>
-              <li>
-                Engage in agro-based industries, food industries, lumber
-                industries, economic renewable plants that yield polymers such
-                as grains, rubber lattices, cashew-nut shell liquids, tannins,
-                as well as animal husbandry which yields protein polymer.
-              </li>
+              <li>Federal, State, and Local Government Hospitals and Healthcare Centers</li>
+              <li>Private Hospitals and Medical Clinics</li>
+              <li>Medical Research Institutions and Universities</li>
+              <li>Public Health and Epidemiology Services</li>
+              <li>Clinical Practice and Medical Consultation</li>
+              <li>International Health Organizations and NGOs</li>
+              <li>Military Medical Services</li>
+              <li>Medical Education and Academic Medicine</li>
+              <li>Healthcare Administration and Health Policy</li>
             </ul>
           </div>
         </div>
